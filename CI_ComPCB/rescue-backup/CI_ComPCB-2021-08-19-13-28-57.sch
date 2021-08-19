@@ -1,5 +1,5 @@
-EESchema Schematic File Version 4
-EELAYER 30 0
+EESchema Schematic File Version 2
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -25,7 +25,7 @@ F 3 "http://www.irf.com/product-info/datasheets/data/irf9540n.pdf" H 1450 1750 5
 	1    0    0    -1  
 $EndComp
 $Comp
-L CI_ComPCB-rescue:12v_to_5V-New_Library-RackComm-rescue Buck_Converter1
+L RackComm-rescue:12v_to_5V-New_Library Buck_Converter1
 U 1 1 61169941
 P 1750 1800
 F 0 "Buck_Converter1" H 1272 1409 50  0000 R CNN
@@ -61,7 +61,7 @@ Vin
 Wire Wire Line
 	1000 3150 1250 3150
 $Comp
-L CI_ComPCB-rescue:TxRx-RS485-New_Library-RackComm-rescue Converter1
+L RackComm-rescue:TxRx-RS485-New_Library Converter1
 U 1 1 6117FFF0
 P 5900 5000
 F 0 "Converter1" H 5850 4285 50  0000 C CNN
@@ -72,7 +72,7 @@ F 3 "" H 5900 5000 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L CI_ComPCB-rescue:TxRx-RS485-New_Library-RackComm-rescue Converter2
+L RackComm-rescue:TxRx-RS485-New_Library Converter2
 U 1 1 61181371
 P 5850 6100
 F 0 "Converter2" H 5800 5385 50  0000 C CNN
@@ -203,22 +203,22 @@ Wire Wire Line
 Wire Wire Line
 	1700 5050 1400 5050
 Wire Wire Line
-	7400 2650 7400 2750
-Text GLabel 9750 2150 2    50   Input ~ 0
+	7650 3550 7650 3650
+Text GLabel 10000 3050 2    50   Input ~ 0
 GND
-Text GLabel 5400 1900 2    50   Input ~ 0
+Text GLabel 5650 2800 2    50   Input ~ 0
 Vin
 Wire Wire Line
-	5250 1900 5400 1900
+	5500 2800 5650 2800
 $Comp
 L Transistor_FET:IRF9540N Q2
 U 1 1 6115C458
-P 7400 2450
-F 0 "Q2" V 7649 2450 50  0000 C CNN
-F 1 "IRF9540N" V 7740 2450 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7600 2375 50  0001 L CIN
-F 3 "http://www.irf.com/product-info/datasheets/data/irf9540n.pdf" H 7400 2450 50  0001 L CNN
-	1    7400 2450
+P 7650 3350
+F 0 "Q2" V 7899 3350 50  0000 C CNN
+F 1 "IRF9540N" V 7990 3350 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7850 3275 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf9540n.pdf" H 7650 3350 50  0001 L CNN
+	1    7650 3350
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -236,25 +236,25 @@ Wire Wire Line
 Wire Wire Line
 	7350 4050 7200 4050
 Wire Wire Line
-	10000 1800 10000 2350
+	10250 2700 10250 3250
 Wire Wire Line
-	5250 1800 10000 1800
-Connection ~ 10000 2350
+	5500 2700 10250 2700
+Connection ~ 10250 3250
 Wire Wire Line
-	10000 2350 10000 2750
+	10250 3250 10250 3650
 $Comp
 L Connector:Conn_01x03_Male J7
 U 1 1 61263CFA
-P 5050 1900
-F 0 "J7" H 5158 2181 50  0000 C CNN
-F 1 "Conn_01x03_Male" H 5158 2090 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5050 1900 50  0001 C CNN
-F 3 "~" H 5050 1900 50  0001 C CNN
-	1    5050 1900
+P 5300 2800
+F 0 "J7" H 5408 3081 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 5408 2990 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5300 2800 50  0001 C CNN
+F 3 "~" H 5300 2800 50  0001 C CNN
+	1    5300 2800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5250 2350 5250 2000
+	5500 3250 5500 2900
 $Comp
 L Connector:Conn_01x02_Male J6
 U 1 1 6128186C
@@ -289,27 +289,27 @@ F 3 "~" H 800 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 1000 3050
-Text GLabel 6000 2550 0    50   Input ~ 0
+Text GLabel 6250 3450 0    50   Input ~ 0
 GND
 $Comp
-L CI_ComPCB-rescue:Boost_Converter-New_Library-RackComm-rescue U1
+L RackComm-rescue:Boost_Converter-New_Library U1
 U 1 1 61234995
-P 6500 2100
-F 0 "U1" H 6500 2075 50  0000 C CNN
-F 1 "Boost_Converter" H 6500 1984 50  0000 C CNN
-F 2 "RackCom:BoostConverter" H 6500 2100 50  0001 C CNN
-F 3 "" H 6500 2100 50  0001 C CNN
-	1    6500 2100
+P 6750 3000
+F 0 "U1" H 6750 2975 50  0000 C CNN
+F 1 "Boost_Converter" H 6750 2884 50  0000 C CNN
+F 2 "RackCom:BoostConverter" H 6750 3000 50  0001 C CNN
+F 3 "" H 6750 3000 50  0001 C CNN
+	1    6750 3000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8400 2300 8400 2600
+	8650 3200 8650 3500
 Wire Wire Line
-	7000 2350 7200 2350
+	7250 3250 7450 3250
 Wire Wire Line
-	7000 2550 7150 2550
+	7250 3450 7400 3450
 Wire Wire Line
-	7850 2350 7850 2650
+	8100 3250 8100 3550
 $Comp
 L Connector:RJ45_LED_Shielded J8
 U 1 1 611C7A9A
@@ -330,12 +330,12 @@ Connection ~ 7150 6000
 $Comp
 L Diode:1N5400 D3
 U 1 1 611E915E
-P 5650 2350
-F 0 "D3" V 5604 2429 50  0000 L CNN
-F 1 "1N5400" V 5695 2429 50  0000 L CNN
-F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 5650 2175 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88516/1n5400.pdf" H 5650 2350 50  0001 C CNN
-	1    5650 2350
+P 5900 3250
+F 0 "D3" V 5854 3329 50  0000 L CNN
+F 1 "1N5400" V 5945 3329 50  0000 L CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 5900 3075 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88516/1n5400.pdf" H 5900 3250 50  0001 C CNN
+	1    5900 3250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -369,68 +369,68 @@ Wire Wire Line
 Wire Wire Line
 	2600 2150 2600 3050
 Wire Wire Line
-	5800 2350 6000 2350
+	6050 3250 6250 3250
 Wire Wire Line
-	5250 2350 5500 2350
+	5500 3250 5750 3250
 $Comp
 L Connector:Conn_01x02_Male J10
 U 1 1 612294AF
-P 7800 2150
-F 0 "J10" H 7908 2331 50  0000 C CNN
-F 1 "Conn_01x02_Male" H 7908 2240 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7800 2150 50  0001 C CNN
-F 3 "~" H 7800 2150 50  0001 C CNN
-	1    7800 2150
+P 8050 3050
+F 0 "J10" H 8158 3231 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 8158 3140 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8050 3050 50  0001 C CNN
+F 3 "~" H 8050 3050 50  0001 C CNN
+	1    8050 3050
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7850 2650 8550 2650
+	8100 3550 8800 3550
 Wire Wire Line
-	8000 2600 8400 2600
+	8250 3500 8650 3500
 $Comp
-L CI_ComPCB-rescue:Battery-New_Library-RackComm-rescue Holder1
+L RackComm-rescue:Battery-New_Library Holder1
 U 1 1 61178D03
-P 7800 2400
-F 0 "Holder1" V 7846 2122 50  0000 R CNN
-F 1 "Battery-New_Library" V 7755 2122 50  0000 R CNN
-F 2 "RackCom:Battery" H 7940 2400 50  0001 C CNN
-F 3 "" H 7940 2400 50  0001 C CNN
-	1    7800 2400
+P 8050 3300
+F 0 "Holder1" V 8096 3022 50  0000 R CNN
+F 1 "Battery-New_Library" V 8005 3022 50  0000 R CNN
+F 2 "RackCom:Battery" H 8190 3300 50  0001 C CNN
+F 3 "" H 8190 3300 50  0001 C CNN
+	1    8050 3300
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	9600 2350 10000 2350
+	9850 3250 10250 3250
 Wire Wire Line
-	9750 2150 9600 2150
+	10000 3050 9850 3050
 Wire Wire Line
-	8550 2350 8550 2650
+	8800 3250 8800 3550
 Wire Wire Line
-	8400 2300 8550 2300
+	8650 3200 8800 3200
 Wire Wire Line
-	8550 2200 8000 2200
+	8800 3100 8250 3100
 $Comp
-L CI_ComPCB-rescue:Charger-New_Library-RackComm-rescue-RackComm-rescue HW-3731
+L RackComm-rescue:Charger-New_Library-RackComm-rescue HW-3731
 U 1 1 6120F21D
-P 9050 1900
-F 0 "HW-3731" H 9075 1875 50  0000 C CNN
-F 1 "Charger" H 9075 1784 50  0000 C CNN
-F 2 "RackCom:Charger" H 9050 1900 50  0001 C CNN
-F 3 "" H 9050 1900 50  0001 C CNN
-	1    9050 1900
+P 9300 2800
+F 0 "HW-3731" H 9325 2775 50  0000 C CNN
+F 1 "Charger" H 9325 2684 50  0000 C CNN
+F 2 "RackCom:Charger" H 9300 2800 50  0001 C CNN
+F 3 "" H 9300 2800 50  0001 C CNN
+	1    9300 2800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7600 2350 7700 2350
+	7850 3250 7950 3250
 Wire Wire Line
-	7850 2350 7800 2350
+	8100 3250 8050 3250
 Wire Wire Line
-	7150 2050 8550 2050
+	7400 2950 8800 2950
 Wire Wire Line
-	8550 2050 8550 2150
+	8800 2950 8800 3050
 Wire Wire Line
-	7150 2050 7150 2550
+	7400 2950 7400 3450
 Wire Wire Line
-	7400 2750 10000 2750
+	7650 3650 10250 3650
 Wire Wire Line
 	7350 4250 9250 4250
 Wire Wire Line
@@ -653,7 +653,7 @@ Connection ~ 4300 4650
 Wire Wire Line
 	4300 4650 5300 4650
 $Comp
-L CI_ComPCB-rescue:ESP32s-RackComm-rescue U1001
+L RackComm-rescue:ESP32s U1001
 U 1 1 61536F0E
 P 1600 4950
 F 0 "U1001" H 2450 5115 50  0000 C CNN

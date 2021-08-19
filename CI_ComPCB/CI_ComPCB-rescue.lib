@@ -1,0 +1,129 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# 12v_to_5V-New_Library-RackComm-rescue
+#
+DEF 12v_to_5V-New_Library-RackComm-rescue Buck_Converter 0 40 Y Y 1 F N
+F0 "Buck_Converter" 50 -50 50 H V C CNN
+F1 "12v_to_5V-New_Library-RackComm-rescue" 0 50 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -450 -150 50 -550 0 1 0 N
+X En 1 150 -200 100 L 50 50 1 1 I
+X Vi+ 2 150 -300 100 L 50 50 1 1 I
+X GND 3 150 -400 100 L 50 50 1 1 I
+X Vo+ 4 150 -500 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Battery-New_Library-RackComm-rescue
+#
+DEF Battery-New_Library-RackComm-rescue Holder 0 40 Y Y 1 F N
+F0 "Holder" -5 -15 50 H V C CNN
+F1 "Battery-New_Library-RackComm-rescue" 0 -90 50 H V C CNN
+F2 "" 140 0 50 H I C CNN
+F3 "" 140 0 50 H I C CNN
+DRAW
+S 100 -250 -100 -150 0 1 0 N
+X + 1 -200 -200 100 R 50 50 1 1 I
+X - 2 200 -200 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Boost_Converter-New_Library-RackComm-rescue
+#
+DEF Boost_Converter-New_Library-RackComm-rescue U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "Boost_Converter-New_Library-RackComm-rescue" 0 -50 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S 400 -500 -400 -200 0 1 0 N
+X Vout+ 1 -500 -250 100 R 50 50 1 1 I
+X Vout- 2 -500 -450 100 R 50 50 1 1 I
+X Vin+ 3 500 -250 100 L 50 50 1 1 I
+X VIN- 4 500 -450 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Charger-New_Library-RackComm-rescue-RackComm-rescue
+#
+DEF Charger-New_Library-RackComm-rescue-RackComm-rescue HW-373 0 40 Y Y 1 F N
+F0 "HW-373" 0 -100 50 H V C CNN
+F1 "Charger-New_Library-RackComm-rescue-RackComm-rescue" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -400 -200 450 -500 0 1 0 N
+X Out- 1 -500 -250 100 R 50 50 1 1 I
+X B- 2 -500 -300 100 R 50 50 1 1 I
+X B+ 3 -500 -400 100 R 50 50 1 1 I
+X Out+ 4 -500 -450 100 R 50 50 1 1 I
+X GND 5 550 -250 100 L 50 50 1 1 I
+X Vin+ 6 550 -450 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# ESP32s-RackComm-rescue
+#
+DEF ESP32s-RackComm-rescue U 0 40 Y Y 1 F N
+F0 "U" 900 -750 50 H V C CNN
+F1 "ESP32s-RackComm-rescue" 900 -650 50 H V C CNN
+F2 "" 900 -750 50 H I C CNN
+F3 "" 900 -750 50 H I C CNN
+DRAW
+S 200 0 1500 -1600 0 1 0 N
+X 3V3 3V3 1600 -1500 100 L 50 50 1 1 I
+X D12 D12 100 -1200 100 R 50 50 1 1 I
+X D13 D13 100 -1300 100 R 50 50 1 1 I
+X D14 D14 100 -1100 100 R 50 50 1 1 I
+X D15 D15 1600 -1300 100 L 50 50 1 1 I
+X D18 D18 1600 -700 100 L 50 50 1 1 I
+X D19 D19 1600 -600 100 L 50 50 1 1 I
+X D2 D2 1600 -1200 100 L 50 50 1 1 I
+X D21 D21 1600 -500 100 L 50 50 1 1 I
+X D22 D22 1600 -200 100 L 50 50 1 1 I
+X D23 D23 1600 -100 100 L 50 50 1 1 I
+X D25 D25 100 -800 100 R 50 50 1 1 I
+X D26 D26 100 -900 100 R 50 50 1 1 I
+X D27 D27 100 -1000 100 R 50 50 1 1 I
+X D32 D32 100 -600 100 R 50 50 1 1 I
+X D33 D33 100 -700 100 R 50 50 1 1 I
+X D34 D34 100 -400 100 R 50 50 1 1 I
+X D35 D35 100 -500 100 R 50 50 1 1 I
+X D4 D4 1600 -1100 100 L 50 50 1 1 I
+X D5 D5 1600 -800 100 L 50 50 1 1 I
+X EN EN 100 -100 100 R 50 50 1 1 I
+X GND GND 100 -1400 100 R 50 50 1 1 I
+X GND GND 1600 -1400 100 L 50 50 1 1 I
+X RX0 RX0 1600 -400 100 L 50 50 1 1 I
+X RX2 RX2 1600 -1000 100 L 50 50 1 1 I
+X TX0 TX0 1600 -300 100 L 50 50 1 1 I
+X TX2 TX2 1600 -900 100 L 50 50 1 1 I
+X VN VN 100 -300 100 R 50 50 1 1 I
+X VP VP 100 -200 100 R 50 50 1 1 I
+X Vin Vin 100 -1500 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# TxRx-RS485-New_Library-RackComm-rescue
+#
+DEF TxRx-RS485-New_Library-RackComm-rescue Converter 0 40 Y Y 1 F N
+F0 "Converter" 0 0 50 H V C CNN
+F1 "TxRx-RS485-New_Library-RackComm-rescue" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S 450 -550 -500 -250 0 1 0 N
+X GND 1 -600 -300 100 R 50 50 1 1 I
+X RXD 2 -600 -350 100 R 50 50 1 1 I
+X TXD 3 -600 -400 100 R 50 50 1 1 I
+X VCC 4 -600 -450 100 R 50 50 1 1 I
+X GNDO 5 550 -300 100 L 50 50 1 1 I
+X B 6 550 -400 100 L 50 50 1 1 I
+X A 7 550 -500 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library
