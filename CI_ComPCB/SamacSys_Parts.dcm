@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NE555DR
+D Single Precision Timer
+K
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP SRN8040-100M
+D Bourns SRN8040 Series Type SMD Shielded Wire-wound SMD Inductor with a Ferrite Core, 10 uH +/-20% Semi-Shielded 3.1A Idc
+K
+F https://componentsearchengine.com/Datasheets/1/SRN8040-100M.pdf
+$ENDCMP
+#
+#End Doc Library

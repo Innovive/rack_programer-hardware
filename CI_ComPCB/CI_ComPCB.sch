@@ -22,7 +22,7 @@ F 1 "IRF9540N" H 1704 1655 50  0000 L CNN
 F 2 "digikey-footprints:TO-220-3" H 1700 1625 50  0001 L CIN
 F 3 "http://www.irf.com/product-info/datasheets/data/irf9540n.pdf" H 1500 1700 50  0001 L CNN
 	1    1500 1700
-	0    -1   1    0   
+	0    1    1    0   
 $EndComp
 $Comp
 L CI_ComPCB-rescue:TxRx-RS485-New_Library-RackComm-rescue Converter1002
@@ -468,22 +468,11 @@ Wire Wire Line
 	4850 1000 4850 1700
 Connection ~ 4850 1000
 $Comp
-L Device:L_Core_Iron L1001
-U 1 1 61242DE6
-P 5450 1000
-F 0 "L1001" V 5675 1000 50  0000 C CNN
-F 1 "6.8uH" V 5584 1000 50  0000 C CNN
-F 2 "digikey-footprints:Inductor_13R106C" H 5450 1000 50  0001 C CNN
-F 3 "~" H 5450 1000 50  0001 C CNN
-	1    5450 1000
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:C C1005
 U 1 1 6124A796
 P 5700 1400
 F 0 "C1005" H 5815 1446 50  0000 L CNN
-F 1 "33uF" H 5815 1355 50  0000 L CNN
+F 1 "47uF" H 5815 1355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 5738 1250 50  0001 C CNN
 F 3 "~" H 5700 1400 50  0001 C CNN
 	1    5700 1400
@@ -491,16 +480,12 @@ F 3 "~" H 5700 1400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5700 1800 5700 1550
-Wire Wire Line
-	5700 1250 5700 1000
-Wire Wire Line
-	5700 1000 5600 1000
 $Comp
 L Device:C C1002
 U 1 1 612571F2
 P 4000 1350
 F 0 "C1002" H 4115 1396 50  0000 L CNN
-F 1 "0.1uF" H 4115 1305 50  0000 L CNN
+F 1 "100nF" H 4115 1305 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 4038 1200 50  0001 C CNN
 F 3 "~" H 4000 1350 50  0001 C CNN
 	1    4000 1350
@@ -513,7 +498,7 @@ L Device:C C1007
 U 1 1 6126FD34
 P 6300 1400
 F 0 "C1007" H 6415 1446 50  0000 L CNN
-F 1 "33uF" H 6415 1355 50  0000 L CNN
+F 1 "47uF" H 6415 1355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 6338 1250 50  0001 C CNN
 F 3 "~" H 6300 1400 50  0001 C CNN
 	1    6300 1400
@@ -526,9 +511,6 @@ Wire Wire Line
 Connection ~ 5700 1800
 Wire Wire Line
 	5700 1800 5950 1800
-Wire Wire Line
-	5700 1000 6300 1000
-Connection ~ 5700 1000
 $Comp
 L power:GND #PWR01009
 U 1 1 61283A43
@@ -645,7 +627,7 @@ L Device:C C1006
 U 1 1 6132376F
 P 5800 2400
 F 0 "C1006" H 5915 2446 50  0000 L CNN
-F 1 "39pF" H 5915 2355 50  0000 L CNN
+F 1 "10pf" H 5915 2355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 5838 2250 50  0001 C CNN
 F 3 "~" H 5800 2400 50  0001 C CNN
 	1    5800 2400
@@ -660,7 +642,7 @@ L Device:C C1004
 U 1 1 613384B2
 P 5100 2150
 F 0 "C1004" H 5215 2196 50  0000 L CNN
-F 1 "4700pF" H 5215 2105 50  0000 L CNN
+F 1 "1nF" H 5215 2105 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 5138 2000 50  0001 C CNN
 F 3 "~" H 5100 2150 50  0001 C CNN
 	1    5100 2150
@@ -676,7 +658,7 @@ L Device:R R1003
 U 1 1 6134797A
 P 5100 2450
 F 0 "R1003" H 5170 2496 50  0000 L CNN
-F 1 "44.9K" H 5170 2405 50  0000 L CNN
+F 1 "49.9k" H 5170 2405 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 5030 2450 50  0001 C CNN
 F 3 "~" H 5100 2450 50  0001 C CNN
 	1    5100 2450
@@ -707,7 +689,7 @@ L Device:R R1004
 U 1 1 61358A93
 P 6650 2100
 F 0 "R1004" H 6720 2146 50  0000 L CNN
-F 1 "10k" H 6720 2055 50  0000 L CNN
+F 1 "10.2k" H 6720 2055 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 6580 2100 50  0001 C CNN
 F 3 "~" H 6650 2100 50  0001 C CNN
 	1    6650 2100
@@ -739,9 +721,6 @@ Wire Wire Line
 Wire Wire Line
 	6650 2250 6650 2400
 Connection ~ 6650 2400
-Wire Wire Line
-	6650 1000 6300 1000
-Connection ~ 6300 1000
 $Comp
 L power:GND #PWR01010
 U 1 1 6137A8DC
@@ -766,15 +745,12 @@ F 3 "http://www.vishay.com/docs/88516/1n5400.pdf" H 7050 1000 50  0001 C CNN
 	1    7050 1000
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	6900 1000 6650 1000
-Connection ~ 6650 1000
 $Comp
 L Device:C C1003
 U 1 1 613CD8BB
 P 4000 2350
 F 0 "C1003" H 4115 2396 50  0000 L CNN
-F 1 "0.01uF" H 4115 2305 50  0000 L CNN
+F 1 "8.2nF" H 4115 2305 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 4038 2200 50  0001 C CNN
 F 3 "~" H 4000 2350 50  0001 C CNN
 	1    4000 2350
@@ -785,32 +761,10 @@ L Device:C C1001
 U 1 1 613CEE7E
 P 2500 1950
 F 0 "C1001" H 2615 1996 50  0000 L CNN
-F 1 "4700pF" H 2615 1905 50  0000 L CNN
+F 1 "10uF" H 2615 1905 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 2538 1800 50  0001 C CNN
 F 3 "~" H 2500 1950 50  0001 C CNN
 	1    2500 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R1001
-U 1 1 6140D70E
-P 3300 2050
-F 0 "R1001" H 3370 2096 50  0000 L CNN
-F 1 "332k" H 3370 2005 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 3230 2050 50  0001 C CNN
-F 3 "~" H 3300 2050 50  0001 C CNN
-	1    3300 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R1002
-U 1 1 6140DD86
-P 3300 2500
-F 0 "R1002" H 3370 2546 50  0000 L CNN
-F 1 "68.1k" H 3370 2455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 3230 2500 50  0001 C CNN
-F 3 "~" H 3300 2500 50  0001 C CNN
-	1    3300 2500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -825,32 +779,11 @@ F 3 "" H 4000 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3300 1900 3300 1800
-Connection ~ 3300 1800
-Wire Wire Line
-	3300 2200 3300 2250
-Wire Wire Line
-	3300 2650 3300 2700
-Wire Wire Line
-	3300 2700 4000 2700
-Wire Wire Line
 	4000 2500 4000 2700
-Connection ~ 4000 2700
-Wire Wire Line
-	3300 1800 4150 1800
 Wire Wire Line
 	4000 2200 4000 2000
 Wire Wire Line
 	4000 2000 4150 2000
-Wire Wire Line
-	4150 1900 3600 1900
-Wire Wire Line
-	3600 1900 3600 2250
-Wire Wire Line
-	3600 2250 3300 2250
-Connection ~ 3300 2250
-Wire Wire Line
-	3300 2250 3300 2350
 $Comp
 L power:GND #PWR01003
 U 1 1 61452B5C
@@ -980,28 +913,9 @@ F 3 "~" H 7750 5900 50  0001 C CNN
 	1    7750 5900
 	0    1    1    0   
 $EndComp
-$Comp
-L Connector:Conn_01x02_Male J1007
-U 1 1 61724ED0
-P 6850 1400
-F 0 "J1007" V 6912 1444 50  0000 L CNN
-F 1 "Conn_01x02_Male" V 7003 1444 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6850 1400 50  0001 C CNN
-F 3 "~" H 6850 1400 50  0001 C CNN
-	1    6850 1400
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
-	6650 1000 6650 1300
-Wire Wire Line
-	6650 1400 6650 1950
-Wire Wire Line
-	1700 1800 2500 1800
+	1700 1800 2150 1800
 Connection ~ 2500 1800
-Wire Wire Line
-	2500 1800 3300 1800
-Text Notes 2550 3150 0    50   ~ 0
-R1001 and 1002 need to be changed to be a voltage divider\n
 $Comp
 L dk_Diodes-Rectifiers-Single:B340A-13-F D1002
 U 1 1 618C4239
@@ -1023,17 +937,87 @@ F 12 "Active" H 5300 2550 60  0001 L CNN "Status"
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4850 1000 5100 1000
-Wire Wire Line
 	4850 1800 5100 1800
 Wire Wire Line
 	5100 1150 5100 1000
-Connection ~ 5100 1000
-Wire Wire Line
-	5100 1000 5300 1000
 Wire Wire Line
 	5100 1550 5100 1800
 Connection ~ 5100 1800
 Wire Wire Line
 	5100 1800 5700 1800
+$Comp
+L Device:C C1008
+U 1 1 61297C6F
+P 2150 1950
+F 0 "C1008" H 2265 1996 50  0000 L CNN
+F 1 "10uF" H 2265 1905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2188 1800 50  0001 C CNN
+F 3 "~" H 2150 1950 50  0001 C CNN
+	1    2150 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 61297C79
+P 2150 2100
+F 0 "#PWR0101" H 2150 1850 50  0001 C CNN
+F 1 "GND" H 2155 1927 50  0000 C CNN
+F 2 "" H 2150 2100 50  0001 C CNN
+F 3 "" H 2150 2100 50  0001 C CNN
+	1    2150 2100
+	1    0    0    -1  
+$EndComp
+Connection ~ 2150 1800
+Wire Wire Line
+	2150 1800 2500 1800
+Wire Wire Line
+	2500 1800 4150 1800
+Wire Wire Line
+	4850 1000 5100 1000
+$Comp
+L SamacSys_Parts:SRN8040-100M L1001
+U 1 1 612C1A78
+P 5100 1000
+F 0 "L1001" H 5500 1225 50  0000 C CNN
+F 1 "SRN8040-100M" H 5500 1134 50  0000 C CNN
+F 2 "SamacSys_Parts:SRN8040100M" H 5750 1050 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/SRN8040-100M.pdf" H 5750 950 50  0001 L CNN
+F 4 "Bourns SRN8040 Series Type SMD Shielded Wire-wound SMD Inductor with a Ferrite Core, 10 uH +/-20% Semi-Shielded 3.1A Idc" H 5750 850 50  0001 L CNN "Description"
+F 5 "4" H 5750 750 50  0001 L CNN "Height"
+F 6 "652-SRN8040-100M" H 5750 650 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Bourns/SRN8040-100M?qs=opBjA1TV901MvrktVUEKyA%3D%3D" H 5750 550 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Bourns" H 5750 450 50  0001 L CNN "Manufacturer_Name"
+F 9 "SRN8040-100M" H 5750 350 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5100 1000
+	1    0    0    -1  
+$EndComp
+Connection ~ 5100 1000
+Wire Wire Line
+	5700 1250 5900 1250
+Wire Wire Line
+	5900 1250 5900 1000
+Wire Wire Line
+	5900 1000 6300 1000
+Connection ~ 5900 1000
+Connection ~ 6300 1000
+Wire Wire Line
+	6300 1000 6650 1000
+Wire Wire Line
+	6650 1600 6650 1950
+Wire Wire Line
+	6650 1300 6650 1000
+Connection ~ 6650 1000
+Wire Wire Line
+	6650 1000 6900 1000
+$Comp
+L Device:R R1001
+U 1 1 6134FCA9
+P 6650 1450
+F 0 "R1001" H 6720 1496 50  0000 L CNN
+F 1 "0" H 6720 1405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6580 1450 50  0001 C CNN
+F 3 "~" H 6650 1450 50  0001 C CNN
+	1    6650 1450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
