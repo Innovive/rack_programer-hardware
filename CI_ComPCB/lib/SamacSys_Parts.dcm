@@ -12,4 +12,16 @@ K
 F https://componentsearchengine.com/Datasheets/1/SRN8040-100M.pdf
 $ENDCMP
 #
+$CMP TPS63810YFFR
+D Switching Voltage Regulators 2.5-A high-efficient buck-boost converter with interface for dynamic voltage scaling 15-DSBGA -40 to 85
+K
+F http://www.ti.com/lit/ds/symlink/tps63810.pdf
+$ENDCMP
+#
+$CMP SRN8040-R50Y
+D Bourns SRN8040 Series Type 8040 Shielded Wire-wound SMD Inductor with a Ferrite Core, 500 nH +/-30% Wire-Wound 12A Idc
+K
+F https://www.arrow.com/en/products/srn8040-r50y/bourns
+$ENDCMP
+#
 #End Doc Library
