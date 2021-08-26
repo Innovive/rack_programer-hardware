@@ -24,4 +24,34 @@ K
 F https://www.arrow.com/en/products/srn8040-r50y/bourns
 $ENDCMP
 #
+$CMP TPS63020DSJR
+D Conv DC-DC 1.8V to 5.5V Synchronous Step Down/Synchronous Step Up Single-Out 1.2V to 5.5V 3A 14-Pin VSON EP T/R
+K
+F https://www.ti.com/lit/ds/symlink/tps63020.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1623612296427
+$ENDCMP
+#
+$CMP SRN8040-1R0Y
+D Bourns SRN8040 Series Type 8040 Shielded Wire-wound SMD Inductor with a Ferrite Core, 1 uH +/-30% Wire-Wound 7.8A Idc
+K
+F https://www.bourns.com/pdfs/SRN8040.pdf
+$ENDCMP
+#
+$CMP CL21A226MAQNNNE
+D Samsung
+K
+F http://www.samsungsem.com/kr/support/product-search/mlcc/CL21A226MAQNNNE.jsp
+$ENDCMP
+#
+$CMP CS22BNW03
+D Slide Switch,DPDT
+K
+F http://www.nkkswitches.com/pdf/cs.pdf
+$ENDCMP
+#
+$CMP CS12ANW03
+D NKK SWITCHES - CS12ANW03 - SWITCH, SLIDE, SPDT, 3A, 250V, TH
+K
+F http://www.nkkswitches.com/pdf/cs.pdf
+$ENDCMP
+#
 #End Doc Library
