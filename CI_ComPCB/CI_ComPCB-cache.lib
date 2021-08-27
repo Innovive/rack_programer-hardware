@@ -127,26 +127,6 @@ X Vin Vin 100 -1500 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# CI_ComPCB-rescue_TPS54331
-#
-DEF CI_ComPCB-rescue_TPS54331 U 0 40 Y Y 1 F N
-F0 "U" 14 -13 50 H V C CNN
-F1 "CI_ComPCB-rescue_TPS54331" 259 -533 50 H V C CNN
-F2 "" 14 -13 50 H I C CNN
-F3 "" 14 -13 50 H I C CNN
-DRAW
-S 0 0 500 -600 0 1 0 N
-X Boot 1 -100 -100 100 R 50 50 1 1 I
-X VIN 2 -100 -200 100 R 50 50 1 1 I
-X EN 3 -100 -300 100 R 50 50 1 1 I
-X SS 4 -100 -400 100 R 50 50 1 1 I
-X VSNS 5 600 -400 100 L 50 50 1 1 I
-X COMP 6 600 -300 100 L 50 50 1 1 I
-X GND 7 600 -200 100 L 50 50 1 1 I
-X PH 8 600 -100 100 L 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
 # CI_ComPCB-rescue_TxRx-RS485-New_Library-RackComm-rescue
 #
 DEF CI_ComPCB-rescue_TxRx-RS485-New_Library-RackComm-rescue Converter 0 40 Y Y 1 F N
@@ -166,62 +146,20 @@ X A 7 550 -500 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# Connector_Conn_01x15_Female
+# Connector_Conn_01x01_Male
 #
-DEF Connector_Conn_01x15_Female J 0 40 Y N 1 F N
-F0 "J" 0 800 50 H V C CNN
-F1 "Connector_Conn_01x15_Female" 0 -800 50 H V C CNN
+DEF Connector_Conn_01x01_Male J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Conn_01x01_Male" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- Connector*:*_1x??_*
+ Connector*:*
 $ENDFPLIST
 DRAW
-A 0 -700 20 901 -901 1 1 6 N 0 -680 0 -720
-A 0 -600 20 901 -901 1 1 6 N 0 -580 0 -620
-A 0 -500 20 901 -901 1 1 6 N 0 -480 0 -520
-A 0 -400 20 901 -901 1 1 6 N 0 -380 0 -420
-A 0 -300 20 901 -901 1 1 6 N 0 -280 0 -320
-A 0 -200 20 901 -901 1 1 6 N 0 -180 0 -220
-A 0 -100 20 901 -901 1 1 6 N 0 -80 0 -120
-A 0 0 20 901 -901 1 1 6 N 0 20 0 -20
-A 0 100 20 901 -901 1 1 6 N 0 120 0 80
-A 0 200 20 901 -901 1 1 6 N 0 220 0 180
-A 0 300 20 901 -901 1 1 6 N 0 320 0 280
-A 0 400 20 901 -901 1 1 6 N 0 420 0 380
-A 0 500 20 901 -901 1 1 6 N 0 520 0 480
-A 0 600 20 901 -901 1 1 6 N 0 620 0 580
-A 0 700 20 901 -901 1 1 6 N 0 720 0 680
-P 2 1 1 6 -50 -700 -20 -700 N
-P 2 1 1 6 -50 -600 -20 -600 N
-P 2 1 1 6 -50 -500 -20 -500 N
-P 2 1 1 6 -50 -400 -20 -400 N
-P 2 1 1 6 -50 -300 -20 -300 N
-P 2 1 1 6 -50 -200 -20 -200 N
-P 2 1 1 6 -50 -100 -20 -100 N
-P 2 1 1 6 -50 0 -20 0 N
-P 2 1 1 6 -50 100 -20 100 N
-P 2 1 1 6 -50 200 -20 200 N
-P 2 1 1 6 -50 300 -20 300 N
-P 2 1 1 6 -50 400 -20 400 N
-P 2 1 1 6 -50 500 -20 500 N
-P 2 1 1 6 -50 600 -20 600 N
-P 2 1 1 6 -50 700 -20 700 N
-X Pin_1 1 -200 700 150 R 50 50 1 1 P
-X Pin_10 10 -200 -200 150 R 50 50 1 1 P
-X Pin_11 11 -200 -300 150 R 50 50 1 1 P
-X Pin_12 12 -200 -400 150 R 50 50 1 1 P
-X Pin_13 13 -200 -500 150 R 50 50 1 1 P
-X Pin_14 14 -200 -600 150 R 50 50 1 1 P
-X Pin_15 15 -200 -700 150 R 50 50 1 1 P
-X Pin_2 2 -200 600 150 R 50 50 1 1 P
-X Pin_3 3 -200 500 150 R 50 50 1 1 P
-X Pin_4 4 -200 400 150 R 50 50 1 1 P
-X Pin_5 5 -200 300 150 R 50 50 1 1 P
-X Pin_6 6 -200 200 150 R 50 50 1 1 P
-X Pin_7 7 -200 100 150 R 50 50 1 1 P
-X Pin_8 8 -200 0 150 R 50 50 1 1 P
-X Pin_9 9 -200 -100 150 R 50 50 1 1 P
+S 34 5 0 -5 1 1 6 F
+P 2 1 1 6 50 0 34 0 N
+X Pin_1 1 200 0 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -302,29 +240,6 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_L
-#
-DEF Device_L L 0 40 N N 1 F N
-F0 "L" -50 0 50 V V C CNN
-F1 "Device_L" 75 0 50 V V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Choke_*
- *Coil*
- Inductor_*
- L_*
-$ENDFPLIST
-DRAW
-A 0 -75 25 -899 899 0 1 0 N 0 -100 0 -50
-A 0 -25 25 -899 899 0 1 0 N 0 -50 0 0
-A 0 25 25 -899 899 0 1 0 N 0 0 0 50
-A 0 75 25 -899 899 0 1 0 N 0 50 0 100
-X 1 1 0 150 50 D 50 50 1 1 P
-X 2 2 0 -150 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Device_R
 #
 DEF Device_R R 0 0 N Y 1 F N
@@ -386,19 +301,19 @@ X NO_2 6 1200 0 200 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
-# SamacSys_Parts_SRN8040-100M
+# SamacSys_Parts_RLF12560T-7R8N8R2
 #
-DEF SamacSys_Parts_SRN8040-100M L 0 30 Y Y 1 F N
+DEF SamacSys_Parts_RLF12560T-7R8N8R2 L 0 30 Y Y 1 F N
 F0 "L" 650 250 50 H V L CNN
-F1 "SamacSys_Parts_SRN8040-100M" 650 150 50 H V L CNN
-F2 "SRN8040100M" 650 50 50 H I L CNN
-F3 "https://componentsearchengine.com/Datasheets/1/SRN8040-100M.pdf" 650 -50 50 H I L CNN
-F4 "Bourns SRN8040 Series Type SMD Shielded Wire-wound SMD Inductor with a Ferrite Core, 10 uH +/-20% Semi-Shielded 3.1A Idc" 650 -150 50 H I L CNN "Description"
-F5 "4" 650 -250 50 H I L CNN "Height"
-F6 "652-SRN8040-100M" 650 -350 50 H I L CNN "Mouser Part Number"
-F7 "https://www.mouser.co.uk/ProductDetail/Bourns/SRN8040-100M?qs=opBjA1TV901MvrktVUEKyA%3D%3D" 650 -450 50 H I L CNN "Mouser Price/Stock"
-F8 "Bourns" 650 -550 50 H I L CNN "Manufacturer_Name"
-F9 "SRN8040-100M" 650 -650 50 H I L CNN "Manufacturer_Part_Number"
+F1 "SamacSys_Parts_RLF12560T-7R8N8R2" 650 150 50 H V L CNN
+F2 "INDPM128125X600N" 650 50 50 H I L CNN
+F3 "https://product.tdk.com/system/files/dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_power_rlf12560_en.pdf" 650 -50 50 H I L CNN
+F4 "TDK - RLF12560T-7R8N8R2 - Power Inductor (SMD), 7.8 H, 8.4 A, Wirewound, 8.2 A, 12.8mm x 12.5mm x 6mm" 650 -150 50 H I L CNN "Description"
+F5 "6" 650 -250 50 H I L CNN "Height"
+F6 "810-RLF12560T-7R8N" 650 -350 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/TDK/RLF12560T-7R8N8R2?qs=3POhL7GGTOgHxYsYtKxdfg%3D%3D" 650 -450 50 H I L CNN "Mouser Price/Stock"
+F8 "TDK" 650 -550 50 H I L CNN "Manufacturer_Name"
+F9 "RLF12560T-7R8N8R2" 650 -650 50 H I L CNN "Manufacturer_Part_Number"
 DRAW
 A 250 -2 50 1777 -23 0 1 6 N 300 0 200 0
 A 350 -2 50 1777 -23 0 1 6 N 400 0 300 0
@@ -406,6 +321,79 @@ A 450 -2 50 1777 -23 0 1 6 N 500 0 400 0
 A 550 -2 50 1777 -23 0 1 6 N 600 0 500 0
 X ~ 1 0 0 200 R 50 50 0 0 P
 X ~ 2 800 0 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_SPM4012T-1R0M-LR
+#
+DEF SamacSys_Parts_SPM4012T-1R0M-LR L 0 30 Y Y 1 F N
+F0 "L" 650 250 50 H V L CNN
+F1 "SamacSys_Parts_SPM4012T-1R0M-LR" 650 150 50 H V L CNN
+F2 "SPM4010-4020" 650 50 50 H I L CNN
+F3 "https://product.tdk.com/en/system/files?file=dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_power_spm4012-lr_en.pdf" 650 -50 50 H I L CNN
+F4 "Inductors for Power Circuits" 650 -150 50 H I L CNN "Description"
+F5 "810-SPM4012T1R0MLR" 650 -350 50 H I L CNN "Mouser Part Number"
+F6 "https://www.mouser.co.uk/ProductDetail/TDK/SPM4012T-1R0M-LR?qs=P8zzrVhehatQMi5Yn%252Bik7A%3D%3D" 650 -450 50 H I L CNN "Mouser Price/Stock"
+F7 "TDK" 650 -550 50 H I L CNN "Manufacturer_Name"
+F8 "SPM4012T-1R0M-LR" 650 -650 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+A 250 -2 50 1777 -23 0 1 6 N 300 0 200 0
+A 350 -2 50 1777 -23 0 1 6 N 400 0 300 0
+A 450 -2 50 1777 -23 0 1 6 N 500 0 400 0
+A 550 -2 50 1777 -23 0 1 6 N 600 0 500 0
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 800 0 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_SS34
+#
+DEF SamacSys_Parts_SS34 D 0 30 Y Y 1 F N
+F0 "D" 500 350 50 H V L CNN
+F1 "SamacSys_Parts_SS34" 500 250 50 H V L CNN
+F2 "DIOM8059X256N" 500 150 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/2/SS34.pdf" 500 50 50 H I L CNN
+F4 "ON Semi SS34 SMT Schottky Diode, 40V 3A, 2-Pin DO-214AB" 500 -50 50 H I L CNN "Description"
+F5 "2.56" 500 -150 50 H I L CNN "Height"
+F6 "512-SS34" 500 -250 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/SS34?qs=2ONuHmP%2FXzb3ub11UdFfdQ%3D%3D" 500 -350 50 H I L CNN "Mouser Price/Stock"
+F8 "ON Semiconductor" 500 -450 50 H I L CNN "Manufacturer_Name"
+F9 "SS34" 500 -550 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 2 0 1 6 200 0 300 0 N
+P 2 0 1 6 300 100 300 -100 N
+P 2 0 1 6 500 0 600 0 N
+P 3 0 1 6 300 -100 260 -100 260 -60 N
+P 3 0 1 6 300 100 340 100 340 60 N
+P 4 0 1 10 300 0 500 100 500 -100 300 0 F
+X ~ 1 100 0 100 R 50 50 0 0 P
+X ~ 2 700 0 100 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_TPS54331DR
+#
+DEF SamacSys_Parts_TPS54331DR IC 0 30 Y Y 1 F N
+F0 "IC" 1050 300 50 H V L CNN
+F1 "SamacSys_Parts_TPS54331DR" 1050 200 50 H V L CNN
+F2 "SOIC127P600X175-8N" 1050 100 50 H I L CNN
+F3 "http://www.ti.com/lit/gpn/tps54331" 1050 0 50 H I L CNN
+F4 "Texas Instruments TPS54331DR, Step Down DC-DC Converter, 3A, Adjustable, 0.8  25 V, 8-Pin SOIC" 1050 -100 50 H I L CNN "Description"
+F5 "1.75" 1050 -200 50 H I L CNN "Height"
+F6 "595-TPS54331DR" 1050 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS54331DR?qs=QyYHynRG50rsSYcB%2Ftz4Yw%3D%3D" 1050 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Texas Instruments" 1050 -500 50 H I L CNN "Manufacturer_Name"
+F9 "TPS54331DR" 1050 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 1000 100 1000 -400 200 -400 200 100 N
+X BOOT 1 0 0 200 R 50 50 0 0 P
+X VIN 2 0 -100 200 R 50 50 0 0 P
+X EN 3 0 -200 200 R 50 50 0 0 P
+X SS 4 0 -300 200 R 50 50 0 0 P
+X VSENSE 5 1200 -300 200 L 50 50 0 0 P
+X COMP 6 1200 -200 200 L 50 50 0 0 P
+X GND 7 1200 -100 200 L 50 50 0 0 P
+X PH 8 1200 0 200 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
@@ -447,67 +435,6 @@ X L2_1 6 800 -1000 200 U 50 50 0 0 P
 X L2_2 7 900 -1000 200 U 50 50 0 0 P
 X L1_1 8 1000 800 200 D 50 50 0 0 P
 X L1_2 9 900 800 200 D 50 50 0 0 P
-ENDDRAW
-ENDDEF
-#
-# Switch_SW_DIP_x04
-#
-DEF Switch_SW_DIP_x04 SW 0 0 Y N 1 F N
-F0 "SW" 0 350 50 H V C CNN
-F1 "Switch_SW_DIP_x04" 0 -250 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- SW?DIP?x4*
-$ENDFPLIST
-DRAW
-C -80 -100 20 0 0 0 N
-C -80 0 20 0 0 0 N
-C -80 100 20 0 0 0 N
-C -80 200 20 0 0 0 N
-C 80 -100 20 0 0 0 N
-C 80 0 20 0 0 0 N
-C 80 100 20 0 0 0 N
-C 80 200 20 0 0 0 N
-S -150 300 150 -200 0 1 10 f
-P 2 0 0 0 -60 -94 93 -53 N
-P 2 0 0 0 -60 5 93 46 N
-P 2 0 0 0 -60 105 93 146 N
-P 2 0 0 0 -60 205 93 246 N
-X ~ 1 -300 200 200 R 50 50 1 1 P
-X ~ 2 -300 100 200 R 50 50 1 1 P
-X ~ 3 -300 0 200 R 50 50 1 1 P
-X ~ 4 -300 -100 200 R 50 50 1 1 P
-X ~ 5 300 -100 200 L 50 50 1 1 P
-X ~ 6 300 0 200 L 50 50 1 1 P
-X ~ 7 300 100 200 L 50 50 1 1 P
-X ~ 8 300 200 200 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# dk_Diodes-Rectifiers-Single_B340A-13-F
-#
-DEF dk_Diodes-Rectifiers-Single_B340A-13-F D 0 0 N N 1 F N
-F0 "D" 0 100 60 H V C BNN
-F1 "dk_Diodes-Rectifiers-Single_B340A-13-F" 0 -150 60 H V C CNN
-F2 "digikey-footprints:DO-214AC" 200 200 60 H I L CNN
-F3 "https://www.diodes.com/assets/Datasheets/ds30891.pdf" 200 300 60 H I L CNN
-F4 "B340A-FDICT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
-F5 "B340A-13-F" 200 500 60 H I L CNN "MPN"
-F6 "Discrete Semiconductor Products" 200 600 60 H I L CNN "Category"
-F7 "Diodes - Rectifiers - Single" 200 700 60 H I L CNN "Family"
-F8 "https://www.diodes.com/assets/Datasheets/ds30891.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
-F9 "/product-detail/en/diodes-incorporated/B340A-13-F/B340A-FDICT-ND/725054" 200 900 60 H I L CNN "DK_Detail_Page"
-F10 "DIODE SCHOTTKY 40V 3A SMA" 200 1000 60 H I L CNN "Description"
-F11 "Diodes Incorporated" 200 1100 60 H I L CNN "Manufacturer"
-F12 "Active" 200 1200 60 H I L CNN "Status"
-DRAW
-P 2 0 1 0 50 50 50 -50 N
-P 4 0 1 0 -50 50 -50 -50 50 0 -50 50 F
-P 4 0 1 0 50 -50 50 -75 75 -75 75 -50 N
-P 4 0 1 0 50 50 50 75 25 75 25 50 N
-X ~ A -200 0 150 R 50 50 1 1 P
-X ~ K 200 0 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #

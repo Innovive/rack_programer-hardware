@@ -38,8 +38,9 @@ AR Path="/61A5325D" Ref="R?"  Part="1"
 AR Path="/61A31654/61A5325D" Ref="R301"  Part="1" 
 F 0 "R301" V 4363 3680 50  0000 C CNN
 F 1 "1.27M" V 4454 3680 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 4500 3680 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4500 3680 50  0001 C CNN
 F 3 "~" H 4570 3680 50  0001 C CNN
+F 4 "C166902" V 4570 3680 50  0001 C CNN "JLCPCB"
 	1    4570 3680
 	0    -1   1    0   
 $EndComp
@@ -50,7 +51,7 @@ P 4570 4090
 AR Path="/61A53263" Ref="R?"  Part="1" 
 AR Path="/61A31654/61A53263" Ref="R302"  Part="1" 
 F 0 "R302" H 4500 4136 50  0000 R CNN
-F 1 "135k" H 4500 4045 50  0000 R CNN
+F 1 "130k" H 4500 4045 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 4500 4090 50  0001 C CNN
 F 3 "~" H 4570 4090 50  0001 C CNN
 	1    4570 4090
@@ -83,24 +84,9 @@ F 3 "~" H 4140 3990 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	4770 3580 4140 3580
+	4770 3580 4150 3580
 Wire Wire Line
 	4140 3580 4140 3840
-$Comp
-L Device:L L?
-U 1 1 61A53278
-P 5330 2700
-AR Path="/61A53278" Ref="L?"  Part="1" 
-AR Path="/61A31654/61A53278" Ref="L301"  Part="1" 
-F 0 "L301" V 5149 2700 50  0000 C CNN
-F 1 "1uH , 33mohm" V 5240 2700 50  0000 C CNN
-F 2 "SamacSys_Parts:SRN8040R50Y" H 5330 2700 50  0001 C CNN
-F 3 "~" H 5330 2700 50  0001 C CNN
-	1    5330 2700
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	6570 2700 5480 2700
 Wire Wire Line
 	5180 2700 4770 2700
 $Comp
@@ -201,8 +187,7 @@ Wire Wire Line
 Text GLabel 7470 3500 2    50   Input ~ 0
 Charger_OUT
 Wire Wire Line
-	4000 3580 4140 3580
-Connection ~ 4140 3580
+	3410 3580 3550 3580
 Text Notes 7000 7110 0    50   ~ 0
 https://webench.ti.com/power-designer/switching-regulator/customize/6?noparams=0
 Connection ~ 6810 4510
@@ -332,17 +317,17 @@ Connection ~ 6950 3500
 Connection ~ 6570 3500
 Wire Wire Line
 	6570 3500 6570 3580
-Text GLabel 3900 3580 0    48   Input ~ 0
+Text GLabel 3310 3580 0    48   Input ~ 0
 Buck_Converter_OUT
 $Comp
 L CI_ComPCB-cache:Connector_Conn_01x02_Male J301
 U 1 1 61294C10
-P 4000 3380
-F 0 "J301" V 4062 3424 50  0000 L CNN
-F 1 "Connector_Conn_01x02_Male" V 4153 3424 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4000 3380 50  0001 C CNN
-F 3 "" H 4000 3380 50  0001 C CNN
-	1    4000 3380
+P 3410 3380
+F 0 "J301" V 3472 3424 50  0000 L CNN
+F 1 "Connector_Conn_01x02_Male" V 3563 3424 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3410 3380 50  0001 C CNN
+F 3 "" H 3410 3380 50  0001 C CNN
+	1    3410 3380
 	0    1    1    0   
 $EndComp
 $Comp
@@ -356,4 +341,43 @@ F 3 "" H 7470 3300 50  0001 C CNN
 	1    7470 3300
 	0    1    1    0   
 $EndComp
+$Comp
+L SamacSys_Parts:SS34 D301
+U 1 1 612A7837
+P 3450 3580
+F 0 "D301" H 3850 3847 50  0000 C CNN
+F 1 "SS34" H 3850 3756 50  0000 C CNN
+F 2 "SamacSys_Parts:DIOM8059X256N" H 3950 3730 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/2/SS34.pdf" H 3950 3630 50  0001 L CNN
+F 4 "ON Semi SS34 SMT Schottky Diode, 40V 3A, 2-Pin DO-214AB" H 3950 3530 50  0001 L CNN "Description"
+F 5 "2.56" H 3950 3430 50  0001 L CNN "Height"
+F 6 "512-SS34" H 3950 3330 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/SS34?qs=2ONuHmP%2FXzb3ub11UdFfdQ%3D%3D" H 3950 3230 50  0001 L CNN "Mouser Price/Stock"
+F 8 "ON Semiconductor" H 3950 3130 50  0001 L CNN "Manufacturer_Name"
+F 9 "SS34" H 3950 3030 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3450 3580
+	1    0    0    -1  
+$EndComp
+Connection ~ 4150 3580
+Wire Wire Line
+	4150 3580 4140 3580
+$Comp
+L SamacSys_Parts:SPM4012T-1R0M-LR L301
+U 1 1 612BD9BA
+P 5180 2700
+F 0 "L301" H 5580 2925 50  0000 C CNN
+F 1 "SPM4012T-1R0M-LR" H 5580 2834 50  0000 C CNN
+F 2 "SamacSys_Parts:SPM4010-4020" H 5830 2750 50  0001 L CNN
+F 3 "https://product.tdk.com/en/system/files?file=dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_power_spm4012-lr_en.pdf" H 5830 2650 50  0001 L CNN
+F 4 "Inductors for Power Circuits" H 5830 2550 50  0001 L CNN "Description"
+F 5 "" H 5830 2450 50  0001 L CNN "Height"
+F 6 "810-SPM4012T1R0MLR" H 5830 2350 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/TDK/SPM4012T-1R0M-LR?qs=P8zzrVhehatQMi5Yn%252Bik7A%3D%3D" H 5830 2250 50  0001 L CNN "Mouser Price/Stock"
+F 8 "TDK" H 5830 2150 50  0001 L CNN "Manufacturer_Name"
+F 9 "SPM4012T-1R0M-LR" H 5830 2050 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5180 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5980 2700 6570 2700
 $EndSCHEMATC

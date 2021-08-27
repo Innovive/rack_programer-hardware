@@ -54,4 +54,28 @@ K
 F http://www.nkkswitches.com/pdf/cs.pdf
 $ENDCMP
 #
+$CMP SS34
+D ON Semi SS34 SMT Schottky Diode, 40V 3A, 2-Pin DO-214AB
+K
+F https://componentsearchengine.com/Datasheets/2/SS34.pdf
+$ENDCMP
+#
+$CMP RLF12560T-7R8N8R2
+D TDK - RLF12560T-7R8N8R2 - Power Inductor (SMD), 7.8 H, 8.4 A, Wirewound, 8.2 A, 12.8mm x 12.5mm x 6mm
+K
+F https://product.tdk.com/system/files/dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_power_rlf12560_en.pdf
+$ENDCMP
+#
+$CMP SPM4012T-1R0M-LR
+D Inductors for Power Circuits
+K
+F https://product.tdk.com/en/system/files?file=dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_power_spm4012-lr_en.pdf
+$ENDCMP
+#
+$CMP TPS54331DR
+D Texas Instruments TPS54331DR, Step Down DC-DC Converter, 3A, Adjustable, 0.8  25 V, 8-Pin SOIC
+K
+F http://www.ti.com/lit/gpn/tps54331
+$ENDCMP
+#
 #End Doc Library
