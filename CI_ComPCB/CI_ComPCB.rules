@@ -1,0 +1,120 @@
+
+(rules PCB CI_ComPCB
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 81)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.2)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.8)
+    )
+  )
+  (rule
+    (width 203.2)
+    (clear 254.2)
+    (clear 101.6 (type smd_to_turn_gap))
+    (clear 63.6 (type smd_smd))
+  )
+  (padstack "Via[0-1]_609.6:406.4_um"
+    (shape
+      (circle F.Cu 609.6 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 609.6 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_889:406.4_um"
+    (shape
+      (circle F.Cu 889.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 889.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_609.6:406.4_um" "Via[0-1]_609.6:406.4_um" default
+  )
+  (via 
+    "Via[0-1]_889:406.4_um" "Via[0-1]_889:406.4_um" default
+  )
+  (via 
+    "Via[0-1]_609.6:406.4_um-kicad_default" "Via[0-1]_609.6:406.4_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_889:406.4_um-kicad_default" "Via[0-1]_889:406.4_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_609.6:406.4_um-power" "Via[0-1]_609.6:406.4_um" power
+  )
+  (via 
+    "Via[0-1]_889:406.4_um-power" "Via[0-1]_889:406.4_um" power
+  )
+  (via_rule
+    default "Via[0-1]_609.6:406.4_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_609.6:406.4_um-kicad_default"
+  )
+  (via_rule
+    power "Via[0-1]_889:406.4_um-power"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 203.2)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    GND 3.3V TX2 RX2 A1 B1 Sheild TX0
+    RX0 A0 B0 EPower Vin "Buck_Out" "Charger_GND" "Charger_IN"
+    "Battery_Power" "ESP_Power" "Charger_OUT" "B_SW1" "Buck_IN" "Buck_Converter_OUT" "Net-(C301-Pad1)" "Net-(C302-Pad1)"
+    "Net-(C303-Pad1)" "Net-(C401-Pad1)" "Net-(C403-Pad2)" "Net-(C403-Pad1)" "Net-(C404-Pad1)" "Net-(C405-Pad2)" "Net-(C405-Pad1)" "Net-(C406-Pad1)"
+    "Net-(D101-Pad1)" "Net-(D201-Pad1)" "Net-(HW-201-Pad2)" "Net-(HW-201-Pad3)" "Net-(IC301-Pad14)" "Net-(IC301-Pad9)" "Net-(IC301-Pad8)" "Net-(IC301-Pad6)"
+    "Net-(IC301-Pad3)" "Net-(J501-Pad12)" "Net-(J501-Pad10)" "Net-(J501-Pad6)" "Net-(J501-Pad4)" "Net-(J501-Pad5)" "Net-(J501-Pad3)" "Net-(J502-Pad12)"
+    "Net-(J502-Pad10)" "Net-(S101-Pad3)" "Net-(S102-Pad6)" "Net-(S102-Pad3)" "Net-(J501-Pad11)" "Net-(J502-Pad11)" "Net-(U101-PadEN)" "Net-(U101-PadVP)"
+    "Net-(U101-PadVN)" "Net-(U101-PadD34)" "Net-(U101-PadD35)" "Net-(U101-PadD32)" "Net-(U101-PadD33)" "Net-(U101-PadD25)" "Net-(U101-PadD26)" "Net-(U101-PadD27)"
+    "Net-(U101-PadD14)" "Net-(U101-PadD12)" "Net-(U101-PadD13)" "Net-(U101-PadD23)" "Net-(U101-PadD22)" "Net-(U101-PadD21)" "Net-(U101-PadD19)" "Net-(U101-PadD18)"
+    "Net-(U101-PadD5)" "Net-(U101-PadD4)" "Net-(U101-PadD2)" "Net-(U101-PadD15)" "Net-(D301-Pad1)" "Net-(D402-Pad1)" "Net-(D102-Pad1)" "Net-(IC401-Pad5)"
+    "Net-(IC401-Pad3)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 203.2)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class power
+    (clearance_class power)
+    (via_rule power)
+    (rule
+      (width 304.8)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

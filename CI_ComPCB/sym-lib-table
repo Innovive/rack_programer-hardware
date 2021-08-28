@@ -1,2 +1,3 @@
 (sym_lib_table
+  (lib (name CI_ComPCB-rescue)(type Legacy)(uri ${KIPRJMOD}/CI_ComPCB-rescue.lib)(options "")(descr ""))
 )
