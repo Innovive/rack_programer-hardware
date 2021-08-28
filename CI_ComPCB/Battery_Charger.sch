@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L CI_ComPCB-rescue:Charger-New_Library-RackComm-rescue-RackComm-rescue HW-?
+L CI_ComPCB-rescue:Charger-New_Library-RackComm-rescue-RackComm-rescue-CI_ComPCB-rescue HW-?
 U 1 1 61A36CB0
 P 6450 2780
 AR Path="/61A36CB0" Ref="HW-?"  Part="1" 
@@ -27,7 +27,7 @@ F 3 "" H 6450 2780 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CI_ComPCB-rescue:Battery-New_Library-RackComm-rescue Holder?
+L CI_ComPCB-rescue:Battery-New_Library-RackComm-rescue-CI_ComPCB-rescue Holder?
 U 1 1 61A36CB6
 P 6200 3580
 AR Path="/61A36CB6" Ref="Holder?"  Part="1" 
@@ -77,7 +77,7 @@ Charger_IN
 Text GLabel 5970 3230 0    50   Input ~ 0
 Battery_Power
 $Comp
-L CI_ComPCB-cache:Transistor_FET_IRF9540N Q?
+L CI_ComPCB-rescue:Transistor_FET_IRF9540N-CI_ComPCB-cache Q?
 U 1 1 61A36CD2
 P 4900 3340
 AR Path="/61A36CD2" Ref="Q?"  Part="1" 
@@ -117,7 +117,7 @@ F 3 "" H 4400 3540 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L dk_LED-Indication-Discrete:LTST-C190GKT D?
+L CI_ComPCB-rescue:LTST-C190GKT-dk_LED-Indication-Discrete D?
 U 1 1 61A36CE1
 P 4700 3440
 AR Path="/61A36CE1" Ref="D?"  Part="1" 

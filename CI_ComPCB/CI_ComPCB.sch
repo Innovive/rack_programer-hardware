@@ -24,7 +24,7 @@ RX2
 Text GLabel 6480 4320 2    50   Input ~ 0
 3.3V
 $Comp
-L CI_ComPCB-rescue:ESP32s-RackComm-rescue U101
+L CI_ComPCB-rescue:ESP32s-RackComm-rescue-CI_ComPCB-rescue U101
 U 1 1 61536F0E
 P 4750 2820
 F 0 "U101" H 5600 2985 50  0000 C CNN
@@ -85,7 +85,7 @@ Vin
 Text GLabel 1260 1860 0    50   Input ~ 0
 Buck_Out
 $Comp
-L SamacSys_Parts:CS22BNW03 S102
+L CI_ComPCB-rescue:CS22BNW03-SamacSys_Parts S102
 U 1 1 61678194
 P 1560 4360
 F 0 "S102" H 2160 4625 50  0000 C CNN
@@ -102,7 +102,7 @@ F 9 "CS22BNW03" H 2610 3760 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L SamacSys_Parts:CS22BNW03 S101
+L CI_ComPCB-rescue:CS22BNW03-SamacSys_Parts S101
 U 1 1 6172901A
 P 1260 1760
 F 0 "S101" H 1860 2025 50  0000 C CNN
@@ -144,7 +144,7 @@ F 3 "~" H 2460 2410 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L dk_LED-Indication-Discrete:LTST-C190GKT D101
+L CI_ComPCB-rescue:LTST-C190GKT-dk_LED-Indication-Discrete D101
 U 1 1 6128530A
 P 2460 2160
 F 0 "D101" V 2410 2388 50  0000 L CNN
@@ -210,7 +210,7 @@ Charger_IN
 Text GLabel 2380 5250 2    50   Input ~ 0
 Vin
 $Comp
-L SamacSys_Parts:CS12ANW03 S103
+L CI_ComPCB-rescue:CS12ANW03-SamacSys_Parts S103
 U 1 1 61AC507A
 P 2380 5350
 AR Path="/61AC507A" Ref="S103"  Part="1" 
@@ -273,7 +273,7 @@ Connection ~ 4700 4220
 Wire Wire Line
 	4700 4220 4850 4220
 $Comp
-L SamacSys_Parts:SS34 D102
+L CI_ComPCB-rescue:SS34-SamacSys_Parts D102
 U 1 1 612A21DD
 P 2640 1760
 F 0 "D102" H 3040 2027 50  0000 C CNN
@@ -293,4 +293,74 @@ Wire Wire Line
 	2460 1760 2740 1760
 Wire Wire Line
 	3470 1760 3340 1760
+$Comp
+L Mechanical:MountingHole_Pad H102
+U 1 1 612ABAC3
+P 9900 3550
+F 0 "H102" H 10000 3599 50  0000 L CNN
+F 1 "MountingHole_Pad" H 10000 3508 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad_TopBottom" H 9900 3550 50  0001 C CNN
+F 3 "~" H 9900 3550 50  0001 C CNN
+	1    9900 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H104
+U 1 1 612ABFD3
+P 10250 3550
+F 0 "H104" H 10350 3599 50  0000 L CNN
+F 1 "MountingHole_Pad" H 10350 3508 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad_TopBottom" H 10250 3550 50  0001 C CNN
+F 3 "~" H 10250 3550 50  0001 C CNN
+	1    10250 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H101
+U 1 1 612AC52F
+P 9900 3300
+F 0 "H101" H 10000 3349 50  0000 L CNN
+F 1 "MountingHole_Pad" H 10000 3258 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad_TopBottom" H 9900 3300 50  0001 C CNN
+F 3 "~" H 9900 3300 50  0001 C CNN
+	1    9900 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H103
+U 1 1 612ACC04
+P 10250 3300
+F 0 "H103" H 10350 3349 50  0000 L CNN
+F 1 "MountingHole_Pad" H 10350 3258 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad_TopBottom" H 10250 3300 50  0001 C CNN
+F 3 "~" H 10250 3300 50  0001 C CNN
+	1    10250 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 3650 10100 3650
+Wire Wire Line
+	10250 3650 10250 3400
+Connection ~ 10250 3650
+Wire Wire Line
+	10250 3400 9900 3400
+Connection ~ 10250 3400
+Wire Wire Line
+	9900 3400 9900 3650
+Connection ~ 9900 3400
+Connection ~ 9900 3650
+$Comp
+L power:GND #PWR0104
+U 1 1 612AE626
+P 10100 3650
+F 0 "#PWR0104" H 10100 3400 50  0001 C CNN
+F 1 "GND" H 10105 3477 50  0000 C CNN
+F 2 "" H 10100 3650 50  0001 C CNN
+F 3 "" H 10100 3650 50  0001 C CNN
+	1    10100 3650
+	1    0    0    -1  
+$EndComp
+Connection ~ 10100 3650
+Wire Wire Line
+	10100 3650 10250 3650
 $EndSCHEMATC

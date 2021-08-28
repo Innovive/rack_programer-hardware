@@ -291,7 +291,7 @@ Wire Wire Line
 Wire Wire Line
 	6570 3680 6820 3680
 $Comp
-L SamacSys_Parts:TPS63020DSJR IC?
+L CI_ComPCB-rescue:TPS63020DSJR-SamacSys_Parts IC?
 U 1 1 61A532F4
 P 5770 4280
 AR Path="/61A532F4" Ref="IC?"  Part="1" 
@@ -320,9 +320,11 @@ Wire Wire Line
 Text GLabel 3310 3580 0    48   Input ~ 0
 Buck_Converter_OUT
 $Comp
-L CI_ComPCB-cache:Connector_Conn_01x02_Male J301
+L CI_ComPCB-rescue:Connector_Conn_01x02_Male-CI_ComPCB-cache J301
 U 1 1 61294C10
 P 3410 3380
+AR Path="/61294C10" Ref="J301"  Part="1" 
+AR Path="/61A31654/61294C10" Ref="J301"  Part="1" 
 F 0 "J301" V 3472 3424 50  0000 L CNN
 F 1 "Connector_Conn_01x02_Male" V 3563 3424 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3410 3380 50  0001 C CNN
@@ -331,9 +333,11 @@ F 3 "" H 3410 3380 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L CI_ComPCB-cache:Connector_Conn_01x02_Male J302
+L CI_ComPCB-rescue:Connector_Conn_01x02_Male-CI_ComPCB-cache J302
 U 1 1 61298A1D
 P 7470 3300
+AR Path="/61298A1D" Ref="J302"  Part="1" 
+AR Path="/61A31654/61298A1D" Ref="J302"  Part="1" 
 F 0 "J302" V 7532 3344 50  0000 L CNN
 F 1 "Connector_Conn_01x02_Male" V 7623 3344 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7470 3300 50  0001 C CNN
@@ -342,7 +346,7 @@ F 3 "" H 7470 3300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L SamacSys_Parts:SS34 D301
+L CI_ComPCB-rescue:SS34-SamacSys_Parts D301
 U 1 1 612A7837
 P 3450 3580
 F 0 "D301" H 3850 3847 50  0000 C CNN
@@ -362,7 +366,7 @@ Connection ~ 4150 3580
 Wire Wire Line
 	4150 3580 4140 3580
 $Comp
-L SamacSys_Parts:SPM4012T-1R0M-LR L301
+L CI_ComPCB-rescue:SPM4012T-1R0M-LR-SamacSys_Parts L301
 U 1 1 612BD9BA
 P 5180 2700
 F 0 "L301" H 5580 2925 50  0000 C CNN

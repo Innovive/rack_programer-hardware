@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L CI_ComPCB-rescue:TxRx-RS485-New_Library-RackComm-rescue Converter?
+L CI_ComPCB-rescue:TxRx-RS485-New_Library-RackComm-rescue-CI_ComPCB-rescue Converter?
 U 1 1 61AB1847
 P 3930 4500
 AR Path="/61AB1847" Ref="Converter?"  Part="1" 
@@ -27,7 +27,7 @@ F 3 "" H 3930 4500 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L CI_ComPCB-rescue:TxRx-RS485-New_Library-RackComm-rescue Converter?
+L CI_ComPCB-rescue:TxRx-RS485-New_Library-RackComm-rescue-CI_ComPCB-rescue Converter?
 U 1 1 61AB184D
 P 3930 5070
 AR Path="/61AB184D" Ref="Converter?"  Part="1" 
