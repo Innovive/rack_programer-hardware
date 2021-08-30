@@ -1,0 +1,5 @@
+﻿Part,Manufacturer,Part Number,Quantity,Price ($),Footprint (mm²),Description
+Cin,Kemet,C0805C106K8PACTU,1,0.03,6.75,Cap: 10 µF  Total Derated Cap: 7.9 µF  VDC: 10 V  ESR: 3 mΩ  Package: 0805  
+L1,Bourns,SRN8040-R50Y,1,0.27,100,L: 500 nH  DCR: 7 mΩ  IDC: 10 A  
+Cout,TDK,C1608X5R1A226M080AC,3,0.12,4.68,Cap: 22 µF  Total Derated Cap: 13 µF  VDC: 10 V  ESR: 3.71 mΩ  Package: 0603  
+U1,Texas Instruments,TPS63810YFFR,1,1.082,7.84,

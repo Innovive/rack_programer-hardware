@@ -1,0 +1,18 @@
+Ref,Value,Footprint,,,
+C1001,10uF,805,,,
+C1002,100nF,805,,,
+C1003,8.2nF,805,,,
+C1004,1nF,805,Datasheet,Manufacturer,Vendor
+C1005,47uF,805,~,,
+C1006,10pf,805,~,,
+C1007,47uF,805,~,,
+C1008,10uF,805,~,,
+D1002,B340A-13-F,digikey-footprints:DO-214AC,Substitute Part ,,https://www.digikey.com/en/products/detail/micro-commercial-co/SK34A-LTP/2642021
+L1001,SRN8040-100M,SamacSys_Parts:SRN8040100M,~,,
+R1003,49.9k,Resistor_SMD:R_0805_2012Metric,~,,
+R1004,10.2k,Resistor_SMD:R_0805_2012Metric,~,,
+R1005,1.91k,Resistor_SMD:R_0805_2012Metric,,,
+U1002,TPS54331,Package_SO:TI_SO-PowerPAD-8,https://www.mouser.com/ProductDetail/Texas-Instruments/TPS54331DDAR?qs=UlfnwZ2x8nTEKinK6gUiug%3D%3D,,
+need two switches ,,,https://www.digikey.com/en/products/detail/nkk-switches/CS22BNW03/1014828?s=N4IgTCBcDaIMIGUxgEIDkDqAGAzCAugL5A,,
+need one switch ,,,https://www.digikey.com/en/products/detail/nkk-switches/CS12ANW03/1014827?s=N4IgTCBcDaIMIGUCMYCCA5A6gBgMwgF0BfIA,,
+,,,~,,
