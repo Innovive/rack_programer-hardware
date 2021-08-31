@@ -352,7 +352,7 @@ U 1 1 612967EC
 P 8100 2850
 F 0 "D402" H 8500 2583 50  0000 C CNN
 F 1 "SS34" H 8500 2674 50  0000 C CNN
-F 2 "SamacSys_Parts:DIOM8059X256N" H 8600 3000 50  0001 L CNN
+F 2 "digikey-footprints:DO-214AC" H 8600 3000 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/2/SS34.pdf" H 8600 2900 50  0001 L CNN
 F 4 "ON Semi SS34 SMT Schottky Diode, 40V 3A, 2-Pin DO-214AB" H 8600 2800 50  0001 L CNN "Description"
 F 5 "2.56" H 8600 2700 50  0001 L CNN "Height"
@@ -372,7 +372,7 @@ U 1 1 6129D4B6
 P 5850 2900
 F 0 "D401" H 6250 2633 50  0000 C CNN
 F 1 "SS34" H 6250 2724 50  0000 C CNN
-F 2 "SamacSys_Parts:DIOM8059X256N" H 6350 3050 50  0001 L CNN
+F 2 "digikey-footprints:DO-214AC" H 6350 3050 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/2/SS34.pdf" H 6350 2950 50  0001 L CNN
 F 4 "ON Semi SS34 SMT Schottky Diode, 40V 3A, 2-Pin DO-214AB" H 6350 2850 50  0001 L CNN "Description"
 F 5 "2.56" H 6350 2750 50  0001 L CNN "Height"

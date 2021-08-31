@@ -351,7 +351,7 @@ U 1 1 612A7837
 P 3450 3580
 F 0 "D301" H 3850 3847 50  0000 C CNN
 F 1 "SS34" H 3850 3756 50  0000 C CNN
-F 2 "SamacSys_Parts:DIOM8059X256N" H 3950 3730 50  0001 L CNN
+F 2 "digikey-footprints:DO-214AC" H 3950 3730 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/2/SS34.pdf" H 3950 3630 50  0001 L CNN
 F 4 "ON Semi SS34 SMT Schottky Diode, 40V 3A, 2-Pin DO-214AB" H 3950 3530 50  0001 L CNN "Description"
 F 5 "2.56" H 3950 3430 50  0001 L CNN "Height"
