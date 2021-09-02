@@ -78,4 +78,28 @@ K
 F http://www.ti.com/lit/gpn/tps54331
 $ENDCMP
 #
+$CMP SP485EEN-L_TR
+D RS-485 Interface IC Low Pwr Half-Duplex RS-485
+K
+F https://www.mouser.tw/datasheet/2/146/SP481E_SP485E-536219.pdf
+$ENDCMP
+#
+$CMP 74HC04D,653
+D 74HC(T)04 - Hex inverter@en-us
+K
+F https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf
+$ENDCMP
+#
+$CMP SMAJ6.5A
+D ESD Suppressors / TVS Diodes 400W 6.5V 5% Uni-Directional
+K
+F https://4donline.ihs.com/images/VipMasterIC/IC/LFSI/LFSI-S-A0001360630/LFSI-S-A0001360630-1.pdf?hkey=52A5661711E402568146F3353EA87419
+$ENDCMP
+#
+$CMP MF-MSMF010-2
+D PTC Resettable Fuse 0.1A(hold) 0.3A(trip) 60V 40A 0.8W 1.5s 0.7Ohm SMD Solder Pad 1812 T/R Automotive
+K
+F https://www.arrow.com/en/products/mf-msmf010-2/bourns
+$ENDCMP
+#
 #End Doc Library

@@ -336,4 +336,106 @@ P 5 0 1 6 200 100 1000 100 1000 -400 200 -400 200 100 N
 ENDDRAW
 ENDDEF
 #
+#SamacSys ECAD Model SP485EEN-L_TR
+#/1688782/585773/2.49/8/3/Integrated Circuit
+DEF SP485EEN-L_TR IC 0 30 Y Y 1 F N
+F0 "IC" 850 300 50 H V L CNN
+F1 "SP485EEN-L_TR" 850 200 50 H V L CNN
+F2 "SOIC127P600X175-8N" 850 100 50 H I L CNN
+F3 "https://www.mouser.tw/datasheet/2/146/SP481E_SP485E-536219.pdf" 850 0 50 H I L CNN
+F4 "RS-485 Interface IC Low Pwr Half-Duplex RS-485" 850 -100 50 H I L CNN "Description"
+F5 "1.75" 850 -200 50 H I L CNN "Height"
+F6 "701-SP485EEN-L/TR" 850 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/MaxLinear/SP485EEN-L-TR?qs=3EMgrMjM0fa5WEiW9NTI3A%3D%3D" 850 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "MaxLinear, Inc." 850 -500 50 H I L CNN "Manufacturer_Name"
+F9 "SP485EEN-L/TR" 850 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X RO 1 0 0 200 R 50 50 0 0 P
+X ~RE 2 0 -100 200 R 50 50 0 0 P
+X DE 3 0 -200 200 R 50 50 0 0 P
+X DI 4 0 -300 200 R 50 50 0 0 P
+X VCC 8 1000 0 200 L 50 50 0 0 P
+X B 7 1000 -100 200 L 50 50 0 0 P
+X A 6 1000 -200 200 L 50 50 0 0 P
+X GND 5 1000 -300 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 800 100 800 -400 200 -400 200 100 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model 74HC04D,653
+#/3668362/585773/2.49/14/2/Integrated Circuit
+DEF 74HC04D,653 IC 0 30 Y Y 1 F N
+F0 "IC" 850 300 50 H V L CNN
+F1 "74HC04D,653" 850 200 50 H V L CNN
+F2 "SOIC127P600X175-14N" 850 100 50 H I L CNN
+F3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" 850 0 50 H I L CNN
+F4 "74HC(T)04 - Hex inverter@en-us" 850 -100 50 H I L CNN "Description"
+F5 "1.75" 850 -200 50 H I L CNN "Height"
+F6 "771-74HC04D-T" 850 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Nexperia/74HC04D653?qs=P62ublwmbi%252BLi7Vd8cc7xw%3D%3D" 850 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Nexperia" 850 -500 50 H I L CNN "Manufacturer_Name"
+F9 "74HC04D,653" 850 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X 1A 1 0 0 200 R 50 50 0 0 P
+X 1Y 2 0 -100 200 R 50 50 0 0 P
+X 2A 3 0 -200 200 R 50 50 0 0 P
+X 2Y 4 0 -300 200 R 50 50 0 0 P
+X 3A 5 0 -400 200 R 50 50 0 0 P
+X 3Y 6 0 -500 200 R 50 50 0 0 P
+X GND 7 0 -600 200 R 50 50 0 0 P
+X VCC 14 1000 0 200 L 50 50 0 0 P
+X 6A 13 1000 -100 200 L 50 50 0 0 P
+X 6Y 12 1000 -200 200 L 50 50 0 0 P
+X 5A 11 1000 -300 200 L 50 50 0 0 P
+X 5Y 10 1000 -400 200 L 50 50 0 0 P
+X 4A 9 1000 -500 200 L 50 50 0 0 P
+X 4Y 8 1000 -600 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 800 100 800 -700 200 -700 200 100 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model SMAJ6.5A
+#/895019/585773/2.49/2/3/TVS Diode (Uni-directional)
+DEF SMAJ6.5A D 0 30 Y Y 1 F N
+F0 "D" 400 350 50 H V L BNN
+F1 "SMAJ6.5A" 400 250 50 H V L BNN
+F2 "DIOM5026X229N" 400 150 50 H I L BNN
+F3 "https://4donline.ihs.com/images/VipMasterIC/IC/LFSI/LFSI-S-A0001360630/LFSI-S-A0001360630-1.pdf?hkey=52A5661711E402568146F3353EA87419" 400 50 50 H I L BNN
+F4 "ESD Suppressors / TVS Diodes 400W 6.5V 5% Uni-Directional" 400 -50 50 H I L BNN "Description"
+F5 "2.29" 400 -150 50 H I L BNN "Height"
+F6 "576-SMAJ6.5A" 400 -250 50 H I L BNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Littelfuse/SMAJ65A?qs=zHiv0nsVGmpL0b0CmH5SeA%3D%3D" 400 -350 50 H I L BNN "Mouser Price/Stock"
+F8 "LITTELFUSE" 400 -450 50 H I L BNN "Manufacturer_Name"
+F9 "SMAJ6.5A" 400 -550 50 H I L BNN "Manufacturer_Part_Number"
+DRAW
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 600 0 200 L 50 50 0 0 P
+P 4 0 1 6 200 0 400 100 400 -100 200 0 N
+P 2 0 1 6 200 -80 240 -100 N
+P 2 0 1 6 200 -80 200 80 N
+P 2 0 1 6 160 100 200 80 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model MF-MSMF010-2
+#/569682/585773/2.49/2/3/Fuse
+DEF MF-MSMF010-2 F 0 30 Y Y 1 F N
+F0 "F" 550 250 50 H V L CNN
+F1 "MF-MSMF010-2" 550 150 50 H V L CNN
+F2 "FUSC4632X110N" 550 50 50 H I L CNN
+F3 "https://www.arrow.com/en/products/mf-msmf010-2/bourns" 550 -50 50 H I L CNN
+F4 "PTC Resettable Fuse 0.1A(hold) 0.3A(trip) 60V 40A 0.8W 1.5s 0.7Ohm SMD Solder Pad 1812 T/R Automotive" 550 -150 50 H I L CNN "Description"
+F5 "1.1" 550 -250 50 H I L CNN "Height"
+F6 "652-MF-MSMF010-2" 550 -350 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Bourns/MF-MSMF010-2?qs=mkjPM10ZYVYU4yEEad9W7w%3D%3D" 550 -450 50 H I L CNN "Mouser Price/Stock"
+F8 "Bourns" 550 -550 50 H I L CNN "Manufacturer_Name"
+F9 "MF-MSMF010-2" 550 -650 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 700 0 200 L 50 50 0 0 P
+P 5 0 1 6 200 50 500 50 500 -50 200 -50 200 50 N
+P 2 0 1 6 200 0 500 0 N
+ENDDRAW
+ENDDEF
+#
 #End Library
