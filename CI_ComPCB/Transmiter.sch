@@ -121,27 +121,25 @@ Wire Wire Line
 	3080 4780 3080 4720
 Wire Wire Line
 	3080 4720 3330 4720
-Text GLabel 6700 4190 0    50   Input ~ 0
-A1
-Text GLabel 6700 4090 0    50   Input ~ 0
-B1
-Text GLabel 6700 2840 0    50   Input ~ 0
-B0
 Text GLabel 6700 2940 0    50   Input ~ 0
+A1
+Text GLabel 6700 2840 0    50   Input ~ 0
+B1
+Text GLabel 6700 4090 0    50   Input ~ 0
+B0
+Text GLabel 6700 4190 0    50   Input ~ 0
 A0
 Wire Wire Line
-	6300 4040 6500 4040
+	6080 3440 6280 3440
 Wire Wire Line
-	6850 3540 6650 3540
-Wire Wire Line
-	6850 4090 6700 4090
-Wire Wire Line
-	6850 4190 6700 4190
+	6850 2840 6700 2840
 Wire Wire Line
 	6850 2940 6700 2940
 Wire Wire Line
-	6850 2840 6700 2840
-Text GLabel 6300 4040 0    50   Input ~ 0
+	6850 4190 6700 4190
+Wire Wire Line
+	6850 4090 6700 4090
+Text GLabel 6080 3440 0    50   Input ~ 0
 EPower
 $Comp
 L Connector:RJ45_LED_Shielded J?
@@ -158,46 +156,9 @@ F 4 "C464588" H 7250 3140 50  0001 C CNN "JLPCB"
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	6600 4790 6650 4790
-Connection ~ 6650 4790
-Wire Wire Line
-	6850 3040 8750 3040
-Wire Wire Line
-	6850 3140 8650 3140
-Wire Wire Line
-	6850 3240 8550 3240
-Wire Wire Line
-	6850 3340 8450 3340
-Wire Wire Line
-	6500 3440 6850 3440
-Connection ~ 6850 3440
-Wire Wire Line
-	6850 3440 7100 3440
-Wire Wire Line
 	7400 3440 7650 3440
 Wire Wire Line
 	6850 3540 7650 3540
-Connection ~ 6850 3540
-Wire Wire Line
-	7400 4690 7650 4690
-Connection ~ 6850 4790
-Connection ~ 6850 4690
-Wire Wire Line
-	6650 4790 6850 4790
-Wire Wire Line
-	6500 4690 6850 4690
-Wire Wire Line
-	6850 4790 7650 4790
-Wire Wire Line
-	6850 4690 7100 4690
-Wire Wire Line
-	8450 4590 6850 4590
-Wire Wire Line
-	6850 4490 8550 4490
-Wire Wire Line
-	8650 4390 6850 4390
-Wire Wire Line
-	6850 4290 8750 4290
 $Comp
 L Connector:RJ45_LED_Shielded J?
 U 1 1 61AB18B4
@@ -214,8 +175,6 @@ F 4 "C464588" H 7250 4390 50  0001 C CNN "JLCPCB"
 $EndComp
 Text GLabel 7250 3890 2    50   Input ~ 0
 Sheild
-Wire Wire Line
-	6650 3540 6650 4790
 Text GLabel 6900 2640 0    50   Input ~ 0
 Sheild
 Wire Wire Line
@@ -223,14 +182,14 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 61AB18BF
-P 6600 4790
+P 5700 4190
 AR Path="/61AB18BF" Ref="#PWR?"  Part="1" 
 AR Path="/61A9C8FD/61AB18BF" Ref="#PWR0503"  Part="1" 
-F 0 "#PWR0503" H 6600 4540 50  0001 C CNN
-F 1 "GND" H 6605 4617 50  0000 C CNN
-F 2 "" H 6600 4790 50  0001 C CNN
-F 3 "" H 6600 4790 50  0001 C CNN
-	1    6600 4790
+F 0 "#PWR0503" H 5700 3940 50  0001 C CNN
+F 1 "GND" H 5705 4017 50  0000 C CNN
+F 2 "" H 5700 4190 50  0001 C CNN
+F 3 "" H 5700 4190 50  0001 C CNN
+	1    5700 4190
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -259,17 +218,107 @@ F 3 "~" H 7250 4690 50  0001 C CNN
 	1    7250 4690
 	0    1    1    0   
 $EndComp
+$Comp
+L CI_ComPCB-rescue:Transistor_FET_IRF9540N-CI_ComPCB-cache Q?
+U 1 1 613180DF
+P 6480 3540
+F 0 "Q?" V 6729 3540 50  0000 C CNN
+F 1 "Transistor_FET_IRF9540N-CI_ComPCB-cache" V 6820 3540 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6680 3465 50  0001 L CIN
+F 3 "" H 6480 3540 50  0001 L CNN
+	1    6480 3540
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
-	6500 3440 6500 4040
-Connection ~ 6500 4040
+	6850 3440 7100 3440
 Wire Wire Line
-	6500 4040 6500 4690
+	6850 3440 6680 3440
+Connection ~ 6850 3440
 Wire Wire Line
-	8450 3340 8450 4590
+	6850 3540 6800 3540
 Wire Wire Line
-	8550 3240 8550 4490
+	6800 3540 6800 3740
 Wire Wire Line
-	8650 3140 8650 4390
+	6800 3740 6480 3740
+Connection ~ 6850 3540
+$Comp
+L CI_ComPCB-rescue:Transistor_FET_IRF9540N-CI_ComPCB-cache Q?
+U 1 1 6132AA49
+P 6520 4790
+F 0 "Q?" V 6769 4790 50  0000 C CNN
+F 1 "Transistor_FET_IRF9540N-CI_ComPCB-cache" V 6860 4790 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6720 4715 50  0001 L CIN
+F 3 "" H 6520 4790 50  0001 L CNN
+	1    6520 4790
+	0    1    -1   0   
+$EndComp
 Wire Wire Line
-	8750 3040 8750 4290
+	6720 4690 6850 4690
+Connection ~ 6850 4690
+Wire Wire Line
+	6850 4690 7100 4690
+Wire Wire Line
+	6810 4790 6810 4990
+Wire Wire Line
+	6810 4990 6520 4990
+Wire Wire Line
+	6810 4790 6850 4790
+Connection ~ 6850 4790
+Wire Wire Line
+	6850 4790 7650 4790
+Wire Wire Line
+	6280 3440 6280 4690
+Wire Wire Line
+	6280 4690 6320 4690
+Connection ~ 6280 3440
+Wire Wire Line
+	6520 4990 6020 4990
+Wire Wire Line
+	6020 4990 6020 4190
+Wire Wire Line
+	6020 4190 5700 4190
+Connection ~ 6520 4990
+Wire Wire Line
+	6480 3740 6020 3740
+Wire Wire Line
+	6020 3740 6020 4190
+Connection ~ 6480 3740
+Connection ~ 6020 4190
+Text Notes 5930 5250 0    50   ~ 0
+Check and find correct N-channel mosfets for this application
+Text GLabel 5570 3340 0    50   Input ~ 0
+Rx1
+Wire Wire Line
+	6860 3340 6850 3340
+Connection ~ 6850 3340
+Wire Wire Line
+	6850 3340 5570 3340
+Text GLabel 5560 3040 0    50   Input ~ 0
+Tx1
+Wire Wire Line
+	6850 3040 5560 3040
+$Comp
+L Device:R R?
+U 1 1 6133BF6C
+P 8090 4740
+F 0 "R?" H 8160 4786 50  0000 L CNN
+F 1 "10k" H 8160 4695 50  0000 L CNN
+F 2 "" V 8020 4740 50  0001 C CNN
+F 3 "~" H 8090 4740 50  0001 C CNN
+	1    8090 4740
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 4690 7650 4690
+Text GLabel 8090 4890 2    50   Input ~ 0
+3.3V
+Text GLabel 8310 4590 2    50   Input ~ 0
+GPIO???
+Wire Wire Line
+	8310 4590 8090 4590
+Connection ~ 8090 4590
+Wire Wire Line
+	6850 4590 8090 4590
+Text Notes 5920 5400 0    50   ~ 0
+Check with erik about the pinning again 
 $EndSCHEMATC

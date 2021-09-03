@@ -460,17 +460,6 @@ Connection ~ 7100 2850
 Connection ~ 9500 2050
 Wire Wire Line
 	9500 2050 9250 2050
-$Comp
-L Connector:Conn_01x03_Male J102
-U 1 1 613641DE
-P 5550 4250
-F 0 "J102" H 5522 4182 50  0000 R CNN
-F 1 "Conn_01x03_Male" H 5522 4273 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5550 4250 50  0001 C CNN
-F 3 "~" H 5550 4250 50  0001 C CNN
-	1    5550 4250
-	-1   0    0    1   
-$EndComp
 Text GLabel 9600 3150 2    50   Input ~ 0
 Comm
 Wire Wire Line
@@ -478,11 +467,11 @@ Wire Wire Line
 Wire Wire Line
 	7700 3150 9600 3150
 Connection ~ 7700 2850
-Text GLabel 5350 4250 0    50   Input ~ 0
+Text GLabel 5700 4970 2    50   Input ~ 0
 B
-Text GLabel 5350 4150 0    50   Input ~ 0
+Text GLabel 5700 5070 2    50   Input ~ 0
 A
-Text GLabel 5350 4350 0    50   Input ~ 0
+Text GLabel 5700 4870 2    50   Input ~ 0
 Comm
 Wire Wire Line
 	9500 2800 9600 2800
@@ -567,32 +556,32 @@ Text GLabel 1850 2350 0    50   Input ~ 0
 TX
 Text GLabel 1850 1450 0    50   Input ~ 0
 3v3
-Text GLabel 4600 4100 2    50   Input ~ 0
+Text GLabel 4550 5020 0    50   Input ~ 0
 3v3
-Text GLabel 4600 4200 2    50   Input ~ 0
+Text GLabel 4550 4970 0    50   Input ~ 0
 TX
-Text GLabel 4600 4300 2    50   Input ~ 0
+Text GLabel 4550 4920 0    50   Input ~ 0
 RX
-$Comp
-L Connector:Conn_01x04_Male J101
-U 1 1 6139FDFB
-P 4400 4200
-F 0 "J101" H 4508 4481 50  0000 C CNN
-F 1 "Conn_01x04_Male" H 4508 4390 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4400 4200 50  0001 C CNN
-F 3 "~" H 4400 4200 50  0001 C CNN
-	1    4400 4200
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0107
 U 1 1 6139FE01
-P 4600 4400
-F 0 "#PWR0107" H 4600 4150 50  0001 C CNN
-F 1 "GND" H 4605 4227 50  0000 C CNN
-F 2 "" H 4600 4400 50  0001 C CNN
-F 3 "" H 4600 4400 50  0001 C CNN
-	1    4600 4400
+P 4550 4870
+F 0 "#PWR0107" H 4550 4620 50  0001 C CNN
+F 1 "GND" H 4555 4697 50  0000 C CNN
+F 2 "" H 4550 4870 50  0001 C CNN
+F 3 "" H 4550 4870 50  0001 C CNN
+	1    4550 4870
+	-1   0    0    1   
+$EndComp
+$Comp
+L CI_ComPCB-rescue:TxRx-RS485-New_Library-RackComm-rescue-CI_ComPCB-rescue Converter101
+U 1 1 61323B08
+P 5150 4570
+F 0 "Converter101" H 5125 4495 50  0000 C CNN
+F 1 "TxRx-RS485-New_Library-RackComm-rescue-CI_ComPCB-rescue" H 5125 4404 50  0000 C CNN
+F 2 "CI_ComPCB:TXRX-AB" H 5150 4570 50  0001 C CNN
+F 3 "" H 5150 4570 50  0001 C CNN
+	1    5150 4570
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
