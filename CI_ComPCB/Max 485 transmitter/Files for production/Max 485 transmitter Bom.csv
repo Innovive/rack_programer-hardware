@@ -1,6 +1,6 @@
 Value,Designator,Footprint,JLPCB Part#
-0.1u,C1,Capacitor_SMD:C_0201_0603Metric,C14663
-0.1u,C2,Capacitor_SMD:C_0201_0603Metric,C14663
+0.1u,C1,Capacitor_SMD:C_0201_0603Metric,C1525
+0.1u,C2,Capacitor_SMD:C_0201_0603Metric,C1525
 1N4148W,D1,Diode_SMD:D_SOD-123,C81598
 LED,D101,digikey-footprints:LED_0603,C72038
 LED,D102,digikey-footprints:LED_0603,C72038
