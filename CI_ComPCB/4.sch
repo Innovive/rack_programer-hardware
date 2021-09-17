@@ -73,20 +73,16 @@ Wire Wire Line
 $Comp
 L Device:C C?
 U 1 1 61A53270
-P 4140 3990
+P 7150 3650
 AR Path="/61A53270" Ref="C?"  Part="1" 
 AR Path="/61A31654/61A53270" Ref="C301"  Part="1" 
-F 0 "C301" H 4025 4036 50  0000 R CNN
-F 1 "22uF" H 4025 3945 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4178 3840 50  0001 C CNN
-F 3 "~" H 4140 3990 50  0001 C CNN
-	1    4140 3990
+F 0 "C301" H 7035 3696 50  0000 R CNN
+F 1 "22uF" H 7035 3605 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7188 3500 50  0001 C CNN
+F 3 "~" H 7150 3650 50  0001 C CNN
+	1    7150 3650
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	4770 3580 4150 3580
-Wire Wire Line
-	4140 3580 4140 3840
 Wire Wire Line
 	5180 2700 4770 2700
 $Comp
@@ -111,11 +107,6 @@ Wire Wire Line
 	6570 3980 6570 4280
 Wire Wire Line
 	4570 4240 4570 4280
-Wire Wire Line
-	4570 4280 4140 4280
-Connection ~ 4570 4280
-Wire Wire Line
-	4140 4280 4140 4140
 Wire Wire Line
 	4770 4510 4770 3980
 Wire Wire Line
@@ -159,35 +150,18 @@ $EndComp
 $Comp
 L Device:C C?
 U 1 1 61A532A2
-P 6950 3650
+P 3500 3960
 AR Path="/61A532A2" Ref="C?"  Part="1" 
 AR Path="/61A31654/61A532A2" Ref="C303"  Part="1" 
-F 0 "C303" H 7065 3696 50  0000 L CNN
-F 1 "100nF" H 7065 3605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 6988 3500 50  0001 C CNN
-F 3 "~" H 6950 3650 50  0001 C CNN
-	1    6950 3650
+F 0 "C303" H 3615 4006 50  0000 L CNN
+F 1 "10uf" H 3615 3915 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3538 3810 50  0001 C CNN
+F 3 "~" H 3500 3960 50  0001 C CNN
+	1    3500 3960
 	-1   0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 61A532A8
-P 6950 3800
-AR Path="/61A532A8" Ref="#PWR?"  Part="1" 
-AR Path="/61A31654/61A532A8" Ref="#PWR0304"  Part="1" 
-F 0 "#PWR0304" H 6950 3550 50  0001 C CNN
-F 1 "GND" H 6955 3627 50  0000 C CNN
-F 2 "" H 6950 3800 50  0001 C CNN
-F 3 "" H 6950 3800 50  0001 C CNN
-	1    6950 3800
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	7370 3500 7360 3500
 Text GLabel 7470 3500 2    50   Input ~ 0
 Charger_OUT
-Wire Wire Line
-	3410 3580 3550 3580
 Text Notes 7000 7110 0    50   ~ 0
 https://webench.ti.com/power-designer/switching-regulator/customize/6?noparams=0
 Connection ~ 6810 4510
@@ -196,14 +170,14 @@ Wire Wire Line
 $Comp
 L Device:C C?
 U 1 1 61A532B9
-P 7150 3650
+P 3850 3960
 AR Path="/61A532B9" Ref="C?"  Part="1" 
 AR Path="/61A31654/61A532B9" Ref="C304"  Part="1" 
-F 0 "C304" H 7265 3696 50  0000 L CNN
-F 1 "100nF" H 7265 3605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 7188 3500 50  0001 C CNN
-F 3 "~" H 7150 3650 50  0001 C CNN
-	1    7150 3650
+F 0 "C304" H 3965 4006 50  0000 L CNN
+F 1 "10uf" H 3965 3915 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3888 3810 50  0001 C CNN
+F 3 "~" H 3850 3960 50  0001 C CNN
+	1    3850 3960
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -222,35 +196,16 @@ $EndComp
 $Comp
 L Device:C C?
 U 1 1 61A532C5
-P 7360 3650
+P 4150 3960
 AR Path="/61A532C5" Ref="C?"  Part="1" 
 AR Path="/61A31654/61A532C5" Ref="C305"  Part="1" 
-F 0 "C305" H 7475 3696 50  0000 L CNN
-F 1 "100nF" H 7475 3605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 7398 3500 50  0001 C CNN
-F 3 "~" H 7360 3650 50  0001 C CNN
-	1    7360 3650
+F 0 "C305" H 4265 4006 50  0000 L CNN
+F 1 "10uf" H 4265 3915 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4188 3810 50  0001 C CNN
+F 3 "~" H 4150 3960 50  0001 C CNN
+	1    4150 3960
 	-1   0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 61A532CB
-P 7360 3800
-AR Path="/61A532CB" Ref="#PWR?"  Part="1" 
-AR Path="/61A31654/61A532CB" Ref="#PWR0306"  Part="1" 
-F 0 "#PWR0306" H 7360 3550 50  0001 C CNN
-F 1 "GND" H 7365 3627 50  0000 C CNN
-F 2 "" H 7360 3800 50  0001 C CNN
-F 3 "" H 7360 3800 50  0001 C CNN
-	1    7360 3800
-	-1   0    0    -1  
-$EndComp
-Connection ~ 7150 3500
-Connection ~ 7360 3500
-Wire Wire Line
-	7360 3500 7150 3500
-Wire Wire Line
-	6950 3500 7150 3500
 Connection ~ 6570 3280
 Connection ~ 5670 4280
 Wire Wire Line
@@ -311,25 +266,22 @@ F 9 "TPS63020DSJR" H 6920 4180 50  0001 L CNN "Manufacturer_Part_Number"
 $EndComp
 Wire Wire Line
 	6570 3480 6570 3500
-Wire Wire Line
-	6950 3500 6570 3500
-Connection ~ 6950 3500
 Connection ~ 6570 3500
 Wire Wire Line
 	6570 3500 6570 3580
-Text GLabel 3310 3580 0    48   Input ~ 0
+Text GLabel 2400 3580 0    48   Input ~ 0
 Buck_Converter_OUT
 $Comp
 L CI_ComPCB-rescue:Connector_Conn_01x02_Male-CI_ComPCB-cache J301
 U 1 1 61294C10
-P 3410 3380
+P 2500 3380
 AR Path="/61294C10" Ref="J301"  Part="1" 
 AR Path="/61A31654/61294C10" Ref="J301"  Part="1" 
-F 0 "J301" V 3472 3424 50  0000 L CNN
-F 1 "Connector_Conn_01x02_Male" V 3563 3424 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3410 3380 50  0001 C CNN
-F 3 "" H 3410 3380 50  0001 C CNN
-	1    3410 3380
+F 0 "J301" V 2562 3424 50  0000 L CNN
+F 1 "Connector_Conn_01x02_Male" V 2653 3424 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2500 3380 50  0001 C CNN
+F 3 "" H 2500 3380 50  0001 C CNN
+	1    2500 3380
 	0    1    1    0   
 $EndComp
 $Comp
@@ -345,26 +297,6 @@ F 3 "" H 7470 3300 50  0001 C CNN
 	1    7470 3300
 	0    1    1    0   
 $EndComp
-$Comp
-L CI_ComPCB-rescue:SS34-SamacSys_Parts D301
-U 1 1 612A7837
-P 3450 3580
-F 0 "D301" H 3850 3847 50  0000 C CNN
-F 1 "SS34" H 3850 3756 50  0000 C CNN
-F 2 "digikey-footprints:DO-214AC" H 3950 3730 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/2/SS34.pdf" H 3950 3630 50  0001 L CNN
-F 4 "ON Semi SS34 SMT Schottky Diode, 40V 3A, 2-Pin DO-214AB" H 3950 3530 50  0001 L CNN "Description"
-F 5 "2.56" H 3950 3430 50  0001 L CNN "Height"
-F 6 "512-SS34" H 3950 3330 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/SS34?qs=2ONuHmP%2FXzb3ub11UdFfdQ%3D%3D" H 3950 3230 50  0001 L CNN "Mouser Price/Stock"
-F 8 "ON Semiconductor" H 3950 3130 50  0001 L CNN "Manufacturer_Name"
-F 9 "SS34" H 3950 3030 50  0001 L CNN "Manufacturer_Part_Number"
-	1    3450 3580
-	1    0    0    -1  
-$EndComp
-Connection ~ 4150 3580
-Wire Wire Line
-	4150 3580 4140 3580
 $Comp
 L CI_ComPCB-rescue:SPM4012T-1R0M-LR-SamacSys_Parts L301
 U 1 1 612BD9BA
@@ -384,4 +316,60 @@ F 9 "SPM4012T-1R0M-LR" H 5830 2050 50  0001 L CNN "Manufacturer_Part_Number"
 $EndComp
 Wire Wire Line
 	5980 2700 6570 2700
+Wire Wire Line
+	6570 3500 7150 3500
+Wire Wire Line
+	3500 4280 3500 4110
+Connection ~ 4570 4280
+Wire Wire Line
+	3850 4110 3850 4280
+Connection ~ 3850 4280
+Wire Wire Line
+	3850 4280 3500 4280
+Wire Wire Line
+	4570 4280 4150 4280
+Wire Wire Line
+	4150 4110 4150 4280
+Connection ~ 4150 4280
+Wire Wire Line
+	4150 4280 3850 4280
+Wire Wire Line
+	3500 3810 3500 3580
+Connection ~ 3500 3580
+Wire Wire Line
+	3850 3810 3850 3580
+Connection ~ 3850 3580
+Wire Wire Line
+	3850 3580 3500 3580
+Wire Wire Line
+	4770 3580 4150 3580
+Wire Wire Line
+	4150 3810 4150 3580
+Connection ~ 4150 3580
+Wire Wire Line
+	4150 3580 3850 3580
+Connection ~ 7150 3500
+Wire Wire Line
+	7150 3500 7370 3500
+Wire Wire Line
+	3230 3580 3500 3580
+$Comp
+L CI_ComPCB-rescue:SS34-SamacSys_Parts D301
+U 1 1 612A7837
+P 2530 3580
+F 0 "D301" H 2930 3847 50  0000 C CNN
+F 1 "SS34" H 2930 3756 50  0000 C CNN
+F 2 "digikey-footprints:DO-214AC" H 3030 3730 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/2/SS34.pdf" H 3030 3630 50  0001 L CNN
+F 4 "ON Semi SS34 SMT Schottky Diode, 40V 3A, 2-Pin DO-214AB" H 3030 3530 50  0001 L CNN "Description"
+F 5 "2.56" H 3030 3430 50  0001 L CNN "Height"
+F 6 "512-SS34" H 3030 3330 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/SS34?qs=2ONuHmP%2FXzb3ub11UdFfdQ%3D%3D" H 3030 3230 50  0001 L CNN "Mouser Price/Stock"
+F 8 "ON Semiconductor" H 3030 3130 50  0001 L CNN "Manufacturer_Name"
+F 9 "SS34" H 3030 3030 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2530 3580
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2630 3580 2500 3580
 $EndSCHEMATC
