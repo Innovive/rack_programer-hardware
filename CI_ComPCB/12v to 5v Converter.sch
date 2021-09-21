@@ -68,24 +68,6 @@ Wire Wire Line
 Wire Wire Line
 	7050 3100 7050 2850
 Connection ~ 6450 3650
-Wire Wire Line
-	6450 3650 6700 3650
-$Comp
-L power:GND #PWR?
-U 1 1 61A8D150
-P 6700 3650
-AR Path="/61A8D150" Ref="#PWR?"  Part="1" 
-AR Path="/61A31DC2/61A8D150" Ref="#PWR0405"  Part="1" 
-F 0 "#PWR0405" H 6700 3400 50  0001 C CNN
-F 1 "GND" H 6705 3477 50  0000 C CNN
-F 2 "" H 6700 3650 50  0001 C CNN
-F 3 "" H 6700 3650 50  0001 C CNN
-	1    6700 3650
-	1    0    0    -1  
-$EndComp
-Connection ~ 6700 3650
-Wire Wire Line
-	6700 3650 7050 3650
 $Comp
 L Device:C C?
 U 1 1 61A8D158
@@ -134,28 +116,6 @@ F 3 "~" H 5850 4300 50  0001 C CNN
 	1    5850 4300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5850 4450 5850 4700
-Wire Wire Line
-	5850 4700 6200 4700
-Wire Wire Line
-	6550 4700 6550 4400
-$Comp
-L power:GND #PWR?
-U 1 1 61A8D172
-P 6200 4700
-AR Path="/61A8D172" Ref="#PWR?"  Part="1" 
-AR Path="/61A31DC2/61A8D172" Ref="#PWR0404"  Part="1" 
-F 0 "#PWR0404" H 6200 4450 50  0001 C CNN
-F 1 "GND" H 6205 4527 50  0000 C CNN
-F 2 "" H 6200 4700 50  0001 C CNN
-F 3 "" H 6200 4700 50  0001 C CNN
-	1    6200 4700
-	1    0    0    -1  
-$EndComp
-Connection ~ 6200 4700
-Wire Wire Line
-	6200 4700 6550 4700
 $Comp
 L Device:R R?
 U 1 1 61A8D17A
@@ -169,47 +129,8 @@ F 3 "~" H 7400 3590 50  0001 C CNN
 	1    7400 3590
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R?
-U 1 1 61A8D180
-P 7400 4550
-AR Path="/61A8D180" Ref="R?"  Part="1" 
-AR Path="/61A31DC2/61A8D180" Ref="R404"  Part="1" 
-F 0 "R404" H 7470 4596 50  0000 L CNN
-F 1 "1.78k" H 7470 4505 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 7330 4550 50  0001 C CNN
-F 3 "~" H 7400 4550 50  0001 C CNN
-	1    7400 4550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5600 3850 5700 3850
-Wire Wire Line
-	5700 4950 7150 4950
-Wire Wire Line
-	7150 4950 7150 4250
-Wire Wire Line
-	7150 4250 7400 4250
-Wire Wire Line
-	7400 4250 7400 4400
-Wire Wire Line
-	7400 3740 7400 4250
-Connection ~ 7400 4250
-$Comp
-L power:GND #PWR?
-U 1 1 61A8D18E
-P 7400 4900
-AR Path="/61A8D18E" Ref="#PWR?"  Part="1" 
-AR Path="/61A31DC2/61A8D18E" Ref="#PWR0406"  Part="1" 
-F 0 "#PWR0406" H 7400 4650 50  0001 C CNN
-F 1 "GND" H 7405 4727 50  0000 C CNN
-F 2 "" H 7400 4900 50  0001 C CNN
-F 3 "" H 7400 4900 50  0001 C CNN
-	1    7400 4900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7400 4700 7400 4900
 $Comp
 L Device:C C?
 U 1 1 61A8D195
@@ -237,36 +158,8 @@ F 3 "~" H 3900 3800 50  0001 C CNN
 	1    3900 3800
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 61A8D1A1
-P 4250 4550
-AR Path="/61A8D1A1" Ref="#PWR?"  Part="1" 
-AR Path="/61A31DC2/61A8D1A1" Ref="#PWR0403"  Part="1" 
-F 0 "#PWR0403" H 4250 4300 50  0001 C CNN
-F 1 "GND" H 4255 4377 50  0000 C CNN
-F 2 "" H 4250 4550 50  0001 C CNN
-F 3 "" H 4250 4550 50  0001 C CNN
-	1    4250 4550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4250 4350 4250 4550
 Wire Wire Line
 	4250 4050 4250 3850
-$Comp
-L power:GND #PWR?
-U 1 1 61A8D1AA
-P 3900 3950
-AR Path="/61A8D1AA" Ref="#PWR?"  Part="1" 
-AR Path="/61A31DC2/61A8D1AA" Ref="#PWR0402"  Part="1" 
-F 0 "#PWR0402" H 3900 3700 50  0001 C CNN
-F 1 "GND" H 3905 3777 50  0000 C CNN
-F 2 "" H 3900 3950 50  0001 C CNN
-F 3 "" H 3900 3950 50  0001 C CNN
-	1    3900 3950
-	1    0    0    -1  
-$EndComp
 Connection ~ 3900 3650
 Wire Wire Line
 	5850 3000 5850 2850
@@ -281,19 +174,6 @@ F 1 "10uF" H 3635 3755 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 3558 3650 50  0001 C CNN
 F 3 "~" H 3520 3800 50  0001 C CNN
 	1    3520 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 61A8D1BC
-P 3520 3950
-AR Path="/61A8D1BC" Ref="#PWR?"  Part="1" 
-AR Path="/61A31DC2/61A8D1BC" Ref="#PWR0401"  Part="1" 
-F 0 "#PWR0401" H 3520 3700 50  0001 C CNN
-F 1 "GND" H 3525 3777 50  0000 C CNN
-F 2 "" H 3520 3950 50  0001 C CNN
-F 3 "" H 3520 3950 50  0001 C CNN
-	1    3520 3950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -318,34 +198,8 @@ Wire Wire Line
 Connection ~ 3520 3650
 Wire Wire Line
 	3520 3650 3900 3650
-Text GLabel 3110 3650 0    50   Input ~ 0
+Text GLabel 3210 3650 0    50   Input ~ 0
 Buck_IN
-$Comp
-L CI_ComPCB-rescue:Connector_Conn_01x02_Male-CI_ComPCB-cache J402
-U 1 1 6129A665
-P 8100 2650
-AR Path="/6129A665" Ref="J402"  Part="1" 
-AR Path="/61A31DC2/6129A665" Ref="J402"  Part="1" 
-F 0 "J402" V 8162 2694 50  0000 L CNN
-F 1 "Connector_Conn_01x02_Male" V 8253 2694 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8100 2650 50  0001 C CNN
-F 3 "" H 8100 2650 50  0001 C CNN
-	1    8100 2650
-	0    1    1    0   
-$EndComp
-$Comp
-L CI_ComPCB-rescue:Connector_Conn_01x02_Male-CI_ComPCB-cache J401
-U 1 1 6129C94F
-P 3210 3450
-AR Path="/6129C94F" Ref="J401"  Part="1" 
-AR Path="/61A31DC2/6129C94F" Ref="J401"  Part="1" 
-F 0 "J401" V 3272 3494 50  0000 L CNN
-F 1 "Connector_Conn_01x02_Male" V 3363 3494 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3210 3450 50  0001 C CNN
-F 3 "" H 3210 3450 50  0001 C CNN
-	1    3210 3450
-	0    1    1    0   
-$EndComp
 $Comp
 L CI_ComPCB-rescue:SS34-SamacSys_Parts D402
 U 1 1 612967EC
@@ -434,4 +288,151 @@ Wire Wire Line
 	4250 3850 4400 3850
 Wire Wire Line
 	4250 3550 4400 3550
+Wire Wire Line
+	6450 3650 6700 3650
+Connection ~ 6700 3650
+$Comp
+L power:GND #PWR?
+U 1 1 61A8D150
+P 6700 3650
+AR Path="/61A8D150" Ref="#PWR?"  Part="1" 
+AR Path="/61A31DC2/61A8D150" Ref="#PWR0405"  Part="1" 
+F 0 "#PWR0405" H 6700 3400 50  0001 C CNN
+F 1 "GND" H 6705 3477 50  0000 C CNN
+F 2 "" H 6700 3650 50  0001 C CNN
+F 3 "" H 6700 3650 50  0001 C CNN
+	1    6700 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3650 7050 3650
+Connection ~ 6200 4700
+Wire Wire Line
+	6200 4700 6550 4700
+Wire Wire Line
+	5850 4700 6200 4700
+$Comp
+L power:GND #PWR?
+U 1 1 61A8D172
+P 6200 4700
+AR Path="/61A8D172" Ref="#PWR?"  Part="1" 
+AR Path="/61A31DC2/61A8D172" Ref="#PWR0404"  Part="1" 
+F 0 "#PWR0404" H 6200 4450 50  0001 C CNN
+F 1 "GND" H 6205 4527 50  0000 C CNN
+F 2 "" H 6200 4700 50  0001 C CNN
+F 3 "" H 6200 4700 50  0001 C CNN
+	1    6200 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 4950 7150 4950
+Wire Wire Line
+	7400 4700 7400 4900
+$Comp
+L power:GND #PWR?
+U 1 1 61A8D18E
+P 7400 4900
+AR Path="/61A8D18E" Ref="#PWR?"  Part="1" 
+AR Path="/61A31DC2/61A8D18E" Ref="#PWR0406"  Part="1" 
+F 0 "#PWR0406" H 7400 4650 50  0001 C CNN
+F 1 "GND" H 7405 4727 50  0000 C CNN
+F 2 "" H 7400 4900 50  0001 C CNN
+F 3 "" H 7400 4900 50  0001 C CNN
+	1    7400 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 3740 7400 4250
+Wire Wire Line
+	7400 4250 7400 4400
+Connection ~ 7400 4250
+Wire Wire Line
+	7150 4250 7400 4250
+Wire Wire Line
+	7150 4950 7150 4250
+Wire Wire Line
+	6550 4700 6550 4400
+$Comp
+L Device:R R?
+U 1 1 61A8D180
+P 7400 4550
+AR Path="/61A8D180" Ref="R?"  Part="1" 
+AR Path="/61A31DC2/61A8D180" Ref="R404"  Part="1" 
+F 0 "R404" H 7470 4596 50  0000 L CNN
+F 1 "1.78k" H 7470 4505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7330 4550 50  0001 C CNN
+F 3 "~" H 7400 4550 50  0001 C CNN
+	1    7400 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 4450 5850 4700
+$Comp
+L power:GND #PWR?
+U 1 1 61A8D1A1
+P 4250 4550
+AR Path="/61A8D1A1" Ref="#PWR?"  Part="1" 
+AR Path="/61A31DC2/61A8D1A1" Ref="#PWR0403"  Part="1" 
+F 0 "#PWR0403" H 4250 4300 50  0001 C CNN
+F 1 "GND" H 4255 4377 50  0000 C CNN
+F 2 "" H 4250 4550 50  0001 C CNN
+F 3 "" H 4250 4550 50  0001 C CNN
+	1    4250 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 4350 4250 4550
+$Comp
+L power:GND #PWR?
+U 1 1 61A8D1AA
+P 3900 3950
+AR Path="/61A8D1AA" Ref="#PWR?"  Part="1" 
+AR Path="/61A31DC2/61A8D1AA" Ref="#PWR0402"  Part="1" 
+F 0 "#PWR0402" H 3900 3700 50  0001 C CNN
+F 1 "GND" H 3905 3777 50  0000 C CNN
+F 2 "" H 3900 3950 50  0001 C CNN
+F 3 "" H 3900 3950 50  0001 C CNN
+	1    3900 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61A8D1BC
+P 3520 3950
+AR Path="/61A8D1BC" Ref="#PWR?"  Part="1" 
+AR Path="/61A31DC2/61A8D1BC" Ref="#PWR0401"  Part="1" 
+F 0 "#PWR0401" H 3520 3700 50  0001 C CNN
+F 1 "GND" H 3525 3777 50  0000 C CNN
+F 2 "" H 3520 3950 50  0001 C CNN
+F 3 "" H 3520 3950 50  0001 C CNN
+	1    3520 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L CI_ComPCB-cache:Connector_Conn_01x01_Male J402
+U 1 1 614D6EFD
+P 8050 2650
+F 0 "J402" V 8112 2694 50  0000 L CNN
+F 1 "Connector_Conn_01x01_Male" V 8203 2694 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 8050 2650 50  0001 C CNN
+F 3 "" H 8050 2650 50  0001 C CNN
+	1    8050 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8100 2850 8050 2850
+Wire Wire Line
+	8000 2850 8050 2850
+Connection ~ 8050 2850
+$Comp
+L CI_ComPCB-cache:Connector_Conn_01x01_Male J401
+U 1 1 614D9F4C
+P 3210 3450
+F 0 "J401" V 3272 3494 50  0000 L CNN
+F 1 "Connector_Conn_01x01_Male" V 3363 3494 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 3210 3450 50  0001 C CNN
+F 3 "" H 3210 3450 50  0001 C CNN
+	1    3210 3450
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

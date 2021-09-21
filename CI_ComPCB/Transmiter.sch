@@ -29,23 +29,23 @@ $EndComp
 $Comp
 L CI_ComPCB-rescue:TxRx-RS485-New_Library-RackComm-rescue-CI_ComPCB-rescue Converter?
 U 1 1 61AB184D
-P 3930 5070
+P 3930 5080
 AR Path="/61AB184D" Ref="Converter?"  Part="1" 
 AR Path="/61A9C8FD/61AB184D" Ref="Converter502"  Part="1" 
-F 0 "Converter502" H 3880 4355 50  0000 C CNN
-F 1 "TxRx-RS485" H 3880 4446 50  0000 C CNN
-F 2 "CI_ComPCB:TXRX-AB" H 3930 5070 50  0001 C CNN
-F 3 "" H 3930 5070 50  0001 C CNN
-	1    3930 5070
+F 0 "Converter502" H 3880 4365 50  0000 C CNN
+F 1 "TxRx-RS485" H 3880 4456 50  0000 C CNN
+F 2 "CI_ComPCB:TXRX-AB" H 3930 5080 50  0001 C CNN
+F 3 "" H 3930 5080 50  0001 C CNN
+	1    3930 5080
 	1    0    0    1   
 $EndComp
-Text GLabel 4780 4570 2    50   Input ~ 0
+Text GLabel 4780 4580 2    50   Input ~ 0
 A1
-Text GLabel 4780 4670 2    50   Input ~ 0
+Text GLabel 4780 4680 2    50   Input ~ 0
 B1
-Text GLabel 4780 4770 2    50   Input ~ 0
+Text GLabel 4780 4780 2    50   Input ~ 0
 Sheild
-Text GLabel 3310 4620 0    50   Input ~ 0
+Text GLabel 3310 4630 0    50   Input ~ 0
 3.3V
 Text GLabel 4780 4200 2    50   Input ~ 0
 Sheild
@@ -64,26 +64,26 @@ Wire Wire Line
 Wire Wire Line
 	3300 4050 3330 4050
 Wire Wire Line
-	4480 4770 4780 4770
+	4480 4780 4780 4780
 Wire Wire Line
-	4780 4670 4480 4670
+	4780 4680 4480 4680
 Wire Wire Line
-	4480 4570 4780 4570
+	4480 4580 4780 4580
 Text GLabel 3080 4170 0    50   Input ~ 0
 RX0
 Wire Wire Line
-	3330 4620 3310 4620
+	3330 4630 3310 4630
 $Comp
 L power:GND #PWR?
 U 1 1 61AB1864
-P 3330 4770
+P 3330 4780
 AR Path="/61AB1864" Ref="#PWR?"  Part="1" 
 AR Path="/61A9C8FD/61AB1864" Ref="#PWR0502"  Part="1" 
-F 0 "#PWR0502" H 3330 4520 50  0001 C CNN
-F 1 "GND" V 3335 4642 50  0000 R CNN
-F 2 "" H 3330 4770 50  0001 C CNN
-F 3 "" H 3330 4770 50  0001 C CNN
-	1    3330 4770
+F 0 "#PWR0502" H 3330 4530 50  0001 C CNN
+F 1 "GND" V 3335 4652 50  0000 R CNN
+F 2 "" H 3330 4780 50  0001 C CNN
+F 3 "" H 3330 4780 50  0001 C CNN
+	1    3330 4780
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -109,18 +109,18 @@ Wire Wire Line
 	3330 4150 3080 4150
 Wire Wire Line
 	3080 4150 3080 4170
-Text GLabel 3080 4630 0    50   Input ~ 0
+Text GLabel 3080 4640 0    50   Input ~ 0
 TX2
-Text GLabel 3080 4780 0    50   Input ~ 0
+Text GLabel 3080 4790 0    50   Input ~ 0
 RX2
 Wire Wire Line
-	3330 4670 3080 4670
+	3330 4680 3080 4680
 Wire Wire Line
-	3080 4670 3080 4630
+	3080 4680 3080 4640
 Wire Wire Line
-	3080 4780 3080 4720
+	3080 4790 3080 4730
 Wire Wire Line
-	3080 4720 3330 4720
+	3080 4730 3330 4730
 Text GLabel 6700 2940 0    50   Input ~ 0
 A1
 Text GLabel 6700 2840 0    50   Input ~ 0
@@ -129,8 +129,6 @@ Text GLabel 6700 4090 0    50   Input ~ 0
 B0
 Text GLabel 6700 4190 0    50   Input ~ 0
 A0
-Wire Wire Line
-	6080 3440 6280 3440
 Wire Wire Line
 	6850 2840 6700 2840
 Wire Wire Line
@@ -218,107 +216,87 @@ F 3 "~" H 7250 4690 50  0001 C CNN
 	1    7250 4690
 	0    1    1    0   
 $EndComp
-$Comp
-L CI_ComPCB-rescue:Transistor_FET_IRF9540N-CI_ComPCB-cache Q501
-U 1 1 613180DF
-P 6480 3540
-F 0 "Q501" V 6729 3540 50  0000 C CNN
-F 1 "Transistor_FET_IRF9540N-CI_ComPCB-cache" V 6820 3540 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6680 3465 50  0001 L CIN
-F 3 "" H 6480 3540 50  0001 L CNN
-	1    6480 3540
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	6850 3440 7100 3440
-Wire Wire Line
-	6850 3440 6680 3440
 Connection ~ 6850 3440
 Wire Wire Line
 	6850 3540 6800 3540
 Wire Wire Line
 	6800 3540 6800 3740
-Wire Wire Line
-	6800 3740 6480 3740
 Connection ~ 6850 3540
-$Comp
-L CI_ComPCB-rescue:Transistor_FET_IRF9540N-CI_ComPCB-cache Q502
-U 1 1 6132AA49
-P 6520 4790
-F 0 "Q502" V 6769 4790 50  0000 C CNN
-F 1 "Transistor_FET_IRF9540N-CI_ComPCB-cache" V 6860 4790 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6720 4715 50  0001 L CIN
-F 3 "" H 6520 4790 50  0001 L CNN
-	1    6520 4790
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	6720 4690 6850 4690
 Connection ~ 6850 4690
 Wire Wire Line
 	6850 4690 7100 4690
 Wire Wire Line
 	6810 4790 6810 4990
 Wire Wire Line
-	6810 4990 6520 4990
-Wire Wire Line
 	6810 4790 6850 4790
 Connection ~ 6850 4790
 Wire Wire Line
 	6850 4790 7650 4790
 Wire Wire Line
-	6280 3440 6280 4690
-Wire Wire Line
-	6280 4690 6320 4690
-Connection ~ 6280 3440
-Wire Wire Line
-	6520 4990 6020 4990
-Wire Wire Line
 	6020 4990 6020 4190
 Wire Wire Line
 	6020 4190 5700 4190
-Connection ~ 6520 4990
-Wire Wire Line
-	6480 3740 6020 3740
 Wire Wire Line
 	6020 3740 6020 4190
-Connection ~ 6480 3740
 Connection ~ 6020 4190
-Text Notes 5930 5250 0    50   ~ 0
-Check and find correct N-channel mosfets for this application
 Text GLabel 5570 3340 0    50   Input ~ 0
-Rx1
-Wire Wire Line
-	6860 3340 6850 3340
+RX1
 Connection ~ 6850 3340
 Wire Wire Line
 	6850 3340 5570 3340
 Text GLabel 5560 3040 0    50   Input ~ 0
-Tx1
+TX1
 Wire Wire Line
 	6850 3040 5560 3040
-$Comp
-L Device:R R503
-U 1 1 6133BF6C
-P 8090 4740
-F 0 "R503" H 8160 4786 50  0000 L CNN
-F 1 "10k" H 8160 4695 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 8020 4740 50  0001 C CNN
-F 3 "~" H 8090 4740 50  0001 C CNN
-	1    8090 4740
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7400 4690 7650 4690
-Text GLabel 8090 4890 2    50   Input ~ 0
-3.3V
-Text GLabel 8310 4590 2    50   Input ~ 0
-GPIO???
 Wire Wire Line
-	8310 4590 8090 4590
-Connection ~ 8090 4590
+	6850 4590 7800 4590
 Wire Wire Line
-	6850 4590 8090 4590
-Text Notes 5920 5400 0    50   ~ 0
-Check with erik about the pinning again 
+	7800 4590 7800 3340
+Wire Wire Line
+	6850 3340 7800 3340
+Wire Wire Line
+	7700 4290 7700 3040
+Wire Wire Line
+	7700 3040 6850 3040
+Connection ~ 6850 3040
+Wire Wire Line
+	6850 4290 7700 4290
+Wire Wire Line
+	6020 3740 6800 3740
+Wire Wire Line
+	6020 4990 6810 4990
+$Comp
+L CI_ComPCB-rescue:SS34-SamacSys_Parts D?
+U 1 1 614B2CBA
+P 6340 4780
+AR Path="/61A31DC2/614B2CBA" Ref="D?"  Part="1" 
+AR Path="/61A9C8FD/614B2CBA" Ref="D501"  Part="1" 
+F 0 "D501" H 6740 4513 50  0000 C CNN
+F 1 "SS34" H 6740 4604 50  0000 C CNN
+F 2 "digikey-footprints:DO-214AC" H 6840 4930 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/2/SS34.pdf" H 6840 4830 50  0001 L CNN
+F 4 "ON Semi SS34 SMT Schottky Diode, 40V 3A, 2-Pin DO-214AB" H 6840 4730 50  0001 L CNN "Description"
+F 5 "2.56" H 6840 4630 50  0001 L CNN "Height"
+F 6 "512-SS34" H 6840 4530 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/SS34?qs=2ONuHmP%2FXzb3ub11UdFfdQ%3D%3D" H 6840 4430 50  0001 L CNN "Mouser Price/Stock"
+F 8 "ON Semiconductor" H 6840 4330 50  0001 L CNN "Manufacturer_Name"
+F 9 "SS34" H 6840 4230 50  0001 L CNN "Manufacturer_Part_Number"
+	1    6340 4780
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6340 4690 6340 4680
+Wire Wire Line
+	6340 4690 6850 4690
+Wire Wire Line
+	6340 4080 6340 3440
+Wire Wire Line
+	6080 3440 6340 3440
+Wire Wire Line
+	6340 3440 6850 3440
+Connection ~ 6340 3440
 $EndSCHEMATC

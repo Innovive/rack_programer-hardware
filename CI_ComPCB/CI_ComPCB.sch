@@ -363,4 +363,12 @@ $EndComp
 Connection ~ 10100 3650
 Wire Wire Line
 	10100 3650 10250 3650
+Wire Wire Line
+	4850 4120 4460 4120
+Wire Wire Line
+	4850 3920 4460 3920
+Text GLabel 4460 4120 0    50   Input ~ 0
+RX1
+Text GLabel 4460 3920 0    50   Input ~ 0
+TX1
 $EndSCHEMATC
