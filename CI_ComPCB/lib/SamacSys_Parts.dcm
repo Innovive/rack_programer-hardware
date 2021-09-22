@@ -102,4 +102,16 @@ K
 F https://www.arrow.com/en/products/mf-msmf010-2/bourns
 $ENDCMP
 #
+$CMP L202021MA04QE
+D Slide Switches Slide
+K
+F https://www.ckswitches.com/media/1423/l.pdf
+$ENDCMP
+#
+$CMP L102021ML04Q
+D SWITCH SLIDE SPDT 4A 125V
+K
+F http://www.ckswitches.com/media/1423/l.pdf
+$ENDCMP
+#
 #End Doc Library

@@ -56,18 +56,16 @@ F 3 "" H 4660 4220 50  0001 C CNN
 	1    4660 4220
 	0    1    1    0   
 $EndComp
-Text GLabel 2760 4560 2    50   Input ~ 0
+Text GLabel 2550 4560 2    50   Input ~ 0
 ESP_Power
-Text GLabel 1560 4560 0    50   Input ~ 0
+Text GLabel 1750 4560 0    50   Input ~ 0
 Battery_Power
-Text GLabel 2860 4460 2    50   Input ~ 0
+Text GLabel 2650 4460 2    50   Input ~ 0
 Vin
 Wire Wire Line
-	2860 4460 2760 4460
-Text GLabel 1560 4460 0    50   Input ~ 0
+	2650 4460 2550 4460
+Text GLabel 1750 4460 0    50   Input ~ 0
 B_SW1
-Text Notes 1300 3980 0    50   ~ 0
-Device ON/OFF Switch
 Text GLabel 4660 4320 0    50   Input ~ 0
 ESP_Power
 Wire Wire Line
@@ -79,48 +77,13 @@ Power To/From Rack switch
 Text GLabel 3470 1760 2    50   Input ~ 0
 Vin
 Wire Wire Line
-	1210 1960 1260 1960
-Text GLabel 1210 1960 0    50   Input ~ 0
+	1610 1960 1660 1960
+Text GLabel 1610 1960 0    50   Input ~ 0
 Vin
-Text GLabel 1260 1860 0    50   Input ~ 0
+Text GLabel 1660 1860 0    50   Input ~ 0
 Buck_Out
-$Comp
-L CI_ComPCB-rescue:CS22BNW03-SamacSys_Parts S102
-U 1 1 61678194
-P 1560 4360
-F 0 "S102" H 2160 4625 50  0000 C CNN
-F 1 "CS22BNW03" H 2160 4534 50  0000 C CNN
-F 2 "SamacSys_Parts:CS22BNW03" H 2610 4460 50  0001 L CNN
-F 3 "http://www.nkkswitches.com/pdf/cs.pdf" H 2610 4360 50  0001 L CNN
-F 4 "Slide Switch,DPDT" H 2610 4260 50  0001 L CNN "Description"
-F 5 "14.8" H 2610 4160 50  0001 L CNN "Height"
-F 6 "633-CS22BNW03" H 2610 4060 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/NKK-Switches/CS22BNW03?qs=EIJ16CYJdOvWYX4DU1mCGA%3D%3D" H 2610 3960 50  0001 L CNN "Mouser Price/Stock"
-F 8 "NKK Switches" H 2610 3860 50  0001 L CNN "Manufacturer_Name"
-F 9 "CS22BNW03" H 2610 3760 50  0001 L CNN "Manufacturer_Part_Number"
-	1    1560 4360
-	1    0    0    -1  
-$EndComp
-$Comp
-L CI_ComPCB-rescue:CS22BNW03-SamacSys_Parts S101
-U 1 1 6172901A
-P 1260 1760
-F 0 "S101" H 1860 2025 50  0000 C CNN
-F 1 "CS22BNW03" H 1860 1934 50  0000 C CNN
-F 2 "SamacSys_Parts:CS22BNW03" H 2310 1860 50  0001 L CNN
-F 3 "http://www.nkkswitches.com/pdf/cs.pdf" H 2310 1760 50  0001 L CNN
-F 4 "Slide Switch,DPDT" H 2310 1660 50  0001 L CNN "Description"
-F 5 "14.8" H 2310 1560 50  0001 L CNN "Height"
-F 6 "633-CS22BNW03" H 2310 1460 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/NKK-Switches/CS22BNW03?qs=EIJ16CYJdOvWYX4DU1mCGA%3D%3D" H 2310 1360 50  0001 L CNN "Mouser Price/Stock"
-F 8 "NKK Switches" H 2310 1260 50  0001 L CNN "Manufacturer_Name"
-F 9 "CS22BNW03" H 2310 1160 50  0001 L CNN "Manufacturer_Part_Number"
-	1    1260 1760
-	1    0    0    -1  
-$EndComp
-NoConn ~ 1560 4360
-NoConn ~ 2760 4360
-NoConn ~ 1260 1760
+NoConn ~ 1750 4360
+NoConn ~ 1660 1760
 $Comp
 L power:GND #PWR0101
 U 1 1 61285314
@@ -174,8 +137,6 @@ Wire Notes Line
 Wire Notes Line
 	980  4690 3230 4690
 Wire Notes Line
-	3230 4050 980  4050
-Wire Notes Line
 	980  4050 980  4690
 $Sheet
 S 8660 6040 2540 380 
@@ -209,38 +170,17 @@ Text GLabel 2380 5350 2    50   Input ~ 0
 Charger_IN
 Text GLabel 2380 5250 2    50   Input ~ 0
 Vin
-$Comp
-L CI_ComPCB-rescue:CS12ANW03-SamacSys_Parts S103
-U 1 1 61AC507A
-P 2380 5350
-AR Path="/61AC507A" Ref="S103"  Part="1" 
-AR Path="/61A31654/61AC507A" Ref="S?"  Part="1" 
-F 0 "S103" H 3008 5296 50  0000 L CNN
-F 1 "CS12ANW03" H 3008 5205 50  0000 L CNN
-F 2 "SamacSys_Parts:CS12ANW03" H 3030 5450 50  0001 L CNN
-F 3 "http://www.nkkswitches.com/pdf/cs.pdf" H 3030 5350 50  0001 L CNN
-F 4 "NKK SWITCHES - CS12ANW03 - SWITCH, SLIDE, SPDT, 3A, 250V, TH" H 3030 5250 50  0001 L CNN "Description"
-F 5 "" H 3030 5150 50  0001 L CNN "Height"
-F 6 "633-CS12ANW03" H 3030 5050 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/NKK-Switches/CS12ANW03?qs=4P1McwaGddbVHu%252BBZT0egw%3D%3D" H 3030 4950 50  0001 L CNN "Mouser Price/Stock"
-F 8 "NKK Switches" H 3030 4850 50  0001 L CNN "Manufacturer_Name"
-F 9 "CS12ANW03" H 3030 4750 50  0001 L CNN "Manufacturer_Part_Number"
-	1    2380 5350
-	-1   0    0    1   
-$EndComp
 Text GLabel 2380 5150 2    48   Input ~ 0
 Buck_Converter_OUT
 Wire Notes Line
-	3230 4690 3230 4050
-Wire Notes Line
-	980  4970 980  5470
+	980  4840 980  5470
 Wire Notes Line
 	980  5470 3230 5470
 Wire Notes Line
-	3230 5470 3230 4970
+	3230 5470 3230 4840
 Wire Notes Line
-	3230 4970 980  4970
-Text Notes 1280 4930 0    48   ~ 0
+	3230 4840 980  4840
+Text Notes 1280 4800 0    48   ~ 0
 Charging/Delivering Battery Power Switch
 Wire Wire Line
 	4660 4220 4700 4220
@@ -371,4 +311,62 @@ Text GLabel 4460 4120 0    50   Input ~ 0
 RX1
 Text GLabel 4460 3920 0    50   Input ~ 0
 TX1
+$Comp
+L SamacSys_Parts:L202021MA04QE S101
+U 1 1 614EB07D
+P 1660 1760
+F 0 "S101" H 2060 2025 50  0000 C CNN
+F 1 "L202021MA04QE" H 2060 1934 50  0000 C CNN
+F 2 "L202021MA04QE" H 2310 1860 50  0001 L CNN
+F 3 "https://www.ckswitches.com/media/1423/l.pdf" H 2310 1760 50  0001 L CNN
+F 4 "Slide Switches Slide" H 2310 1660 50  0001 L CNN "Description"
+F 5 "10.46" H 2310 1560 50  0001 L CNN "Height"
+F 6 "611-L202021MA04QE" H 2310 1460 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/CK/L202021MA04QE?qs=LgMIjt8LuD9SKAo8ixZdPQ%3D%3D" H 2310 1360 50  0001 L CNN "Mouser Price/Stock"
+F 8 "C & K COMPONENTS" H 2310 1260 50  0001 L CNN "Manufacturer_Name"
+F 9 "L202021MA04QE" H 2310 1160 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1660 1760
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:L202021MA04QE S102
+U 1 1 614EBE17
+P 1750 4360
+F 0 "S102" H 2150 4625 50  0000 C CNN
+F 1 "L202021MA04QE" H 2150 4534 50  0000 C CNN
+F 2 "L202021MA04QE" H 2400 4460 50  0001 L CNN
+F 3 "https://www.ckswitches.com/media/1423/l.pdf" H 2400 4360 50  0001 L CNN
+F 4 "Slide Switches Slide" H 2400 4260 50  0001 L CNN "Description"
+F 5 "10.46" H 2400 4160 50  0001 L CNN "Height"
+F 6 "611-L202021MA04QE" H 2400 4060 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/CK/L202021MA04QE?qs=LgMIjt8LuD9SKAo8ixZdPQ%3D%3D" H 2400 3960 50  0001 L CNN "Mouser Price/Stock"
+F 8 "C & K COMPONENTS" H 2400 3860 50  0001 L CNN "Manufacturer_Name"
+F 9 "L202021MA04QE" H 2400 3760 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1750 4360
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	3230 4690 3230 4050
+Wire Notes Line
+	3230 4050 980  4050
+NoConn ~ 2550 4360
+Text Notes 1300 3980 0    50   ~ 0
+Device ON/OFF Switch
+$Comp
+L SamacSys_Parts:L102021ML04Q S103
+U 1 1 614F4229
+P 2380 5350
+F 0 "S103" H 2672 4885 50  0000 C CNN
+F 1 "L102021ML04Q" H 2672 4976 50  0000 C CNN
+F 2 "L102011ML04Q" H 3030 5450 50  0001 L CNN
+F 3 "http://www.ckswitches.com/media/1423/l.pdf" H 3030 5350 50  0001 L CNN
+F 4 "SWITCH SLIDE SPDT 4A 125V" H 3030 5250 50  0001 L CNN "Description"
+F 5 "7" H 3030 5150 50  0001 L CNN "Height"
+F 6 "611-L102021ML04Q" H 3030 5050 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/CK/L102021ML04Q?qs=XK7TQRbusgWd6Hv%2F260p7g%3D%3D" H 3030 4950 50  0001 L CNN "Mouser Price/Stock"
+F 8 "C & K COMPONENTS" H 3030 4850 50  0001 L CNN "Manufacturer_Name"
+F 9 "L102021ML04Q" H 3030 4750 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2380 5350
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC

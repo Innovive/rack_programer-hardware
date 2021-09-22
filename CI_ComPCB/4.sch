@@ -347,34 +347,34 @@ Connection ~ 6810 4510
 Wire Wire Line
 	6820 3680 6820 4510
 $Comp
-L CI_ComPCB-cache:Connector_Conn_01x01_Male J?
+L CI_ComPCB-cache:Connector_Conn_01x01_Male J303
 U 1 1 614AA749
 P 7370 3300
-F 0 "J?" H 7478 3481 50  0000 C CNN
+F 0 "J303" H 7478 3481 50  0000 C CNN
 F 1 "Connector_Conn_01x01_Male" H 7478 3390 50  0000 C CNN
-F 2 "" H 7370 3300 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 7370 3300 50  0001 C CNN
 F 3 "" H 7370 3300 50  0001 C CNN
 	1    7370 3300
 	0    1    1    0   
 $EndComp
 $Comp
-L CI_ComPCB-cache:Connector_Conn_01x01_Male J?
+L CI_ComPCB-cache:Connector_Conn_01x01_Male J301
 U 1 1 614ABD86
 P 2500 3380
-F 0 "J?" H 2608 3561 50  0000 C CNN
+F 0 "J301" H 2608 3561 50  0000 C CNN
 F 1 "Connector_Conn_01x01_Male" H 2608 3470 50  0000 C CNN
-F 2 "" H 2500 3380 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 2500 3380 50  0001 C CNN
 F 3 "" H 2500 3380 50  0001 C CNN
 	1    2500 3380
 	0    1    1    0   
 $EndComp
 $Comp
-L CI_ComPCB-cache:Connector_Conn_01x01_Male J?
+L CI_ComPCB-cache:Connector_Conn_01x01_Male J302
 U 1 1 614B51F1
 P 4360 4050
-F 0 "J?" H 4468 4231 50  0000 C CNN
+F 0 "J302" H 4468 4231 50  0000 C CNN
 F 1 "Connector_Conn_01x01_Male" H 4468 4140 50  0000 C CNN
-F 2 "" H 4360 4050 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4360 4050 50  0001 C CNN
 F 3 "" H 4360 4050 50  0001 C CNN
 	1    4360 4050
 	0    1    1    0   
