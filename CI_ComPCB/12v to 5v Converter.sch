@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
+Sheet 4 6
 Title ""
 Date ""
 Rev ""
@@ -139,7 +139,7 @@ AR Path="/61A8D195" Ref="C?"  Part="1"
 AR Path="/61A31DC2/61A8D195" Ref="C404"  Part="1" 
 F 0 "C404" H 4365 4246 50  0000 L CNN
 F 1 "8.2nF" H 4365 4155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4288 4050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4288 4050 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/lcsc/1811071710_Sunlord-SDCL1608C8N2JTDF_C1032.pdf" H 4250 4200 50  0001 C CNN
 F 4 "C1032" H 4250 4200 50  0001 C CNN "JLCPCB"
 	1    4250 4200
@@ -190,7 +190,7 @@ Wire Wire Line
 Text Notes 7370 7500 0    50   ~ 0
 12v to 5v converter
 Text GLabel 8100 2850 2    50   Input ~ 0
-Buck_Out
+Vin
 Text Notes 7060 7090 0    50   ~ 0
 https://webench.ti.com/power-designer/switching-regulator/customize/8?noparams=0
 Wire Wire Line
@@ -380,8 +380,6 @@ F 3 "" H 4250 4550 50  0001 C CNN
 	1    4250 4550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4250 4350 4250 4550
 $Comp
 L power:GND #PWR?
 U 1 1 61A8D1AA
@@ -409,22 +407,6 @@ F 3 "" H 3520 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CI_ComPCB-cache:Connector_Conn_01x01_Male J402
-U 1 1 614D6EFD
-P 8050 2650
-F 0 "J402" V 8112 2694 50  0000 L CNN
-F 1 "Connector_Conn_01x01_Male" V 8203 2694 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 8050 2650 50  0001 C CNN
-F 3 "" H 8050 2650 50  0001 C CNN
-	1    8050 2650
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8100 2850 8050 2850
-Wire Wire Line
-	8000 2850 8050 2850
-Connection ~ 8050 2850
-$Comp
 L CI_ComPCB-cache:Connector_Conn_01x01_Male J401
 U 1 1 614D9F4C
 P 3210 3450
@@ -435,4 +417,33 @@ F 3 "" H 3210 3450 50  0001 C CNN
 	1    3210 3450
 	0    1    1    0   
 $EndComp
+$Comp
+L Connector:Conn_01x02_Male J402
+U 1 1 61839510
+P 8100 2650
+F 0 "J402" V 8162 2694 50  0000 L CNN
+F 1 "Conn_01x02_Male" V 8253 2694 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8100 2650 50  0001 C CNN
+F 3 "~" H 8100 2650 50  0001 C CNN
+	1    8100 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J403
+U 1 1 6184D048
+P 4776 4344
+F 0 "J403" H 4884 4525 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 4884 4434 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4776 4344 50  0001 C CNN
+F 3 "~" H 4776 4344 50  0001 C CNN
+	1    4776 4344
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4776 4544 4250 4544
+Wire Wire Line
+	4250 4350 4250 4544
+Connection ~ 4250 4544
+Wire Wire Line
+	4250 4544 4250 4550
 $EndSCHEMATC

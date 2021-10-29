@@ -328,6 +328,49 @@ X Pin_1 1 200 0 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Connector_Conn_01x02_Male
+#
+DEF Connector_Conn_01x02_Male J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Conn_01x02_Male" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S 34 -95 0 -105 1 1 6 F
+S 34 5 0 -5 1 1 6 F
+P 2 1 1 6 50 -100 34 -100 N
+P 2 1 1 6 50 0 34 0 N
+X Pin_1 1 200 0 150 L 50 50 1 1 P
+X Pin_2 2 200 -100 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Conn_01x03_Male
+#
+DEF Connector_Conn_01x03_Male J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "Connector_Conn_01x03_Male" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S 34 -95 0 -105 1 1 6 F
+S 34 5 0 -5 1 1 6 F
+S 34 105 0 95 1 1 6 F
+P 2 1 1 6 50 -100 34 -100 N
+P 2 1 1 6 50 0 34 0 N
+P 2 1 1 6 50 100 34 100 N
+X Pin_1 1 200 100 150 L 50 50 1 1 P
+X Pin_2 2 200 0 150 L 50 50 1 1 P
+X Pin_3 3 200 -100 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Connector_RJ45_LED_Shielded
 #
 DEF Connector_RJ45_LED_Shielded J 0 40 Y Y 1 F N
@@ -422,6 +465,26 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Diode_1N4007
+#
+DEF Diode_1N4007 D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Diode_1N4007" 0 -100 50 H V C CNN
+F2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" 0 -175 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS 1N4002 1N4003 1N4004 1N4005 1N4006 1N4007 BA157 BA158 BA159
+$FPLIST
+ D*DO?41*
+$ENDFPLIST
+DRAW
+P 2 0 1 10 -50 50 -50 -50 N
+P 2 0 1 0 50 0 -50 0 N
+P 4 0 1 10 50 50 50 -50 -50 0 50 50 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Mechanical_MountingHole_Pad
 #
 DEF Mechanical_MountingHole_Pad H 0 40 N N 1 F N
@@ -438,24 +501,46 @@ X 1 1 0 -100 100 U 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# SamacSys_Parts_L102021ML04Q
+# SRD-05VDC-SL-C_SRD-05VDC-SL-C
 #
-DEF SamacSys_Parts_L102021ML04Q S 0 30 Y Y 1 F N
-F0 "S" 650 300 50 H V L CNN
-F1 "SamacSys_Parts_L102021ML04Q" 650 200 50 H V L CNN
-F2 "L102011ML04Q" 650 100 50 H I L CNN
-F3 "http://www.ckswitches.com/media/1423/l.pdf" 650 0 50 H I L CNN
-F4 "SWITCH SLIDE SPDT 4A 125V" 650 -100 50 H I L CNN "Description"
-F5 "7" 650 -200 50 H I L CNN "Height"
-F6 "611-L102021ML04Q" 650 -300 50 H I L CNN "Mouser Part Number"
-F7 "https://www.mouser.co.uk/ProductDetail/CK/L102021ML04Q?qs=XK7TQRbusgWd6Hv%2F260p7g%3D%3D" 650 -400 50 H I L CNN "Mouser Price/Stock"
-F8 "C & K COMPONENTS" 650 -500 50 H I L CNN "Manufacturer_Name"
-F9 "L102021ML04Q" 650 -600 50 H I L CNN "Manufacturer_Part_Number"
+DEF SRD-05VDC-SL-C_SRD-05VDC-SL-C K 0 40 N N 1 L N
+F0 "K" -200 230 50 H V L BNN
+F1 "SRD-05VDC-SL-C_SRD-05VDC-SL-C" -200 -400 50 H V L BNN
+F2 "RELAY_SRD-05VDC-SL-C" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "IPC-7251" 0 0 50 H I L BNN "STANDARD"
+F5 "SONGLE RELAY" 0 0 50 H I L BNN "MANUFACTURER"
 DRAW
-P 5 0 1 6 200 100 600 100 600 -300 200 -300 200 100 N
-X 1 1 0 -200 200 R 50 50 0 0 P
-X 2 2 0 0 200 R 50 50 0 0 P
-X 3 3 0 -100 200 R 50 50 0 0 P
+C 100 -100 10 0 0 6 N
+C 100 0 10 0 0 6 N
+P 2 0 0 10 -200 -300 -200 200 N
+P 2 0 0 6 -200 100 -100 100 N
+P 2 0 0 10 -200 200 200 200 N
+P 2 0 0 6 -140 -110 -100 -110 N
+P 2 0 0 6 -140 10 -140 -110 N
+P 2 0 0 6 -100 -200 -200 -200 N
+P 2 0 0 6 -100 -110 -100 -200 N
+P 2 0 0 6 -100 -110 -60 -110 N
+P 2 0 0 6 -100 10 -140 10 N
+P 2 0 0 6 -100 100 -100 10 N
+P 2 0 0 6 -60 -110 -60 10 N
+P 2 0 0 6 -60 10 -100 10 N
+P 2 0 0 6 100 -200 200 -200 N
+P 2 0 0 6 100 -100 100 -200 N
+P 2 0 0 6 100 100 100 0 N
+P 2 0 0 6 140 -50 90 -90 N
+P 2 0 0 6 140 -50 170 -50 N
+P 2 0 0 6 170 -50 170 0 N
+P 2 0 0 6 170 0 200 0 N
+P 2 0 0 10 200 -300 -200 -300 N
+P 2 0 0 10 200 0 200 -300 N
+P 2 0 0 6 200 100 100 100 N
+P 2 0 0 10 200 200 200 0 N
+X ~ A1 -300 100 100 R 40 40 0 0 P
+X ~ A2 -300 -200 100 R 40 40 0 0 P
+X ~ COM 300 0 100 L 40 40 0 0 P
+X ~ NC 300 -200 100 L 40 40 0 0 P
+X ~ NO 300 100 100 L 40 40 0 0 P
 ENDDRAW
 ENDDEF
 #
@@ -480,6 +565,36 @@ X 3 3 0 0 200 R 50 50 0 0 P
 X 4 4 800 -200 200 L 50 50 0 0 P
 X 5 5 800 -100 200 L 50 50 0 0 P
 X 6 6 800 0 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# dk_Transistors-Bipolar-BJT-Single_2N3904
+#
+DEF dk_Transistors-Bipolar-BJT-Single_2N3904 Q 0 0 Y Y 1 F N
+F0 "Q" -126 166 60 H V L CNN
+F1 "dk_Transistors-Bipolar-BJT-Single_2N3904" 206 0 60 V V C CNN
+F2 "digikey-footprints:TO-92-3" 200 200 60 H I L CNN
+F3 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=LSSGP072.PDF" 200 300 60 H I L CNN
+F4 "2N3904CS-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "2N3904" 200 500 60 H I L CNN "MPN"
+F6 "Discrete Semiconductor Products" 200 600 60 H I L CNN "Category"
+F7 "Transistors - Bipolar (BJT) - Single" 200 700 60 H I L CNN "Family"
+F8 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=LSSGP072.PDF" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/central-semiconductor-corp/2N3904/2N3904CS-ND/4806876" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "TRANS NPN 40V TO-92" 200 1000 60 H I L CNN "Description"
+F11 "Central Semiconductor Corp" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+C 0 0 128 0 1 0 f
+P 2 0 1 0 -150 0 -100 0 N
+P 2 0 1 0 -140 0 0 0 N
+P 2 0 1 0 0 -50 100 -100 N
+P 2 0 1 0 0 50 100 100 N
+P 2 0 1 0 0 100 0 -100 N
+P 4 0 1 0 60 -50 80 -90 40 -100 60 -50 F
+X E 1 100 -200 100 U 50 50 1 1 P
+X C 2 100 200 100 D 50 50 1 1 P
+X B 3 -200 0 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #

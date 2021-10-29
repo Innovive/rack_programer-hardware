@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -56,88 +56,19 @@ F 3 "" H 4660 4220 50  0001 C CNN
 	1    4660 4220
 	0    1    1    0   
 $EndComp
-Text GLabel 2550 4560 2    50   Input ~ 0
+Text GLabel 2708 1826 2    50   Input ~ 0
 ESP_Power
-Text GLabel 1750 4560 0    50   Input ~ 0
+Text GLabel 1908 1826 0    50   Input ~ 0
 Battery_Power
-Text GLabel 2650 4460 2    50   Input ~ 0
+Text GLabel 2808 1726 2    50   Input ~ 0
 Vin
 Wire Wire Line
-	2650 4460 2550 4460
-Text GLabel 1750 4460 0    50   Input ~ 0
+	2808 1726 2708 1726
+Text GLabel 1908 1726 0    50   Input ~ 0
 B_SW1
 Text GLabel 4660 4320 0    50   Input ~ 0
 ESP_Power
-Wire Wire Line
-	2510 1860 2460 1860
-Text GLabel 2510 1860 2    50   Input ~ 0
-EPower
-Text Notes 1220 1320 0    50   ~ 0
-Power To/From Rack switch
-Text GLabel 3470 1760 2    50   Input ~ 0
-Vin
-Wire Wire Line
-	1610 1960 1660 1960
-Text GLabel 1610 1960 0    50   Input ~ 0
-Vin
-Text GLabel 1660 1860 0    50   Input ~ 0
-Buck_Out
-NoConn ~ 1750 4360
-NoConn ~ 1660 1760
-$Comp
-L power:GND #PWR0101
-U 1 1 61285314
-P 2460 2560
-F 0 "#PWR0101" H 2460 2310 50  0001 C CNN
-F 1 "GND" H 2465 2387 50  0000 C CNN
-F 2 "" H 2460 2560 50  0001 C CNN
-F 3 "" H 2460 2560 50  0001 C CNN
-	1    2460 2560
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R101
-U 1 1 6128531E
-P 2460 2410
-F 0 "R101" H 2530 2456 50  0000 L CNN
-F 1 "680" H 2530 2365 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 2390 2410 50  0001 C CNN
-F 3 "~" H 2460 2410 50  0001 C CNN
-	1    2460 2410
-	1    0    0    -1  
-$EndComp
-$Comp
-L CI_ComPCB-rescue:LTST-C190GKT-dk_LED-Indication-Discrete D101
-U 1 1 6128530A
-P 2460 2160
-F 0 "D101" V 2410 2388 50  0000 L CNN
-F 1 "LTST-C190GKT" H 2460 2010 60  0001 C CNN
-F 2 "digikey-footprints:LED_0603" H 2660 2360 60  0001 L CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Lite-On%20PDFs/LTST-C190GKT.pdf" H 2660 2460 60  0001 L CNN
-F 4 "160-1183-1-ND" H 2660 2560 60  0001 L CNN "Digi-Key_PN"
-F 5 "LTST-C190GKT" H 2660 2660 60  0001 L CNN "MPN"
-F 6 "Optoelectronics" H 2660 2760 60  0001 L CNN "Category"
-F 7 "LED Indication - Discrete" H 2660 2860 60  0001 L CNN "Family"
-F 8 "https://media.digikey.com/pdf/Data%20Sheets/Lite-On%20PDFs/LTST-C190GKT.pdf" H 2660 2960 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/lite-on-inc/LTST-C190GKT/160-1183-1-ND/269255" H 2660 3060 60  0001 L CNN "DK_Detail_Page"
-F 10 "LED GREEN CLEAR CHIP SMD" H 2660 3160 60  0001 L CNN "Description"
-F 11 "Lite-On Inc." H 2660 3260 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 2660 3360 60  0001 L CNN "Status"
-	1    2460 2160
-	0    1    1    0   
-$EndComp
-Wire Notes Line
-	3700 2760 860  2760
-Wire Notes Line
-	860  2760 860  1370
-Wire Notes Line
-	860  1370 3700 1370
-Wire Notes Line
-	3700 1370 3700 2760
-Wire Notes Line
-	980  4690 3230 4690
-Wire Notes Line
-	980  4050 980  4690
+NoConn ~ 1908 1626
 $Sheet
 S 8660 6040 2540 380 
 U 61A30F2E
@@ -156,8 +87,6 @@ U 61A31DC2
 F0 "12v to 5v Converter" 50
 F1 "12v to 5v Converter.sch" 50
 $EndSheet
-Text GLabel 2460 1960 2    50   Input ~ 0
-Buck_IN
 $Sheet
 S 8650 4380 2510 420 
 U 61A9C8FD
@@ -166,22 +95,6 @@ F1 "Transmiter.sch" 50
 $EndSheet
 Text Notes 7410 7530 0    98   ~ 0
 CI Communication PCB
-Text GLabel 2380 5350 2    50   Input ~ 0
-Charger_IN
-Text GLabel 2380 5250 2    50   Input ~ 0
-Vin
-Text GLabel 2380 5150 2    48   Input ~ 0
-Buck_Converter_OUT
-Wire Notes Line
-	980  4840 980  5470
-Wire Notes Line
-	980  5470 3230 5470
-Wire Notes Line
-	3230 5470 3230 4840
-Wire Notes Line
-	3230 4840 980  4840
-Text Notes 1280 4800 0    48   ~ 0
-Charging/Delivering Battery Power Switch
 Wire Wire Line
 	4660 4220 4700 4220
 Wire Wire Line
@@ -212,27 +125,6 @@ $EndComp
 Connection ~ 4700 4220
 Wire Wire Line
 	4700 4220 4850 4220
-$Comp
-L CI_ComPCB-rescue:SS34-SamacSys_Parts D102
-U 1 1 612A21DD
-P 2640 1760
-F 0 "D102" H 3040 2027 50  0000 C CNN
-F 1 "SS34" H 3040 1936 50  0000 C CNN
-F 2 "digikey-footprints:DO-214AC" H 3140 1910 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/2/SS34.pdf" H 3140 1810 50  0001 L CNN
-F 4 "ON Semi SS34 SMT Schottky Diode, 40V 3A, 2-Pin DO-214AB" H 3140 1710 50  0001 L CNN "Description"
-F 5 "2.56" H 3140 1610 50  0001 L CNN "Height"
-F 6 "512-SS34" H 3140 1510 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/SS34?qs=2ONuHmP%2FXzb3ub11UdFfdQ%3D%3D" H 3140 1410 50  0001 L CNN "Mouser Price/Stock"
-F 8 "ON Semiconductor" H 3140 1310 50  0001 L CNN "Manufacturer_Name"
-F 9 "SS34" H 3140 1210 50  0001 L CNN "Manufacturer_Part_Number"
-	1    2640 1760
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2460 1760 2740 1760
-Wire Wire Line
-	3470 1760 3340 1760
 $Comp
 L Mechanical:MountingHole_Pad H102
 U 1 1 612ABAC3
@@ -312,61 +204,51 @@ RX1
 Text GLabel 4460 3920 0    50   Input ~ 0
 TX1
 $Comp
-L SamacSys_Parts:L202021MA04QE S101
-U 1 1 614EB07D
-P 1660 1760
-F 0 "S101" H 2060 2025 50  0000 C CNN
-F 1 "L202021MA04QE" H 2060 1934 50  0000 C CNN
-F 2 "L202021MA04QE" H 2310 1860 50  0001 L CNN
-F 3 "https://www.ckswitches.com/media/1423/l.pdf" H 2310 1760 50  0001 L CNN
-F 4 "Slide Switches Slide" H 2310 1660 50  0001 L CNN "Description"
-F 5 "10.46" H 2310 1560 50  0001 L CNN "Height"
-F 6 "611-L202021MA04QE" H 2310 1460 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/CK/L202021MA04QE?qs=LgMIjt8LuD9SKAo8ixZdPQ%3D%3D" H 2310 1360 50  0001 L CNN "Mouser Price/Stock"
-F 8 "C & K COMPONENTS" H 2310 1260 50  0001 L CNN "Manufacturer_Name"
-F 9 "L202021MA04QE" H 2310 1160 50  0001 L CNN "Manufacturer_Part_Number"
-	1    1660 1760
-	1    0    0    -1  
-$EndComp
-$Comp
 L SamacSys_Parts:L202021MA04QE S102
 U 1 1 614EBE17
-P 1750 4360
-F 0 "S102" H 2150 4625 50  0000 C CNN
-F 1 "L202021MA04QE" H 2150 4534 50  0000 C CNN
-F 2 "L202021MA04QE" H 2400 4460 50  0001 L CNN
-F 3 "https://www.ckswitches.com/media/1423/l.pdf" H 2400 4360 50  0001 L CNN
-F 4 "Slide Switches Slide" H 2400 4260 50  0001 L CNN "Description"
-F 5 "10.46" H 2400 4160 50  0001 L CNN "Height"
-F 6 "611-L202021MA04QE" H 2400 4060 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/CK/L202021MA04QE?qs=LgMIjt8LuD9SKAo8ixZdPQ%3D%3D" H 2400 3960 50  0001 L CNN "Mouser Price/Stock"
-F 8 "C & K COMPONENTS" H 2400 3860 50  0001 L CNN "Manufacturer_Name"
-F 9 "L202021MA04QE" H 2400 3760 50  0001 L CNN "Manufacturer_Part_Number"
-	1    1750 4360
+P 1908 1626
+F 0 "S102" H 2308 1891 50  0000 C CNN
+F 1 "L202021MA04QE" H 2308 1800 50  0000 C CNN
+F 2 "SamacSys_Parts:L202021MA04QE" H 2558 1726 50  0001 L CNN
+F 3 "https://www.ckswitches.com/media/1423/l.pdf" H 2558 1626 50  0001 L CNN
+F 4 "Slide Switches Slide" H 2558 1526 50  0001 L CNN "Description"
+F 5 "10.46" H 2558 1426 50  0001 L CNN "Height"
+F 6 "611-L202021MA04QE" H 2558 1326 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/CK/L202021MA04QE?qs=LgMIjt8LuD9SKAo8ixZdPQ%3D%3D" H 2558 1226 50  0001 L CNN "Mouser Price/Stock"
+F 8 "C & K COMPONENTS" H 2558 1126 50  0001 L CNN "Manufacturer_Name"
+F 9 "L202021MA04QE" H 2558 1026 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1908 1626
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	3230 4690 3230 4050
-Wire Notes Line
-	3230 4050 980  4050
-NoConn ~ 2550 4360
-Text Notes 1300 3980 0    50   ~ 0
+	3388 1316 1138 1316
+NoConn ~ 2708 1626
+Text Notes 1458 1246 0    50   ~ 0
 Device ON/OFF Switch
-$Comp
-L SamacSys_Parts:L102021ML04Q S103
-U 1 1 614F4229
-P 2380 5350
-F 0 "S103" H 2672 4885 50  0000 C CNN
-F 1 "L102021ML04Q" H 2672 4976 50  0000 C CNN
-F 2 "L102011ML04Q" H 3030 5450 50  0001 L CNN
-F 3 "http://www.ckswitches.com/media/1423/l.pdf" H 3030 5350 50  0001 L CNN
-F 4 "SWITCH SLIDE SPDT 4A 125V" H 3030 5250 50  0001 L CNN "Description"
-F 5 "7" H 3030 5150 50  0001 L CNN "Height"
-F 6 "611-L102021ML04Q" H 3030 5050 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/CK/L102021ML04Q?qs=XK7TQRbusgWd6Hv%2F260p7g%3D%3D" H 3030 4950 50  0001 L CNN "Mouser Price/Stock"
-F 8 "C & K COMPONENTS" H 3030 4850 50  0001 L CNN "Manufacturer_Name"
-F 9 "L102021ML04Q" H 3030 4750 50  0001 L CNN "Manufacturer_Part_Number"
-	1    2380 5350
-	-1   0    0    1   
-$EndComp
+$Sheet
+S 8640 3870 2520 440 
+U 6172E90A
+F0 "Relay Switches" 50
+F1 "Relay_Switches.sch" 50
+$EndSheet
+Text GLabel 4796 3420 0    50   Input ~ 0
+Ch1
+Text GLabel 4800 3520 0    50   Input ~ 0
+Ch2
+Wire Wire Line
+	4850 3420 4796 3420
+Wire Wire Line
+	4800 3520 4850 3520
+Wire Notes Line
+	3386 1956 3388 1316
+Wire Notes Line
+	1138 1316 1136 1956
+Wire Notes Line
+	1140 1960 3390 1960
+Text GLabel 4800 3618 0    50   Input ~ 0
+Ch3
+Wire Wire Line
+	4850 3620 4800 3620
+Wire Wire Line
+	4800 3620 4800 3618
 $EndSCHEMATC
