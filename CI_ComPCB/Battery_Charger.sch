@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 6
+Sheet 2 5
 Title ""
 Date ""
 Rev ""
@@ -13,19 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L CI_ComPCB-rescue:Charger-New_Library-RackComm-rescue-RackComm-rescue-CI_ComPCB-rescue HW-?
-U 1 1 61A36CB0
-P 6450 2780
-AR Path="/61A36CB0" Ref="HW-?"  Part="1" 
-AR Path="/61A30F2E/61A36CB0" Ref="HW-201"  Part="1" 
-F 0 "HW-201" H 6475 2755 50  0000 C CNN
-F 1 "Charger-New_Library-RackComm-rescue-RackComm-rescue" H 6475 2664 50  0000 C CNN
-F 2 "CI_ComPCB:Charger" H 6450 2780 50  0001 C CNN
-F 3 "" H 6450 2780 50  0001 C CNN
-	1    6450 2780
-	1    0    0    -1  
-$EndComp
 $Comp
 L CI_ComPCB-rescue:Battery-New_Library-RackComm-rescue-CI_ComPCB-rescue Holder?
 U 1 1 61A36CB6
@@ -46,20 +33,20 @@ B_SW1
 Wire Wire Line
 	4900 3540 4900 3830
 Wire Wire Line
-	4900 3830 7000 3830
+	5432 4700 7532 4700
 Wire Wire Line
-	7000 3830 7000 3230
+	7532 4700 7532 4100
 $Comp
 L power:GND #PWR?
 U 1 1 61A36CC1
-P 7000 3030
+P 7532 3900
 AR Path="/61A36CC1" Ref="#PWR?"  Part="1" 
 AR Path="/61A30F2E/61A36CC1" Ref="#PWR0202"  Part="1" 
-F 0 "#PWR0202" H 7000 2780 50  0001 C CNN
-F 1 "GND" H 7005 2857 50  0000 C CNN
-F 2 "" H 7000 3030 50  0001 C CNN
-F 3 "" H 7000 3030 50  0001 C CNN
-	1    7000 3030
+F 0 "#PWR0202" H 7532 3650 50  0001 C CNN
+F 1 "GND" H 7537 3727 50  0000 C CNN
+F 2 "" H 7532 3900 50  0001 C CNN
+F 3 "" H 7532 3900 50  0001 C CNN
+	1    7532 3900
 	0    -1   -1   0   
 $EndComp
 Text GLabel 5950 3030 0    50   Input ~ 0
@@ -72,7 +59,7 @@ Wire Wire Line
 	6500 3780 6500 3380
 Text Notes 4200 3860 0    50   ~ 0
 Charger
-Text GLabel 7000 3230 2    50   Input ~ 0
+Text GLabel 7532 4100 2    50   Input ~ 0
 Charger_IN
 Text GLabel 5970 3230 0    50   Input ~ 0
 Battery_Power
@@ -149,7 +136,6 @@ F 3 "~" H 4900 3980 50  0001 C CNN
 	1    4900 3980
 	1    0    0    -1  
 $EndComp
-Connection ~ 4900 3830
 $Comp
 L power:GND #PWR0105
 U 1 1 612D1AE2
@@ -161,4 +147,6 @@ F 3 "" H 4900 4130 50  0001 C CNN
 	1    4900 4130
 	1    0    0    -1  
 $EndComp
+Text Notes 7216 6154 0    50   ~ 0
+https://www.amazon.com/DGZZI-Charger-Lithium-Battery-Protection/dp/B07RKL438C/ref=sr_1_4?crid=1OYPBW1QQ1WYA&keywords=10A+BMS+Charger+Protection+Board+for+Pack+of+3+18650+Li-ion+lithium+Battery+Cell&qid=1636155931&sprefix=10a+bms+charger+protection+board+for+pack+of+3+18650+li-ion+lithium+battery+cell%2Caps%2C91&sr=8-4
 $EndSCHEMATC

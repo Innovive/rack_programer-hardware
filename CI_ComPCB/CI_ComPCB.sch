@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 5
 Title ""
 Date ""
 Rev ""
@@ -70,25 +70,19 @@ Text GLabel 4660 4320 0    50   Input ~ 0
 ESP_Power
 NoConn ~ 1908 1626
 $Sheet
-S 8660 6040 2540 380 
+S 8660 6016 2540 380 
 U 61A30F2E
 F0 "Battery_Charger" 50
 F1 "Battery_Charger.sch" 50
 $EndSheet
 $Sheet
-S 8650 5480 2510 400 
-U 61A31654
-F0 "4.2v to 5v Converter" 50
-F1 "4.sch" 50
-$EndSheet
-$Sheet
-S 8650 4960 2510 340 
+S 8666 5508 2510 340 
 U 61A31DC2
 F0 "12v to 5v Converter" 50
 F1 "12v to 5v Converter.sch" 50
 $EndSheet
 $Sheet
-S 8650 4380 2510 420 
+S 8666 4928 2510 420 
 U 61A9C8FD
 F0 "Transmiter" 50
 F1 "Transmiter.sch" 50
@@ -226,7 +220,7 @@ NoConn ~ 2708 1626
 Text Notes 1458 1246 0    50   ~ 0
 Device ON/OFF Switch
 $Sheet
-S 8640 3870 2520 440 
+S 8656 4418 2520 440 
 U 6172E90A
 F0 "Relay Switches" 50
 F1 "Relay_Switches.sch" 50
