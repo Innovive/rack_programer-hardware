@@ -148,5 +148,5 @@ F 3 "" H 4900 4130 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 7216 6154 0    50   ~ 0
-https://www.amazon.com/DGZZI-Charger-Lithium-Battery-Protection/dp/B07RKL438C/ref=sr_1_4?crid=1OYPBW1QQ1WYA&keywords=10A+BMS+Charger+Protection+Board+for+Pack+of+3+18650+Li-ion+lithium+Battery+Cell&qid=1636155931&sprefix=10a+bms+charger+protection+board+for+pack+of+3+18650+li-ion+lithium+battery+cell%2Caps%2C91&sr=8-4
+https://www.amazon.com/Li-ion-Lithium-Battery-Charger-Protection/dp/B085WBC3VD/ref=pd_sbs_4/142-9960783-6429120?pd_rd_w=BQDWq&pf_rd_p=8b76d7a7-ab83-4ddc-a92d-e3e33bfdbf03&pf_rd_r=1G7PKXSWC24V1T78R90V&pd_rd_r=f6b41e4c-7f01-498a-b560-66b727321cd4&pd_rd_wg=bSg1c&pd_rd_i=B085WBC3VD&psc=1
 $EndSCHEMATC
