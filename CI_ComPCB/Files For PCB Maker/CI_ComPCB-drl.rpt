@@ -1,5 +1,5 @@
-Drill report for C:\Users\Aalam Shaikh\Documents\GitHub\rack_programer-hardware\CI_ComPCB\CI_ComPCB.kicad_pcb
-Created on 10/29/2021 4:40:11 PM
+Drill report for /Users/Thermiteplazma/Documents/GitHub/rack_programer-hardware/CI_ComPCB/CI_ComPCB.kicad_pcb
+Created on Tuesday, January 11, 2022 at 04:09:44 PM
 
 Copper Layer Stackup:
     =============================================================
@@ -10,25 +10,19 @@ Copper Layer Stackup:
 Drill file 'CI_ComPCB-PTH.drl' contains
     plated through holes:
     =============================================================
-    T1  0.406mm  0.0160"  (74 holes)
-    T2  0.550mm  0.0217"  (6 holes)
-    T3  0.762mm  0.0300"  (36 holes)
-    T4  0.890mm  0.0350"  (24 holes)
-    T5  1.000mm  0.0394"  (20 holes)
-    T6  1.100mm  0.0433"  (3 holes)
-    T7  1.290mm  0.0508"  (2 holes)
-    T8  1.320mm  0.0520"  (8 holes)
-    T9  1.570mm  0.0618"  (4 holes)
-    T10  1.650mm  0.0650"  (6 holes)
-    T11  1.900mm  0.0748"  (2 holes)
-    T12  3.200mm  0.1260"  (4 holes)
+    T1  0.406mm  0.0160"  (22 holes)
+    T2  0.762mm  0.0300"  (30 holes)
+    T3  0.890mm  0.0350"  (12 holes)
+    T4  1.000mm  0.0394"  (3 holes)
+    T5  1.570mm  0.0618"  (2 holes)
+    T6  3.200mm  0.1260"  (4 holes)
 
-    Total plated holes count 189
+    Total plated holes count 73
 
 
 Drill file 'CI_ComPCB-NPTH.drl' contains
     unplated through holes:
     =============================================================
-    T1  3.250mm  0.1280"  (4 holes)
+    T1  3.250mm  0.1280"  (2 holes)
 
-    Total unplated holes count 4
+    Total unplated holes count 2
