@@ -28,7 +28,7 @@ AR Path="/61A8D138" Ref="C?"  Part="1"
 AR Path="/61A31DC2/61A8D138" Ref="C206"  Part="1" 
 F 0 "C206" H 6565 3296 50  0000 L CNN
 F 1 "47uF" H 6565 3205 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 6488 3100 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 6488 3100 50  0001 C CNN
 F 3 "~" H 6450 3250 50  0001 C CNN
 	1    6450 3250
 	1    0    0    -1  
@@ -58,7 +58,7 @@ AR Path="/61A8D146" Ref="C?"  Part="1"
 AR Path="/61A31DC2/61A8D146" Ref="C208"  Part="1" 
 F 0 "C208" H 7165 3296 50  0000 L CNN
 F 1 "47uF" H 7165 3205 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 7088 3100 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 7088 3100 50  0001 C CNN
 F 3 "~" H 7050 3250 50  0001 C CNN
 	1    7050 3250
 	1    0    0    -1  
@@ -152,8 +152,8 @@ P 3900 3800
 AR Path="/61A8D19B" Ref="C?"  Part="1" 
 AR Path="/61A31DC2/61A8D19B" Ref="C202"  Part="1" 
 F 0 "C202" H 4015 3846 50  0000 L CNN
-F 1 "10uF" H 4015 3755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 3938 3650 50  0001 C CNN
+F 1 "22uf" H 4015 3755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 3938 3650 50  0001 C CNN
 F 3 "~" H 3900 3800 50  0001 C CNN
 	1    3900 3800
 	1    0    0    -1  
@@ -170,20 +170,20 @@ P 3520 3800
 AR Path="/61A8D1B6" Ref="C?"  Part="1" 
 AR Path="/61A31DC2/61A8D1B6" Ref="C201"  Part="1" 
 F 0 "C201" H 3635 3846 50  0000 L CNN
-F 1 "10uF" H 3635 3755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 3558 3650 50  0001 C CNN
+F 1 "22uf" H 3635 3755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 3558 3650 50  0001 C CNN
 F 3 "~" H 3520 3800 50  0001 C CNN
 	1    3520 3800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5600 2850 5850 2850
+	5600 2850 5849 2850
 Wire Wire Line
 	6450 3100 6650 3100
 Wire Wire Line
 	6650 3100 6650 2850
 Wire Wire Line
-	6650 2850 7050 2850
+	6650 2850 6652 2850
 Connection ~ 7050 2850
 Wire Wire Line
 	7050 2850 7400 2850
@@ -244,25 +244,6 @@ Wire Wire Line
 	5850 3650 6450 3650
 Wire Wire Line
 	7400 2850 7400 3440
-$Comp
-L CI_ComPCB-rescue:RLF12560T-7R8N8R2-SamacSys_Parts-CI_ComPCB-rescue L201
-U 1 1 612ACFD5
-P 5850 2850
-F 0 "L201" H 6250 3075 50  0000 C CNN
-F 1 "RLF12560T-7R8N8R2" H 6250 2984 50  0000 C CNN
-F 2 "SamacSys_Parts:INDPM128125X600N" H 6500 2900 50  0001 L CNN
-F 3 "https://product.tdk.com/system/files/dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_power_rlf12560_en.pdf" H 6500 2800 50  0001 L CNN
-F 4 "TDK - RLF12560T-7R8N8R2 - Power Inductor (SMD), 7.8 H, 8.4 A, Wirewound, 8.2 A, 12.8mm x 12.5mm x 6mm" H 6500 2700 50  0001 L CNN "Description"
-F 5 "6" H 6500 2600 50  0001 L CNN "Height"
-F 6 "810-RLF12560T-7R8N" H 6500 2500 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/TDK/RLF12560T-7R8N8R2?qs=3POhL7GGTOgHxYsYtKxdfg%3D%3D" H 6500 2400 50  0001 L CNN "Mouser Price/Stock"
-F 8 "TDK" H 6500 2300 50  0001 L CNN "Manufacturer_Name"
-F 9 "RLF12560T-7R8N8R2" H 6500 2200 50  0001 L CNN "Manufacturer_Part_Number"
-	1    5850 2850
-	1    0    0    -1  
-$EndComp
-Connection ~ 5850 2850
-Connection ~ 6650 2850
 $Comp
 L CI_ComPCB-rescue:TPS54331DR-SamacSys_Parts-CI_ComPCB-rescue IC201
 U 1 1 612C5C0D
@@ -437,4 +418,29 @@ Wire Wire Line
 Connection ~ 4250 4544
 Wire Wire Line
 	4250 4544 4250 4550
+$Comp
+L IHLP2525CZER6R8M01:IHLP2525CZER6R8M01 L201
+U 1 1 61E06FC7
+P 5962 2849
+F 0 "L201" H 6262 3138 60  0000 C CNN
+F 1 "IHLP2525CZER6R8M01" H 6262 3032 60  0000 C CNN
+F 2 "IND:IHLP2525CZER6R8M01" H 6237 2564 60  0001 C CNN
+F 3 "" H 5962 2849 60  0000 C CNN
+	1    5962 2849
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5962 2849 5849 2849
+Wire Wire Line
+	5849 2849 5849 2850
+Connection ~ 5849 2850
+Wire Wire Line
+	5849 2850 5850 2850
+Wire Wire Line
+	6562 2849 6652 2849
+Wire Wire Line
+	6652 2849 6652 2850
+Connection ~ 6652 2850
+Wire Wire Line
+	6652 2850 7050 2850
 $EndSCHEMATC

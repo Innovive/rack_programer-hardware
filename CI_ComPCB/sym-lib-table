@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name CI_ComPCB-rescue)(type Legacy)(uri ${KIPRJMOD}/CI_ComPCB-rescue.lib)(options "")(descr ""))
+  (lib (name IHLP2525CZER6R8M01)(type Legacy)(uri "/Users/Thermiteplazma/Downloads/ul_IHLP2525CZER6R8M01 (1)/KiCAD/2022-01-13_17-19-36/2022-01-13_17-19-36.lib")(options "")(descr ""))
 )
