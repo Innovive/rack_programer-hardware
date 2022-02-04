@@ -90,7 +90,7 @@ F 3 "~" H 5000 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CI_ComPCB-rescue:LTST-C190GKT-dk_LED-Indication-Discrete D?
+L CI_ComPCB-rescue:LTST-C190GKT-dk_LED-Indication-Discrete-CI_ComPCB-rescue D?
 U 1 1 6173F3C7
 P 5000 2600
 AR Path="/6173F3C7" Ref="D?"  Part="1" 
@@ -253,7 +253,7 @@ F 3 "~" H 5050 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CI_ComPCB-rescue:LTST-C190GKT-dk_LED-Indication-Discrete D?
+L CI_ComPCB-rescue:LTST-C190GKT-dk_LED-Indication-Discrete-CI_ComPCB-rescue D?
 U 1 1 617D35BE
 P 5050 5050
 AR Path="/617D35BE" Ref="D?"  Part="1" 
@@ -355,7 +355,7 @@ F 3 "~" H 8414 4250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L CI_ComPCB-rescue:LTST-C190GKT-dk_LED-Indication-Discrete D?
+L CI_ComPCB-rescue:LTST-C190GKT-dk_LED-Indication-Discrete-CI_ComPCB-rescue D?
 U 1 1 617E89E6
 P 8414 4500
 AR Path="/617E89E6" Ref="D?"  Part="1" 
@@ -388,7 +388,7 @@ Charger in or battery out switch
 Text GLabel 8994 4800 2    50   Input ~ 0
 EPower
 $Comp
-L CI_ComPCB-rescue:SS34-SamacSys_Parts D?
+L CI_ComPCB-rescue:SS34-SamacSys_Parts-CI_ComPCB-rescue D?
 U 1 1 617E89F3
 P 7260 5000
 AR Path="/617E89F3" Ref="D?"  Part="1" 
@@ -475,7 +475,7 @@ F 3 "~" H 8916 5062 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L SRD-05VDC-SL-C:SRD-05VDC-SL-C K601
+L CI_ComPCB-rescue:SRD-05VDC-SL-C-SRD-05VDC-SL-C K601
 U 1 1 6188DFD6
 P 6600 2448
 F 0 "K601" H 7328 2494 50  0000 L CNN
@@ -517,7 +517,7 @@ Wire Wire Line
 Wire Wire Line
 	7048 2148 7048 2444
 $Comp
-L SRD-05VDC-SL-C:SRD-05VDC-SL-C K602
+L CI_ComPCB-rescue:SRD-05VDC-SL-C-SRD-05VDC-SL-C K602
 U 1 1 617EEB4B
 P 6650 4900
 F 0 "K602" H 7378 4946 50  0000 L CNN

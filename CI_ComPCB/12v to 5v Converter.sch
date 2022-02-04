@@ -201,7 +201,7 @@ Wire Wire Line
 Text GLabel 3210 3650 0    50   Input ~ 0
 Buck_IN
 $Comp
-L CI_ComPCB-rescue:SS34-SamacSys_Parts D402
+L CI_ComPCB-rescue:SS34-SamacSys_Parts-CI_ComPCB-rescue D402
 U 1 1 612967EC
 P 8100 2850
 F 0 "D402" H 8500 2583 50  0000 C CNN
@@ -221,7 +221,7 @@ Connection ~ 7400 2850
 Wire Wire Line
 	5600 3650 5850 3650
 $Comp
-L CI_ComPCB-rescue:SS34-SamacSys_Parts D401
+L CI_ComPCB-rescue:SS34-SamacSys_Parts-CI_ComPCB-rescue D401
 U 1 1 6129D4B6
 P 5850 2900
 F 0 "D401" H 6250 2633 50  0000 C CNN
@@ -245,7 +245,7 @@ Wire Wire Line
 Wire Wire Line
 	7400 2850 7400 3440
 $Comp
-L CI_ComPCB-rescue:RLF12560T-7R8N8R2-SamacSys_Parts L401
+L CI_ComPCB-rescue:RLF12560T-7R8N8R2-SamacSys_Parts-CI_ComPCB-rescue L401
 U 1 1 612ACFD5
 P 5850 2850
 F 0 "L401" H 6250 3075 50  0000 C CNN
@@ -264,7 +264,7 @@ $EndComp
 Connection ~ 5850 2850
 Connection ~ 6650 2850
 $Comp
-L CI_ComPCB-rescue:TPS54331DR-SamacSys_Parts IC401
+L CI_ComPCB-rescue:TPS54331DR-SamacSys_Parts-CI_ComPCB-rescue IC401
 U 1 1 612C5C0D
 P 4400 3550
 F 0 "IC401" H 5000 3815 50  0000 C CNN
@@ -407,9 +407,11 @@ F 3 "" H 3520 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CI_ComPCB-cache:Connector_Conn_01x01_Male J401
+L CI_ComPCB-rescue:Connector_Conn_01x01_Male-CI_ComPCB-cache J401
 U 1 1 614D9F4C
 P 3210 3450
+AR Path="/614D9F4C" Ref="J401"  Part="1" 
+AR Path="/61A31DC2/614D9F4C" Ref="J401"  Part="1" 
 F 0 "J401" V 3272 3494 50  0000 L CNN
 F 1 "Connector_Conn_01x01_Male" V 3363 3494 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 3210 3450 50  0001 C CNN

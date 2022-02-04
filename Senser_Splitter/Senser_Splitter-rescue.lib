@@ -1,0 +1,42 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# A_08-LC-TT-dk_Sockets-for-ICs-Transistors
+#
+DEF A_08-LC-TT-dk_Sockets-for-ICs-Transistors J 0 40 Y Y 1 F N
+F0 "J" -150 250 50 H V L CNN
+F1 "A_08-LC-TT-dk_Sockets-for-ICs-Transistors" 0 -250 50 H V C CNN
+F2 "digikey-footprints:SOCKET_DIP-8_7.62mm_Conn" 200 200 60 H I L CNN
+F3 "http://www.assmann-wsw.com/fileadmin/datasheets/ASS_0810_CO.pdf" 200 300 60 H I L CNN
+F4 "AE9986-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "A 08-LC-TT" 200 500 60 H I L CNN "MPN"
+F6 "Connectors, Interconnects" 200 600 60 H I L CNN "Category"
+F7 "Sockets for ICs, Transistors" 200 700 60 H I L CNN "Family"
+F8 "http://www.assmann-wsw.com/fileadmin/datasheets/ASS_0810_CO.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/assmann-wsw-components/A-08-LC-TT/AE9986-ND/821740" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "CONN IC DIP SOCKET 8POS TIN" 200 1000 60 H I L CNN "Description"
+F11 "Assmann WSW Components" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -150 -125 -75 -175 1 1 0 F
+S -150 -25 -75 -75 1 1 0 F
+S -150 75 -75 25 1 1 0 F
+S -150 175 -75 125 1 1 0 F
+S -150 200 150 -200 1 1 0 f
+S -25 150 25 -150 1 1 0 N
+S 75 -125 150 -175 1 1 0 F
+S 75 -25 150 -75 1 1 0 F
+S 75 75 150 25 1 1 0 F
+S 75 175 150 125 1 1 0 F
+X ~ 1 -250 150 100 R 50 50 1 1 P
+X ~ 2 -250 50 100 R 50 50 1 1 P
+X ~ 3 -250 -50 100 R 50 50 1 1 P
+X ~ 4 -250 -150 100 R 50 50 1 1 P
+X ~ 5 250 -150 100 L 50 50 1 1 P
+X ~ 6 250 -50 100 L 50 50 1 1 P
+X ~ 7 250 50 100 L 50 50 1 1 P
+X ~ 8 250 150 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

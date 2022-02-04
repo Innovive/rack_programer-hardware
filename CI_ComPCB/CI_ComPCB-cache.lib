@@ -1,11 +1,25 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# CI_ComPCB-cache_Connector_Conn_01x01_Male
+# CI_ComPCB-rescue_Battery-New_Library-RackComm-rescue-CI_ComPCB-rescue-CI_ComPCB-rescue
 #
-DEF CI_ComPCB-cache_Connector_Conn_01x01_Male J 0 40 Y N 1 F N
+DEF CI_ComPCB-rescue_Battery-New_Library-RackComm-rescue-CI_ComPCB-rescue-CI_ComPCB-rescue Holder 0 40 Y Y 1 F N
+F0 "Holder" -5 -15 50 H V C CNN
+F1 "CI_ComPCB-rescue_Battery-New_Library-RackComm-rescue-CI_ComPCB-rescue-CI_ComPCB-rescue" 0 -90 50 H V C CNN
+F2 "" 140 0 50 H I C CNN
+F3 "" 140 0 50 H I C CNN
+DRAW
+S 100 -250 -100 -150 0 1 0 N
+X + 1 -200 -200 100 R 50 50 1 1 I
+X - 2 200 -200 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# CI_ComPCB-rescue_Connector_Conn_01x01_Male-CI_ComPCB-cache
+#
+DEF CI_ComPCB-rescue_Connector_Conn_01x01_Male-CI_ComPCB-cache J 0 40 Y N 1 F N
 F0 "J" 0 100 50 H V C CNN
-F1 "CI_ComPCB-cache_Connector_Conn_01x01_Male" 0 -100 50 H V C CNN
+F1 "CI_ComPCB-rescue_Connector_Conn_01x01_Male-CI_ComPCB-cache" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -18,25 +32,11 @@ X Pin_1 1 200 0 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# CI_ComPCB-rescue_Battery-New_Library-RackComm-rescue-CI_ComPCB-rescue
+# CI_ComPCB-rescue_ESP32s-RackComm-rescue-CI_ComPCB-rescue-CI_ComPCB-rescue
 #
-DEF CI_ComPCB-rescue_Battery-New_Library-RackComm-rescue-CI_ComPCB-rescue Holder 0 40 Y Y 1 F N
-F0 "Holder" -5 -15 50 H V C CNN
-F1 "CI_ComPCB-rescue_Battery-New_Library-RackComm-rescue-CI_ComPCB-rescue" 0 -90 50 H V C CNN
-F2 "" 140 0 50 H I C CNN
-F3 "" 140 0 50 H I C CNN
-DRAW
-S 100 -250 -100 -150 0 1 0 N
-X + 1 -200 -200 100 R 50 50 1 1 I
-X - 2 200 -200 100 L 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# CI_ComPCB-rescue_ESP32s-RackComm-rescue-CI_ComPCB-rescue
-#
-DEF CI_ComPCB-rescue_ESP32s-RackComm-rescue-CI_ComPCB-rescue U 0 40 Y Y 1 F N
+DEF CI_ComPCB-rescue_ESP32s-RackComm-rescue-CI_ComPCB-rescue-CI_ComPCB-rescue U 0 40 Y Y 1 F N
 F0 "U" 900 -750 50 H V C CNN
-F1 "CI_ComPCB-rescue_ESP32s-RackComm-rescue-CI_ComPCB-rescue" 900 -650 50 H V C CNN
+F1 "CI_ComPCB-rescue_ESP32s-RackComm-rescue-CI_ComPCB-rescue-CI_ComPCB-rescue" 900 -650 50 H V C CNN
 F2 "" 900 -750 50 H I C CNN
 F3 "" 900 -750 50 H I C CNN
 DRAW
@@ -74,11 +74,35 @@ X Vin Vin 100 -1500 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# CI_ComPCB-rescue_LTST-C190GKT-dk_LED-Indication-Discrete
+# CI_ComPCB-rescue_L202021MA04QE-SamacSys_Parts
 #
-DEF CI_ComPCB-rescue_LTST-C190GKT-dk_LED-Indication-Discrete D 0 0 Y Y 1 F N
+DEF CI_ComPCB-rescue_L202021MA04QE-SamacSys_Parts S 0 30 Y Y 1 F N
+F0 "S" 650 300 50 H V L CNN
+F1 "CI_ComPCB-rescue_L202021MA04QE-SamacSys_Parts" 650 200 50 H V L CNN
+F2 "L202021MA04QE" 650 100 50 H I L CNN
+F3 "https://www.ckswitches.com/media/1423/l.pdf" 650 0 50 H I L CNN
+F4 "Slide Switches Slide" 650 -100 50 H I L CNN "Description"
+F5 "10.46" 650 -200 50 H I L CNN "Height"
+F6 "611-L202021MA04QE" 650 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/CK/L202021MA04QE?qs=LgMIjt8LuD9SKAo8ixZdPQ%3D%3D" 650 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "C & K COMPONENTS" 650 -500 50 H I L CNN "Manufacturer_Name"
+F9 "L202021MA04QE" 650 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 600 100 600 -300 200 -300 200 100 N
+X 1 1 0 -200 200 R 50 50 0 0 P
+X 2 2 0 -100 200 R 50 50 0 0 P
+X 3 3 0 0 200 R 50 50 0 0 P
+X 4 4 800 -200 200 L 50 50 0 0 P
+X 5 5 800 -100 200 L 50 50 0 0 P
+X 6 6 800 0 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# CI_ComPCB-rescue_LTST-C190GKT-dk_LED-Indication-Discrete-CI_ComPCB-rescue
+#
+DEF CI_ComPCB-rescue_LTST-C190GKT-dk_LED-Indication-Discrete-CI_ComPCB-rescue D 0 0 Y Y 1 F N
 F0 "D" -250 150 50 H V L CNN
-F1 "CI_ComPCB-rescue_LTST-C190GKT-dk_LED-Indication-Discrete" 0 -150 60 H I C CNN
+F1 "CI_ComPCB-rescue_LTST-C190GKT-dk_LED-Indication-Discrete-CI_ComPCB-rescue" 0 -150 60 H I C CNN
 F2 "digikey-footprints:LED_0603" 200 200 60 H I L CNN
 F3 "https://media.digikey.com/pdf/Data%20Sheets/Lite-On%20PDFs/LTST-C190GKT.pdf" 200 300 60 H I L CNN
 F4 "160-1183-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
@@ -106,11 +130,11 @@ X ~ 2 -200 0 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# CI_ComPCB-rescue_RLF12560T-7R8N8R2-SamacSys_Parts
+# CI_ComPCB-rescue_RLF12560T-7R8N8R2-SamacSys_Parts-CI_ComPCB-rescue
 #
-DEF CI_ComPCB-rescue_RLF12560T-7R8N8R2-SamacSys_Parts L 0 30 Y Y 1 F N
+DEF CI_ComPCB-rescue_RLF12560T-7R8N8R2-SamacSys_Parts-CI_ComPCB-rescue L 0 30 Y Y 1 F N
 F0 "L" 650 250 50 H V L CNN
-F1 "CI_ComPCB-rescue_RLF12560T-7R8N8R2-SamacSys_Parts" 650 150 50 H V L CNN
+F1 "CI_ComPCB-rescue_RLF12560T-7R8N8R2-SamacSys_Parts-CI_ComPCB-rescue" 650 150 50 H V L CNN
 F2 "INDPM128125X600N" 650 50 50 H I L CNN
 F3 "https://product.tdk.com/system/files/dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_power_rlf12560_en.pdf" 650 -50 50 H I L CNN
 F4 "TDK - RLF12560T-7R8N8R2 - Power Inductor (SMD), 7.8 H, 8.4 A, Wirewound, 8.2 A, 12.8mm x 12.5mm x 6mm" 650 -150 50 H I L CNN "Description"
@@ -129,11 +153,54 @@ X ~ 2 800 0 200 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
-# CI_ComPCB-rescue_SS34-SamacSys_Parts
+# CI_ComPCB-rescue_SRD-05VDC-SL-C-SRD-05VDC-SL-C
 #
-DEF CI_ComPCB-rescue_SS34-SamacSys_Parts D 0 30 Y Y 1 F N
+DEF CI_ComPCB-rescue_SRD-05VDC-SL-C-SRD-05VDC-SL-C K 0 40 N N 1 L N
+F0 "K" -200 230 50 H V L BNN
+F1 "CI_ComPCB-rescue_SRD-05VDC-SL-C-SRD-05VDC-SL-C" -200 -400 50 H V L BNN
+F2 "RELAY_SRD-05VDC-SL-C" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "IPC-7251" 0 0 50 H I L BNN "STANDARD"
+F5 "SONGLE RELAY" 0 0 50 H I L BNN "MANUFACTURER"
+DRAW
+C 100 -100 10 0 0 6 N
+C 100 0 10 0 0 6 N
+P 2 0 0 10 -200 -300 -200 200 N
+P 2 0 0 6 -200 100 -100 100 N
+P 2 0 0 10 -200 200 200 200 N
+P 2 0 0 6 -140 -110 -100 -110 N
+P 2 0 0 6 -140 10 -140 -110 N
+P 2 0 0 6 -100 -200 -200 -200 N
+P 2 0 0 6 -100 -110 -100 -200 N
+P 2 0 0 6 -100 -110 -60 -110 N
+P 2 0 0 6 -100 10 -140 10 N
+P 2 0 0 6 -100 100 -100 10 N
+P 2 0 0 6 -60 -110 -60 10 N
+P 2 0 0 6 -60 10 -100 10 N
+P 2 0 0 6 100 -200 200 -200 N
+P 2 0 0 6 100 -100 100 -200 N
+P 2 0 0 6 100 100 100 0 N
+P 2 0 0 6 140 -50 90 -90 N
+P 2 0 0 6 140 -50 170 -50 N
+P 2 0 0 6 170 -50 170 0 N
+P 2 0 0 6 170 0 200 0 N
+P 2 0 0 10 200 -300 -200 -300 N
+P 2 0 0 10 200 0 200 -300 N
+P 2 0 0 6 200 100 100 100 N
+P 2 0 0 10 200 200 200 0 N
+X ~ A1 -300 100 100 R 40 40 0 0 P
+X ~ A2 -300 -200 100 R 40 40 0 0 P
+X ~ COM 300 0 100 L 40 40 0 0 P
+X ~ NC 300 -200 100 L 40 40 0 0 P
+X ~ NO 300 100 100 L 40 40 0 0 P
+ENDDRAW
+ENDDEF
+#
+# CI_ComPCB-rescue_SS34-SamacSys_Parts-CI_ComPCB-rescue
+#
+DEF CI_ComPCB-rescue_SS34-SamacSys_Parts-CI_ComPCB-rescue D 0 30 Y Y 1 F N
 F0 "D" 500 350 50 H V L CNN
-F1 "CI_ComPCB-rescue_SS34-SamacSys_Parts" 500 250 50 H V L CNN
+F1 "CI_ComPCB-rescue_SS34-SamacSys_Parts-CI_ComPCB-rescue" 500 250 50 H V L CNN
 F2 "DIOM8059X256N" 500 150 50 H I L CNN
 F3 "https://componentsearchengine.com/Datasheets/2/SS34.pdf" 500 50 50 H I L CNN
 F4 "ON Semi SS34 SMT Schottky Diode, 40V 3A, 2-Pin DO-214AB" 500 -50 50 H I L CNN "Description"
@@ -154,11 +221,11 @@ X ~ 2 700 0 100 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
-# CI_ComPCB-rescue_TPS54331DR-SamacSys_Parts
+# CI_ComPCB-rescue_TPS54331DR-SamacSys_Parts-CI_ComPCB-rescue
 #
-DEF CI_ComPCB-rescue_TPS54331DR-SamacSys_Parts IC 0 30 Y Y 1 F N
+DEF CI_ComPCB-rescue_TPS54331DR-SamacSys_Parts-CI_ComPCB-rescue IC 0 30 Y Y 1 F N
 F0 "IC" 1050 300 50 H V L CNN
-F1 "CI_ComPCB-rescue_TPS54331DR-SamacSys_Parts" 1050 200 50 H V L CNN
+F1 "CI_ComPCB-rescue_TPS54331DR-SamacSys_Parts-CI_ComPCB-rescue" 1050 200 50 H V L CNN
 F2 "SOIC127P600X175-8N" 1050 100 50 H I L CNN
 F3 "http://www.ti.com/lit/gpn/tps54331" 1050 0 50 H I L CNN
 F4 "Texas Instruments TPS54331DR, Step Down DC-DC Converter, 3A, Adjustable, 0.8  25 V, 8-Pin SOIC" 1050 -100 50 H I L CNN "Description"
@@ -180,11 +247,11 @@ X PH 8 1200 0 200 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
-# CI_ComPCB-rescue_Transistor_FET_IRF9540N-CI_ComPCB-cache
+# CI_ComPCB-rescue_Transistor_FET_IRF9540N-CI_ComPCB-cache-CI_ComPCB-rescue
 #
-DEF CI_ComPCB-rescue_Transistor_FET_IRF9540N-CI_ComPCB-cache Q 0 20 Y N 1 F N
+DEF CI_ComPCB-rescue_Transistor_FET_IRF9540N-CI_ComPCB-cache-CI_ComPCB-rescue Q 0 20 Y N 1 F N
 F0 "Q" 200 75 50 H V L CNN
-F1 "CI_ComPCB-rescue_Transistor_FET_IRF9540N-CI_ComPCB-cache" 200 0 50 H V L CNN
+F1 "CI_ComPCB-rescue_Transistor_FET_IRF9540N-CI_ComPCB-cache-CI_ComPCB-rescue" 200 0 50 H V L CNN
 F2 "Package_TO_SOT_THT:TO-220-3_Vertical" 200 -75 50 H I L CIN
 F3 "" 0 0 50 H I L CNN
 $FPLIST
@@ -211,11 +278,11 @@ X S 3 100 -200 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# CI_ComPCB-rescue_TxRx-RS485-New_Library-RackComm-rescue-CI_ComPCB-rescue
+# CI_ComPCB-rescue_TxRx-RS485-New_Library-RackComm-rescue-CI_ComPCB-rescue-CI_ComPCB-rescue
 #
-DEF CI_ComPCB-rescue_TxRx-RS485-New_Library-RackComm-rescue-CI_ComPCB-rescue Converter 0 40 Y Y 1 F N
+DEF CI_ComPCB-rescue_TxRx-RS485-New_Library-RackComm-rescue-CI_ComPCB-rescue-CI_ComPCB-rescue Converter 0 40 Y Y 1 F N
 F0 "Converter" 0 0 50 H V C CNN
-F1 "CI_ComPCB-rescue_TxRx-RS485-New_Library-RackComm-rescue-CI_ComPCB-rescue" 0 -100 50 H V C CNN
+F1 "CI_ComPCB-rescue_TxRx-RS485-New_Library-RackComm-rescue-CI_ComPCB-rescue-CI_ComPCB-rescue" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -417,73 +484,6 @@ $ENDFPLIST
 DRAW
 C 0 50 50 0 1 50 N
 X 1 1 0 -100 100 U 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# SRD-05VDC-SL-C_SRD-05VDC-SL-C
-#
-DEF SRD-05VDC-SL-C_SRD-05VDC-SL-C K 0 40 N N 1 L N
-F0 "K" -200 230 50 H V L BNN
-F1 "SRD-05VDC-SL-C_SRD-05VDC-SL-C" -200 -400 50 H V L BNN
-F2 "RELAY_SRD-05VDC-SL-C" 0 0 50 H I L BNN
-F3 "" 0 0 50 H I L BNN
-F4 "IPC-7251" 0 0 50 H I L BNN "STANDARD"
-F5 "SONGLE RELAY" 0 0 50 H I L BNN "MANUFACTURER"
-DRAW
-C 100 -100 10 0 0 6 N
-C 100 0 10 0 0 6 N
-P 2 0 0 10 -200 -300 -200 200 N
-P 2 0 0 6 -200 100 -100 100 N
-P 2 0 0 10 -200 200 200 200 N
-P 2 0 0 6 -140 -110 -100 -110 N
-P 2 0 0 6 -140 10 -140 -110 N
-P 2 0 0 6 -100 -200 -200 -200 N
-P 2 0 0 6 -100 -110 -100 -200 N
-P 2 0 0 6 -100 -110 -60 -110 N
-P 2 0 0 6 -100 10 -140 10 N
-P 2 0 0 6 -100 100 -100 10 N
-P 2 0 0 6 -60 -110 -60 10 N
-P 2 0 0 6 -60 10 -100 10 N
-P 2 0 0 6 100 -200 200 -200 N
-P 2 0 0 6 100 -100 100 -200 N
-P 2 0 0 6 100 100 100 0 N
-P 2 0 0 6 140 -50 90 -90 N
-P 2 0 0 6 140 -50 170 -50 N
-P 2 0 0 6 170 -50 170 0 N
-P 2 0 0 6 170 0 200 0 N
-P 2 0 0 10 200 -300 -200 -300 N
-P 2 0 0 10 200 0 200 -300 N
-P 2 0 0 6 200 100 100 100 N
-P 2 0 0 10 200 200 200 0 N
-X ~ A1 -300 100 100 R 40 40 0 0 P
-X ~ A2 -300 -200 100 R 40 40 0 0 P
-X ~ COM 300 0 100 L 40 40 0 0 P
-X ~ NC 300 -200 100 L 40 40 0 0 P
-X ~ NO 300 100 100 L 40 40 0 0 P
-ENDDRAW
-ENDDEF
-#
-# SamacSys_Parts_L202021MA04QE
-#
-DEF SamacSys_Parts_L202021MA04QE S 0 30 Y Y 1 F N
-F0 "S" 650 300 50 H V L CNN
-F1 "SamacSys_Parts_L202021MA04QE" 650 200 50 H V L CNN
-F2 "L202021MA04QE" 650 100 50 H I L CNN
-F3 "https://www.ckswitches.com/media/1423/l.pdf" 650 0 50 H I L CNN
-F4 "Slide Switches Slide" 650 -100 50 H I L CNN "Description"
-F5 "10.46" 650 -200 50 H I L CNN "Height"
-F6 "611-L202021MA04QE" 650 -300 50 H I L CNN "Mouser Part Number"
-F7 "https://www.mouser.co.uk/ProductDetail/CK/L202021MA04QE?qs=LgMIjt8LuD9SKAo8ixZdPQ%3D%3D" 650 -400 50 H I L CNN "Mouser Price/Stock"
-F8 "C & K COMPONENTS" 650 -500 50 H I L CNN "Manufacturer_Name"
-F9 "L202021MA04QE" 650 -600 50 H I L CNN "Manufacturer_Part_Number"
-DRAW
-P 5 0 1 6 200 100 600 100 600 -300 200 -300 200 100 N
-X 1 1 0 -200 200 R 50 50 0 0 P
-X 2 2 0 -100 200 R 50 50 0 0 P
-X 3 3 0 0 200 R 50 50 0 0 P
-X 4 4 800 -200 200 L 50 50 0 0 P
-X 5 5 800 -100 200 L 50 50 0 0 P
-X 6 6 800 0 200 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #

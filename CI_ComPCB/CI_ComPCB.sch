@@ -24,7 +24,7 @@ RX2
 Text GLabel 6480 4320 2    50   Input ~ 0
 3.3V
 $Comp
-L CI_ComPCB-rescue:ESP32s-RackComm-rescue-CI_ComPCB-rescue U101
+L CI_ComPCB-rescue:ESP32s-RackComm-rescue-CI_ComPCB-rescue-CI_ComPCB-rescue U101
 U 1 1 61536F0E
 P 4750 2820
 F 0 "U101" H 5600 2985 50  0000 C CNN
@@ -198,7 +198,7 @@ RX1
 Text GLabel 4460 3920 0    50   Input ~ 0
 TX1
 $Comp
-L SamacSys_Parts:L202021MA04QE S102
+L CI_ComPCB-rescue:L202021MA04QE-SamacSys_Parts S102
 U 1 1 614EBE17
 P 1908 1626
 F 0 "S102" H 2308 1891 50  0000 C CNN

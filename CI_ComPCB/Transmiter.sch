@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L CI_ComPCB-rescue:TxRx-RS485-New_Library-RackComm-rescue-CI_ComPCB-rescue Converter?
+L CI_ComPCB-rescue:TxRx-RS485-New_Library-RackComm-rescue-CI_ComPCB-rescue-CI_ComPCB-rescue Converter?
 U 1 1 61AB1847
 P 3930 4500
 AR Path="/61AB1847" Ref="Converter?"  Part="1" 
@@ -27,7 +27,7 @@ F 3 "" H 3930 4500 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L CI_ComPCB-rescue:TxRx-RS485-New_Library-RackComm-rescue-CI_ComPCB-rescue Converter?
+L CI_ComPCB-rescue:TxRx-RS485-New_Library-RackComm-rescue-CI_ComPCB-rescue-CI_ComPCB-rescue Converter?
 U 1 1 61AB184D
 P 3930 5080
 AR Path="/61AB184D" Ref="Converter?"  Part="1" 
@@ -270,7 +270,7 @@ Wire Wire Line
 Wire Wire Line
 	6020 4990 6810 4990
 $Comp
-L CI_ComPCB-rescue:SS34-SamacSys_Parts D?
+L CI_ComPCB-rescue:SS34-SamacSys_Parts-CI_ComPCB-rescue D?
 U 1 1 614B2CBA
 P 6340 4780
 AR Path="/61A31DC2/614B2CBA" Ref="D?"  Part="1" 
