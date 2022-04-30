@@ -114,4 +114,16 @@ K
 F http://www.ckswitches.com/media/1423/l.pdf
 $ENDCMP
 #
+$CMP MF-MSMF050-2
+D Fuse, PTC, Resettable, SMD, 1812, 500mA Bourns 0.5A Surface Mount Resettable Fuse, 15 V
+K
+F https://www.bourns.com/pdfs/mfmsmf.pdf
+$ENDCMP
+#
+$CMP SL08_10001
+D NTC THERMISTOR; Product Range:SL08 Series; Disc Size:8mm; Zero Power Resistance at 25C:10ohm; Approvals:-; Maximum Energy Rating at 25C:8J; Maximum Steady State Current at 25C:1A; Dissipation Constant:9mW/C; No. of Pins:2 RoHS Compliant: Yes
+K
+F https://componentsearchengine.com/Datasheets/1/SL08 10001.pdf
+$ENDCMP
+#
 #End Doc Library

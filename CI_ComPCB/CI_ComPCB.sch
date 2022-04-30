@@ -164,4 +164,27 @@ Wire Wire Line
 	10100 3650 10250 3650
 Wire Wire Line
 	4411 4320 4850 4320
+$Comp
+L oleds:oled(128x64)i2c U102
+U 1 1 626EBE2D
+P 7650 4050
+F 0 "U102" H 8128 4054 50  0000 L CNN
+F 1 "oled(128x64)i2c" H 8128 3963 50  0000 L CNN
+F 2 "CI_ComPCB:oled(128x64)i2c" H 7650 3850 50  0001 C CNN
+F 3 "" H 7650 3850 50  0001 C CNN
+	1    7650 4050
+	-1   0    0    -1  
+$EndComp
+Text GLabel 7900 3800 1    50   Input ~ 0
+GND
+Text GLabel 7750 3800 1    50   Input ~ 0
+3.3V
+Wire Wire Line
+	6350 3020 7600 3020
+Wire Wire Line
+	7600 3020 7600 3800
+Wire Wire Line
+	7450 3800 7450 3320
+Wire Wire Line
+	7450 3320 6350 3320
 $EndSCHEMATC

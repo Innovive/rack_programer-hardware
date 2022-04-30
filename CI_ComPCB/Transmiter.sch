@@ -87,18 +87,16 @@ $EndComp
 $Comp
 L Device:R R?
 U 1 1 61AB18D1
-P 7400 5140
+P 7940 5140
 AR Path="/61AB18D1" Ref="R?"  Part="1" 
 AR Path="/61A9C8FD/61AB18D1" Ref="R301"  Part="1" 
-F 0 "R301" V 7193 5140 50  0000 C CNN
-F 1 "680" V 7284 5140 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 7330 5140 50  0001 C CNN
-F 3 "~" H 7400 5140 50  0001 C CNN
-	1    7400 5140
+F 0 "R301" V 7733 5140 50  0000 C CNN
+F 1 "680" V 7824 5140 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7870 5140 50  0001 C CNN
+F 3 "~" H 7940 5140 50  0001 C CNN
+	1    7940 5140
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6950 5240 6950 5342
 $Comp
 L power:GND #PWR?
 U 1 1 61DE97DB
@@ -126,25 +124,11 @@ F 3 "" H 7400 4340 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7550 5140 7800 5140
-Wire Wire Line
 	7000 4640 6850 4640
 Wire Wire Line
 	7000 4540 6850 4540
 Wire Wire Line
 	6950 5240 7000 5240
-Wire Wire Line
-	7800 5240 7800 5342
-Wire Wire Line
-	7800 5342 6950 5342
-Connection ~ 6950 5342
-Wire Wire Line
-	6950 5342 6950 5440
-Connection ~ 7000 5140
-Wire Wire Line
-	7000 5140 7250 5140
-Wire Wire Line
-	6230 5140 7000 5140
 $Comp
 L Connector:RJ45_LED_Shielded J?
 U 1 1 61AB1886
@@ -159,4 +143,57 @@ F 4 "C464588" H 7400 4840 50  0001 C CNN "JLPCB"
 	1    7400 4840
 	-1   0    0    1   
 $EndComp
+$Comp
+L Device:R R?
+U 1 1 626CFBAF
+P 7950 4540
+AR Path="/626CFBAF" Ref="R?"  Part="1" 
+AR Path="/61A9C8FD/626CFBAF" Ref="R302"  Part="1" 
+F 0 "R302" V 7743 4540 50  0000 C CNN
+F 1 "680" V 7834 4540 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7880 4540 50  0001 C CNN
+F 3 "~" H 7950 4540 50  0001 C CNN
+	1    7950 4540
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 626D253E
+P 7880 4640
+AR Path="/626D253E" Ref="#PWR?"  Part="1" 
+AR Path="/61A9C8FD/626D253E" Ref="#PWR0106"  Part="1" 
+F 0 "#PWR0106" H 7880 4390 50  0001 C CNN
+F 1 "GND" H 7885 4467 50  0000 C CNN
+F 2 "" H 7880 4640 50  0001 C CNN
+F 3 "" H 7880 4640 50  0001 C CNN
+	1    7880 4640
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 4640 7880 4640
+Wire Wire Line
+	7800 5240 7840 5240
+Wire Wire Line
+	6230 5140 7000 5140
+Wire Wire Line
+	6950 5240 6950 5440
+Wire Wire Line
+	7790 5140 7800 5140
+$Comp
+L power:GND #PWR?
+U 1 1 626DB77D
+P 7840 5240
+AR Path="/626DB77D" Ref="#PWR?"  Part="1" 
+AR Path="/61A9C8FD/626DB77D" Ref="#PWR0107"  Part="1" 
+F 0 "#PWR0107" H 7840 4990 50  0001 C CNN
+F 1 "GND" H 7845 5067 50  0000 C CNN
+F 2 "" H 7840 5240 50  0001 C CNN
+F 3 "" H 7840 5240 50  0001 C CNN
+	1    7840 5240
+	1    0    0    -1  
+$EndComp
+Text GLabel 8100 4540 2    50   Input ~ 0
+TX2
+Text GLabel 8090 5140 2    50   Input ~ 0
+RX2
 $EndSCHEMATC

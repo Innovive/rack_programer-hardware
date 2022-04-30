@@ -198,7 +198,7 @@ Wire Wire Line
 Connection ~ 3520 3650
 Wire Wire Line
 	3520 3650 3900 3650
-Text GLabel 3210 3650 0    50   Input ~ 0
+Text GLabel 1340 3650 0    50   Input ~ 0
 EPower
 $Comp
 L CI_ComPCB-rescue:SS34-SamacSys_Parts-CI_ComPCB-rescue D202
@@ -419,9 +419,11 @@ Connection ~ 4250 4544
 Wire Wire Line
 	4250 4544 4250 4550
 $Comp
-L IHLP2525CZER6R8M01:IHLP2525CZER6R8M01 L201
+L CI_ComPCB-rescue:IHLP2525CZER6R8M01-IHLP2525CZER6R8M01 L201
 U 1 1 61E06FC7
 P 5962 2849
+AR Path="/61E06FC7" Ref="L201"  Part="1" 
+AR Path="/61A31DC2/61E06FC7" Ref="L201"  Part="1" 
 F 0 "L201" H 6262 3138 60  0000 C CNN
 F 1 "IHLP2525CZER6R8M01" H 6262 3032 60  0000 C CNN
 F 2 "IND:IHLP2525CZER6R8M01" H 6237 2564 60  0001 C CNN
@@ -443,4 +445,51 @@ Wire Wire Line
 Connection ~ 6652 2850
 Wire Wire Line
 	6652 2850 7050 2850
+$Comp
+L SamacSys_Parts:SL08_10001 RT201
+U 1 1 626F9195
+P 2040 3650
+F 0 "RT201" H 2440 3915 50  0000 C CNN
+F 1 "SL08_10001" H 2440 3824 50  0000 C CNN
+F 2 "SamacSys_Parts:SL0810001" H 2690 3750 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/SL08 10001.pdf" H 2690 3650 50  0001 L CNN
+F 4 "NTC THERMISTOR; Product Range:SL08 Series; Disc Size:8mm; Zero Power Resistance at 25C:10ohm; Approvals:-; Maximum Energy Rating at 25C:8J; Maximum Steady State Current at 25C:1A; Dissipation Constant:9mW/C; No. of Pins:2 RoHS Compliant: Yes" H 2690 3550 50  0001 L CNN "Description"
+F 5 "19.3" H 2690 3450 50  0001 L CNN "Height"
+F 6 "995-SL0810001" H 2690 3350 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=995-SL0810001" H 2690 3250 50  0001 L CNN "Mouser Price/Stock"
+F 8 "AMETHERM" H 2690 3150 50  0001 L CNN "Manufacturer_Name"
+F 9 "SL08 10001" H 2690 3050 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2040 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:MF-MSMF050-2 F201
+U 1 1 626FB5FC
+P 1340 3650
+F 0 "F201" H 1690 3875 50  0000 C CNN
+F 1 "MF-MSMF050-2" H 1690 3784 50  0000 C CNN
+F 2 "SamacSys_Parts:FUSC4632X85N" H 1890 3700 50  0001 L CNN
+F 3 "https://www.bourns.com/pdfs/mfmsmf.pdf" H 1890 3600 50  0001 L CNN
+F 4 "Fuse, PTC, Resettable, SMD, 1812, 500mA Bourns 0.5A Surface Mount Resettable Fuse, 15 V" H 1890 3500 50  0001 L CNN "Description"
+F 5 "0.85" H 1890 3400 50  0001 L CNN "Height"
+F 6 "652-MF-MSMF050-2" H 1890 3300 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Bourns/MF-MSMF050-2?qs=t3shhpq1i1DZ7OBD5kLNoA%3D%3D" H 1890 3200 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Bourns" H 1890 3100 50  0001 L CNN "Manufacturer_Name"
+F 9 "MF-MSMF050-2" H 1890 3000 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1340 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2840 3650 3210 3650
+Connection ~ 3210 3650
+Wire Notes Line
+	1470 3260 1470 3960
+Wire Notes Line
+	1470 3960 2790 3960
+Wire Notes Line
+	2790 3960 2790 3260
+Wire Notes Line
+	2790 3260 1470 3260
+Text Notes 1720 3190 0    50   ~ 0
+Current limiting circuit
 $EndSCHEMATC

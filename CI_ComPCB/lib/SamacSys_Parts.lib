@@ -483,4 +483,45 @@ P 5 0 1 6 200 100 600 100 600 -300 200 -300 200 100 N
 ENDDRAW
 ENDDEF
 #
+#SamacSys ECAD Model MF-MSMF050-2
+#/245904/585773/2.49/2/3/Fuse
+DEF MF-MSMF050-2 F 0 30 Y Y 1 F N
+F0 "F" 550 250 50 H V L CNN
+F1 "MF-MSMF050-2" 550 150 50 H V L CNN
+F2 "FUSC4632X85N" 550 50 50 H I L CNN
+F3 "https://www.bourns.com/pdfs/mfmsmf.pdf" 550 -50 50 H I L CNN
+F4 "Fuse, PTC, Resettable, SMD, 1812, 500mA Bourns 0.5A Surface Mount Resettable Fuse, 15 V" 550 -150 50 H I L CNN "Description"
+F5 "0.85" 550 -250 50 H I L CNN "Height"
+F6 "652-MF-MSMF050-2" 550 -350 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Bourns/MF-MSMF050-2?qs=t3shhpq1i1DZ7OBD5kLNoA%3D%3D" 550 -450 50 H I L CNN "Mouser Price/Stock"
+F8 "Bourns" 550 -550 50 H I L CNN "Manufacturer_Name"
+F9 "MF-MSMF050-2" 550 -650 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 700 0 200 L 50 50 0 0 P
+P 5 0 1 6 200 50 500 50 500 -50 200 -50 200 50 N
+P 2 0 1 6 200 0 500 0 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model SL08_10001
+#/1187936/585773/2.49/2/4/Thermistor
+DEF SL08_10001 RT 0 30 Y Y 1 F N
+F0 "RT" 650 300 50 H V L CNN
+F1 "SL08_10001" 650 200 50 H V L CNN
+F2 "SL0810001" 650 100 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/1/SL08 10001.pdf" 650 0 50 H I L CNN
+F4 "NTC THERMISTOR; Product Range:SL08 Series; Disc Size:8mm; Zero Power Resistance at 25C:10ohm; Approvals:-; Maximum Energy Rating at 25C:8J; Maximum Steady State Current at 25C:1A; Dissipation Constant:9mW/C; No. of Pins:2 RoHS Compliant: Yes" 650 -100 50 H I L CNN "Description"
+F5 "19.3" 650 -200 50 H I L CNN "Height"
+F6 "995-SL0810001" 650 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.com/Search/Refine.aspx?Keyword=995-SL0810001" 650 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "AMETHERM" 650 -500 50 H I L CNN "Manufacturer_Name"
+F9 "SL08 10001" 650 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X 1 1 0 0 200 R 50 50 0 0 P
+X 2 2 800 0 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 600 100 600 -100 200 -100 200 100 N
+ENDDRAW
+ENDDEF
+#
 #End Library
