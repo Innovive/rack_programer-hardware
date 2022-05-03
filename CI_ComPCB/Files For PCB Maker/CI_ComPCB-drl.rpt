@@ -1,0 +1,29 @@
+Drill report for C:\Users\Aalam Shaikh\Documents\GitHub\rack_programer-hardware\CI_ComPCB\CI_ComPCB.kicad_pcb
+Created on 5/3/2022 9:40:06 AM
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'CI_ComPCB-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.406mm  0.0160"  (27 holes)
+    T2  0.762mm  0.0300"  (34 holes)
+    T3  0.800mm  0.0315"  (2 holes)
+    T4  0.890mm  0.0350"  (12 holes)
+    T5  1.000mm  0.0394"  (3 holes)
+    T6  1.570mm  0.0618"  (2 holes)
+    T7  3.200mm  0.1260"  (4 holes)
+
+    Total plated holes count 84
+
+
+Drill file 'CI_ComPCB-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+    T1  3.250mm  0.1280"  (2 holes)
+
+    Total unplated holes count 2
